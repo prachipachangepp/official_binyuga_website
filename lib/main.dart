@@ -1,22 +1,49 @@
 import 'package:flutter/material.dart';
-import 'package:official_binyuga_website/screens/home_page.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+import 'package:official_binyuga_website/responsive_screen/landingpage.dart';
+import 'package:official_binyuga_website/responsive_screen/responsive.dart';
+
+
+
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+      theme: ThemeData(primarySwatch: Colors.blue, fontFamily: "Montserrat"),
+      home: MyHomePage(),
+    );
+  }
+}
+
+class MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('images/Group 220.png'), // Replace with your image asset path
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: SingleChildScrollView(
+          child: Column(
+            children: <Widget>[
+              Navbar(),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                    vertical: 20.0, horizontal: 40.0),
+                child: LandingPage(),
+              )
+            ],
+          ),
+        ),
       ),
-      home: HomePage(),
     );
   }
 }
