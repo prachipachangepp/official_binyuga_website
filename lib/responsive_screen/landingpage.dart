@@ -12,69 +12,86 @@ class LandingPage extends StatelessWidget {
               Row(
                 children: [
                   Expanded(
-                    child: Column(
+                    child: Row(
                       children: [
-                        VerticalDivider(
-                          color:Colors.white,
-                          thickness:4,
-                          indent:300,
-                          endIndent:300,
-                        ),
+                        Text('Who we are',
+                  style: TextStyle(
+                 fontWeight: FontWeight.bold,
+                  fontSize: 15.0,
+                  color: Colors.white),
+                   ),
+
+                        // VerticalDivider(
+                        //   color:Colors.white,
+                        //   thickness:4,
+                        //   indent:300,
+                        //   endIndent:300,
+                        // ),
                       ],
                     ),
                   ),
                   Expanded(
-                    child: Column(
+                    child:Column(
                       children: [
                     Text('We Craft  '
-                        'Tailored digital products '
+                        '\nTailored digital products '
                         '\nfor your unique needs',
                         style: TextStyle(
-                          fontSize: 25,
+                          fontSize: 20,
                           color: Colors.white,
                         ),),
+                       SizedBox(height: 30,),
                        Padding(
                          padding: const EdgeInsets.only(left: 60),
-                         child: Text('Whether its custom Software Solution,a User-friendly app,or a captivating website ,we are commited to delievering innovative and'
-                             'tailored digital products that not only meet but exceed your expectations',
-                           style: TextStyle(
-                          fontSize: 10,
-                           color: Colors.blue,),
-                          ),
+                         child: Column(
+                           children: [
+                             Text('Whether its custom Software Solution,a User-friendly app,'
+                                 '\nor a captivating website ,we are commited to delievering innovative and'
+                                 '\ntailored digital products that not only meet but exceed your expectations',
+                               style: TextStyle(
+                              fontSize: 10,
+                               color: Colors.blue,),
+                              ),
+                           ],
+                         ),
                        ),
                         SizedBox(height: 20,),
-                        MaterialButton(
-                          color: Colors.white,
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.all(Radius.circular(30.0))),
-                          onPressed: () {},
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(
-                                vertical: 10.0, horizontal: 20.0),
-                            child: Text(
-                              "Explore More",
-                              style: TextStyle(color: Colors.black,fontSize: 15,fontWeight:FontWeight.bold),
-                            ),
-                          ),
+                        Column(
+                          children: [
+                            MaterialButton(
+                              color: Colors.white,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.all(Radius.circular(30.0))),
+                              onPressed: () {},
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    vertical: 10.0, horizontal: 20.0),
+                                child: Text(
+                                  "Explore More",
+                                  style: TextStyle(color: Colors.black,fontSize: 15,fontWeight:FontWeight.bold),
+                                ),
+                              ),
 
+                            ),
+                          ],
                         ),
                       ],
-                       
+
                     ),
                   ),
                   SizedBox(height:20),
-              
+
 
                 ],
 
               ),
-              Text(
-                "What we are",
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15.0,
-                    color: Colors.white),
-              ),
+              // Text(
+              //   "What we are",
+              //   style: TextStyle(
+              //       fontWeight: FontWeight.bold,
+              //       fontSize: 15.0,
+              //       color: Colors.white),
+              // ),
               SizedBox(height: 30,),
               Text(
                 "What we Do",
@@ -130,8 +147,100 @@ class LandingPage extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),),
               ),
+              SizedBox(height: 40,),
+               Row(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(left:30),
+                              child: Text(
+                                '000',
+                                style: TextStyle(fontSize: 40.0,
+                                    color: Colors.blue),
+                              ),
+                            ),
+                            SizedBox(height: 8.0),
+                            Padding(
+                              padding: EdgeInsets.only(left:30),
+                              child: Text(
+                                'Successfully Completed Project',
+                                style: TextStyle(
+                                  color:Colors.white,
+                                  fontSize: 20,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            Text(
+                              '000',
+                              style: TextStyle(fontSize: 40.0,
+                                  color: Colors.blue),
+                            ),
+                            SizedBox(height: 8.0),
+                            Padding(
+                              padding: const EdgeInsets.only(left:30),
+                              child: Text(
+                                'Revenue Growth ',
+                                style: TextStyle(
+                                  color:Colors.white,
+                                  fontSize: 20,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            Text(
+                              '000',
+                              style: TextStyle(fontSize: 40.0,
+                                  color: Colors.blue),
+                            ),
+                            SizedBox(height: 8.0),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 30),
+                              child: Text(
+                                'Training Days Conducted for interns ',
+                                style: TextStyle(
+                                  color:Colors.white,
+                                  fontSize: 20,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
+
         ),
       ),
 
@@ -144,7 +253,10 @@ class LandingPage extends StatelessWidget {
       ),
 
     ];
+
   }
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -156,7 +268,7 @@ class LandingPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: pageChildren(constraints.biggest.width / 2),
+                children: pageChildren(constraints.biggest.width / 3),
               ),
             );
           } else {
@@ -165,6 +277,7 @@ class LandingPage extends StatelessWidget {
                 children: pageChildren(constraints.biggest.width),
               ),
             );
+
           }
         },
       ),

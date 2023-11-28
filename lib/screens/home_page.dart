@@ -23,74 +23,71 @@ class _HomePageState extends State<HomePage> {
           ),
 
           // Your content goes here
-          Positioned(
-            top: 50,
-            left: 0,
-            child: Row(
-              children: [
-                Column(
-                  children: [
-                    Image.asset(
-                      'images/Group 223.png',
+          Row(
+            children: [
+              Column(
+                children: [
+                  Image.asset(
+                    alignment:Alignment.topLeft,
+                    'images/Group 223.png',
 
-                    ),
-                    VerticalDivider(
-                      color:Colors.blue,
-                      thickness:2,
-                      indent:300,
-                      endIndent:300,
-                    ),
-                    SizedBox(height: 60,),
-                    Text('Who we are',
+                  ),
+                  VerticalDivider(
+                    color:Colors.blue,
+                    thickness:2,
+                    indent:300,
+                    endIndent:300,
+                  ),
+                  SizedBox(height: 60,),
+                  Text('Who we are',
+                  style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.white,
+                  ),),
+                  SizedBox(height: 30,),
+                  Text('What we do',
                     style: TextStyle(
                       fontSize: 15,
                       color: Colors.white,
                     ),),
-                    SizedBox(height: 30,),
-                    Text('What we do',
-                      style: TextStyle(
-                        fontSize: 15,
-                        color: Colors.white,
-                      ),),
-                    SizedBox(height: 35,),
-                    Text('Features',
-                      style: TextStyle(
-                        fontSize: 15,
-                        color: Colors.white,
-                      ),),
-                    SizedBox(height: 35,),
-                    Text('Career',
-                      style: TextStyle(
-                        fontSize: 15,
-                        color: Colors.white,
-                      ),),
-                    SizedBox(height: 35,),
-                    Text('Portfolio',
-                      style: TextStyle(
-                        fontSize: 15,
-                        color: Colors.white,
-                      ),),
+                  SizedBox(height: 35,),
+                  Text('Features',
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.white,
+                    ),),
+                  SizedBox(height: 35,),
+                  Text('Career',
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.white,
+                    ),),
+                  SizedBox(height: 35,),
+                  Text('Portfolio',
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.white,
+                    ),),
 
 
-                  ],
+                ],
 
-                ),
+              ),
 
 
 
 
-                SizedBox(width:20,),
-                Text('Contacts',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
-                ),),
-                SizedBox(width: 20,),
-                Icon(Icons.toggle_off_sharp,color: Colors.white,size: 30,),
-                SizedBox(width: 20,),
-                Icon(Icons.search_outlined,color: Colors.white,),
-              ],
-            ),
+              SizedBox(width:20,),
+              Text('Contacts',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 20,
+              ),),
+              SizedBox(width: 20,),
+              Icon(Icons.toggle_off_sharp,color: Colors.white,size: 30,),
+              SizedBox(width: 20,),
+              Icon(Icons.search_outlined,color: Colors.white,),
+            ],
           ),
         ],
       ),
