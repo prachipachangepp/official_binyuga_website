@@ -12,25 +12,32 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
+      backgroundColor: Colors.white,
       body: Stack(
         children: [
           // Background Image
           Positioned.fill(
             child: Image.asset(
-              'images/Group 220.png', // Replace with the path to your image asset
-              fit: BoxFit.cover,
+              'images/Group 220.png',
+              height: 1080,
+              width: 1940,// Replace with the path to your image asset
+              fit: BoxFit.fill,
             ),
           ),
 
           // Your content goes here
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Column(
                 children: [
-                  Image.asset(
-                    alignment:Alignment.topLeft,
-                    'images/Group 223.png',
+                  Padding(
+                    padding: const EdgeInsets.only(top: 20),
+                    child: Image.asset(
 
+                      'images/Group 223.png',
+
+                    ),
                   ),
                   VerticalDivider(
                     color:Colors.blue,
@@ -86,7 +93,10 @@ class _HomePageState extends State<HomePage> {
               SizedBox(width: 20,),
               Icon(Icons.toggle_off_sharp,color: Colors.white,size: 30,),
               SizedBox(width: 20,),
-              Icon(Icons.search_outlined,color: Colors.white,),
+              Padding(
+                padding: const EdgeInsets.only(left: 100),
+                child: Icon(Icons.search_outlined,color: Colors.white,),
+              ),
             ],
           ),
         ],

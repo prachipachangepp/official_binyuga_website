@@ -20,38 +20,53 @@ class Navbar extends StatelessWidget {
 class DesktopNavbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
-      child: Container(
-        child: SingleChildScrollView(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 0),
-                child: Image.asset(
-                  'images/Group 223.png',
-
-                ),
+    return Container(
+      child: SingleChildScrollView(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.only(top: 20),
+              child: Image.asset(
+                'images/Group 223.png',
               ),
-              Row(
-                children: <Widget>[
-                  Text('ContactUs',
+            ),
+            Row(
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.only(right: 100),
+                  child: Text(
+                    'Contact Us',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 20,
-                    ),),
-                  SizedBox(width: 20,),
-                  Icon(Icons.toggle_off_sharp,color: Colors.white,size: 30,),
-                  SizedBox(width: 20,),
-                  Icon(Icons.search_outlined,color: Colors.white,),
-
-
-
-                ],
-              )
-            ],
-          ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(right: 80),
+                  child: Icon(
+                    Icons.toggle_off_sharp,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(right: 60),
+                  child: Icon(
+                    Icons.search_outlined,
+                    color: Colors.white,
+                  ),
+                ),
+              ],
+            )
+          ],
         ),
       ),
     );
@@ -61,37 +76,46 @@ class DesktopNavbar extends StatelessWidget {
 class MobileNavbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
-      child: Container(
-        child: Column(children: <Widget>[
-        Padding(
-        padding: const EdgeInsets.only(top: 12,right: 200),
-        child: Image.asset(
-          'images/Group 223.png',
-
-        ),
-      ),
-      Padding(
-        padding: const EdgeInsets.all(12),
-        child: Row(
-            children: <Widget>[
-              Text('ContactUs',
+    return Container(
+        child: SingleChildScrollView(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.only(top: 20),
+            child: Image.asset(
+              'images/Group 223.png',
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(12),
+            child: Row(children: <Widget>[
+              Text(
+                'Contact Us',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 20,
-                ),),
-              SizedBox(width: 20,),
-              Icon(Icons.toggle_off_sharp,color: Colors.white,size: 30,),
-              SizedBox(width: 20,),
-              Icon(Icons.search_outlined,color: Colors.white,),
-
-
-
+                ),
+              ),
+              SizedBox(
+                width: 20,
+              ),
+              Icon(
+                Icons.toggle_off_sharp,
+                color: Colors.white,
+                size: 30,
+              ),
+              SizedBox(
+                width: 20,
+              ),
+              Icon(
+                Icons.search_outlined,
+                color: Colors.white,
+              ),
             ]),
+          ),
+        ],
       ),
-
-    ],),
-      ));
+    ));
   }
 }

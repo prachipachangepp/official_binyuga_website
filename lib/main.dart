@@ -25,12 +25,12 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('images/Group 220.png'), // Replace with your image asset path
-            fit: BoxFit.cover,
-          ),
-        ),
+        // decoration: BoxDecoration(
+        //   image: DecorationImage(
+        //     image: AssetImage('images/Group 220.png',),
+        //     fit: BoxFit.fill,
+        //   ),
+        // ),
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
