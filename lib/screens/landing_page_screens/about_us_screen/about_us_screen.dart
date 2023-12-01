@@ -46,86 +46,53 @@ class _AboutUsState extends State<AboutUs> {
             children: [
               Padding(
                 padding: EdgeInsets.only(top:30,left: 50),
-                child: Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Text(
-                        'OOO',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                            fontSize: 140.0,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text(
+                      'OOO',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: 140.0,
+                      fontFamily: 'inter',
+                      color: Color(0xff07558D,),),
+                    ),
+                    SizedBox(height: 8,),
+                    Text(
+                      'Successfully\ncompleted projects',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 25.0,
                         fontFamily: 'inter',
-                        color: Color(0xff07558D,),),
-                      ),
-                      SizedBox(height: 8,),
-                      Text(
-                        'Successfully\ncompleted projects',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 25.0,
-                          fontFamily: 'inter',
-                          fontWeight: FontWeight.w500,
-                          color: Color(0xff000000),),
-                      ),
-                    ],
-                  ),
+                        fontWeight: FontWeight.w500,
+                        color: Color(0xff000000),),
+                    ),
+                  ],
                 ),
               ),
               SizedBox(width: 50,),
               Padding(
                 padding: EdgeInsets.only(left: 100),
-                child: Expanded(
-                  child: Column(
-                     crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.only(top:20,bottom: 10),
-                        child: Text(
-                          'OO',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 140.0,
-                            fontFamily: 'inter',
-                            color: Color(0xff07558D),
-                          ),
-                        ),
-                      ),
-                      SizedBox(height: 5.0),
-                      Padding(
-                        padding: EdgeInsets.only(bottom:30),
-                        child: Text(
-                          'Revenue Growth',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 25.0,
-                            fontFamily: 'inter',
-                            color: Color(0xff000000),
-                            fontWeight: FontWeight.w500,),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              SizedBox(width: 50,),
-              Padding(
-                padding: EdgeInsets.only(left: 100,top: 30),
-                child: Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Text(
-                        'OOO',
+                child: Column(
+                   crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(top:20,bottom: 10),
+                      child: Text(
+                        'OO',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 140.0,
                           fontFamily: 'inter',
-                          color: Color(0xff07558D),),
+                          color: Color(0xff07558D),
+                        ),
                       ),
-                      SizedBox(height: 8.0),
-                      Text(
-                        'Training Days conducted\nfor interns',
+                    ),
+                    SizedBox(height: 5.0),
+                    Padding(
+                      padding: EdgeInsets.only(bottom:30),
+                      child: Text(
+                        'Revenue Growth',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 25.0,
@@ -133,8 +100,35 @@ class _AboutUsState extends State<AboutUs> {
                           color: Color(0xff000000),
                           fontWeight: FontWeight.w500,),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(width: 50,),
+              Padding(
+                padding: EdgeInsets.only(left: 100,top: 30),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text(
+                      'OOO',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 140.0,
+                        fontFamily: 'inter',
+                        color: Color(0xff07558D),),
+                    ),
+                    SizedBox(height: 8.0),
+                    Text(
+                      'Training Days conducted\nfor interns',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 25.0,
+                        fontFamily: 'inter',
+                        color: Color(0xff000000),
+                        fontWeight: FontWeight.w500,),
+                    ),
+                  ],
                 ),
               ),
             ],
