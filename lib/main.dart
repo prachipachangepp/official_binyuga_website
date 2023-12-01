@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:official_binyuga_website/responsive_screen/landingpage.dart';
+
 import 'package:official_binyuga_website/responsive_screen/responsive.dart';
 
 
@@ -25,12 +26,12 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: Container(
-        // decoration: BoxDecoration(
-        //   image: DecorationImage(
-        //     image: AssetImage('images/Group 220.png',),
-        //     fit: BoxFit.fill,
-        //   ),
-        // ),
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('images/Group 220.png',),
+            fit: BoxFit.fill,
+          ),
+        ),
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
