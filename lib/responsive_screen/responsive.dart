@@ -30,7 +30,7 @@ class DesktopNavbar extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 0),
                 child: Image.asset(
-                  'images/Group 223.png',
+                  'images/binyuga_logo.png',
 
                 ),
               ),
@@ -68,7 +68,7 @@ class MobileNavbar extends StatelessWidget {
         Padding(
         padding: const EdgeInsets.only(top: 12,right: 200),
         child: Image.asset(
-          'images/Group 223.png',
+          'images/binyuga_logo.png',
 
         ),
       ),
