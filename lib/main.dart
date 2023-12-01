@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-
-
-import 'package:responsive_website/responsive_screen/landingpage.dart';
-import 'package:responsive_website/responsive_screen/responsive.dart';
+import 'package:official_binyuga_website/screens/landing_page_screens/landing_page_screen.dart';
 
 
 
@@ -15,36 +12,37 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(primarySwatch: Colors.blue, fontFamily: "Montserrat"),
-      home: MyHomePage(),
+      home: MyStackPage(),
     );
   }
 }
-
-class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      resizeToAvoidBottomInset: false,
-      body: Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/background.png'), // Replace with your image asset path
-            fit: BoxFit.cover,
-          ),
-        ),
-        child: SingleChildScrollView(
-          child: Column(
-            children: <Widget>[
-           //  Navbar(),
-              Padding(
-                padding: const EdgeInsets.symmetric(
-                    vertical: 20.0, horizontal: 40.0),
-                child: Navbar(),
-              )
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
+//
+// class MyHomePage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       resizeToAvoidBottomInset: false,
+//       body: Container(
+//         decoration: BoxDecoration(
+//           color: Colors.red,
+//           image: DecorationImage(
+//             image: AssetImage('images/Group 220.png'), // Replace with your image asset path
+//             fit: BoxFit.cover,
+//           ),
+//         ),
+//         child: SingleChildScrollView(
+//           child: Column(
+//             children: <Widget>[
+//               Navbar(),
+//               Padding(
+//                 padding: const EdgeInsets.symmetric(
+//                     vertical: 20.0, horizontal: 40.0),
+//                // child: LandingPage(),
+//               )
+//             ],
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }

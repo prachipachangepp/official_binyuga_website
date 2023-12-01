@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class Navbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -21,45 +20,38 @@ class Navbar extends StatelessWidget {
 class DesktopNavbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: SingleChildScrollView(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(top: 20),
-              child: Image.asset(
-                'assets/images/imaage.png',
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+      child: Container(
+        child: SingleChildScrollView(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 0),
+                child: Image.asset(
+                  'images/binyuga_logo.png',
+
+                ),
               ),
-            ),
-            Row(
-              children: <Widget>[
-                Text(
-                  'Contact Us',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                  ),
-                ),
-                SizedBox(
-                  width: 20,
-                ),
-                Image.asset(
-                  'assets/images/toggle.jpg',
-                ),
+              Row(
+                children: <Widget>[
+                  Text('ContactUs',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                    ),),
+                  SizedBox(width: 20,),
+                  Icon(Icons.toggle_off_sharp,color: Colors.white,size: 30,),
+                  SizedBox(width: 20,),
+                  Icon(Icons.search_outlined,color: Colors.white,),
 
-                //  Icon(Icons.custom_switch_icon,color: Colors.white,size: 40,),
-                SizedBox(
-                  width: 20,
-                ),
-                //   Icon(Icons.search_outlined,color: Colors.white,),
 
-                Image.asset(
-                  'assets/images/search.png',
-                ),
-              ],
-            ),
-          ],
+
+                ],
+              )
+            ],
+          ),
         ),
       ),
     );
@@ -69,47 +61,37 @@ class DesktopNavbar extends StatelessWidget {
 class MobileNavbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: SingleChildScrollView(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(top: 20),
-              child: Image.asset(
-                'assets/images/imaage.png',
-              ),
-            ),
-            Row(
-              children: <Widget>[
-                Text(
-                  'Contact Us',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                  ),
-                ),
-                SizedBox(
-                  width: 20,
-                ),
-                Image.asset(
-                  'assets/images/toggle.jpg',
-                ),
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+      child: Container(
+        child: Column(children: <Widget>[
+        Padding(
+        padding: const EdgeInsets.only(top: 12,right: 200),
+        child: Image.asset(
+          'images/binyuga_logo.png',
 
-                //  Icon(Icons.custom_switch_icon,color: Colors.white,size: 40,),
-                SizedBox(
-                  width: 20,
-                ),
-                //   Icon(Icons.search_outlined,color: Colors.white,),
-
-                Image.asset(
-                  'assets/search.png',
-                ),
-              ],
-            ),
-          ],
         ),
       ),
-    );
+      Padding(
+        padding: const EdgeInsets.all(12),
+        child: Row(
+            children: <Widget>[
+              Text('ContactUs',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                ),),
+              SizedBox(width: 20,),
+              Icon(Icons.toggle_off_sharp,color: Colors.white,size: 30,),
+              SizedBox(width: 20,),
+              Icon(Icons.search_outlined,color: Colors.white,),
+
+
+
+            ]),
+      ),
+
+    ],),
+      ));
   }
 }
