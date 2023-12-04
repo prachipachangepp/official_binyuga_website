@@ -204,6 +204,15 @@ class StartHomeScreen extends StatelessWidget {
               Positioned(
                 left: 0,
                 top: 0,
+                child: Padding(
+                padding: const EdgeInsets.only(top: 20),
+                child: Image.asset(
+                  'images/binyuga_logo.png',
+                ),
+              ),),
+              Positioned(
+                left: 1200,
+                top: 20,
                 child: Container(
                   color: Colors.transparent,
                   width: MediaQuery.of(context).size.width,
@@ -211,13 +220,8 @@ class StartHomeScreen extends StatelessWidget {
                   child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20),
-                      child: Image.asset(
-                        'images/binyuga_logo.png',
-                      ),
-                    ),
-                    SizedBox(width: MediaQuery.of(context).size.width/1.55,),
+
+                   // SizedBox(width: MediaQuery.of(context).size.width/1.55,),
                     Text(
                       'Contact Us',
                       style: TextStyle(
@@ -245,7 +249,6 @@ class StartHomeScreen extends StatelessWidget {
                   ],
               ),
                 ),),
-
             ],
           ),
         ),
