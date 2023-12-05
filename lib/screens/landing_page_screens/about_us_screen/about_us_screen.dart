@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../presentation/color_manager.dart';
+
 class AboutUs extends StatefulWidget {
   const AboutUs({super.key});
 
@@ -10,7 +12,7 @@ class AboutUs extends StatefulWidget {
 class _AboutUsState extends State<AboutUs> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
       body: Column(
         children: [
           ///txt about us
@@ -22,7 +24,7 @@ class _AboutUsState extends State<AboutUs> {
                 child: Text('About Us',
                   style: TextStyle(
                     fontSize: 70.0,
-                    color: Color(0xff214188),
+                    color: ColorManager.darkBlue,
                     fontWeight: FontWeight.w800,
                     fontFamily: 'inter',
 
@@ -37,7 +39,7 @@ class _AboutUsState extends State<AboutUs> {
             style: TextStyle(
               fontSize: 38.0,
               fontWeight: FontWeight.bold,
-              color: Color(0xff000000),
+              color: ColorManager.black,
             ),
           ),
           SizedBox(height: 60,),

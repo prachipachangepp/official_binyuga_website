@@ -45,8 +45,7 @@ class UnionImageScreen extends StatelessWidget {
               top: 400,
               right: 100,
               child: Text(
-                'We adopt a fresh and distinctive approach\nfor every project, investing time to deeply\ncomprehend our clients requirements.\n'
-              '\nContinual learning is at our core, allowing us\nto embrace new trends and technologies\nand incorporate them into our projects,\nensuring that our work remains at the\nforefront of the industry.',
+                 'AppString.String unionTxt1',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 25,
@@ -58,7 +57,7 @@ class UnionImageScreen extends StatelessWidget {
               top: 1000,
               right: 140,
               child: Text(
-                'We also have a strong commitment to nurturing and educating\nemerging, forward-thinking talent in the field...',
+                  'String unionTxt2',
                 style: TextStyle(
                   color: Color(0xff83CAFF),
                   fontSize: 37,
@@ -90,8 +89,7 @@ class UnionImageScreen extends StatelessWidget {
               bottom: 400,
               left: 100,
               child: Text(
-                'In addition to our primary endeavors, we hold\na steadfast dedication to cultivating and\ninstructing up-and-coming, innovative talent\nwithin the industry.\n'
-              '\nThis is achieved through a multifaceted\napproach that encompasses organizing\ndiverse courses and internships, allowing\nnewcomers to gain hands-on experience.',
+                'String unionTxt3',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 25,

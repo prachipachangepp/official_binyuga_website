@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:country_picker/country_picker.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
+
+import '../../../presentation/color_manager.dart';
 class BottomNavBarScreen extends StatefulWidget {
   const BottomNavBarScreen({super.key});
 
@@ -98,7 +100,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
             ),
             const Row(
               children: [
-                Text('www.career@binyuga.com',
+                Text( 'AppString.email',
                     style: TextStyle(
                       color: Colors.white,
                       fontFamily: 'Inter',
@@ -146,7 +148,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                       style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.bold,
-                          color: Colors.black
+                          color: ColorManager.black,
                       ),)),
                   );
                 }).toList(),
