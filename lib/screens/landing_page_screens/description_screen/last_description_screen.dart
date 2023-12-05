@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../presentation/color_manager.dart';
+
 class LastPage extends StatefulWidget {
   const LastPage({super.key});
 
@@ -11,7 +13,7 @@ class _LastPageState extends State<LastPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff090B17),
+      backgroundColor: ColorManager.nevyBlue,
       body:Column(
         children: [
           Row(
