@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../../presentation/color_manager.dart';
+import '../../../presentation/font_manager.dart';
+import '../../../presentation/string_manager.dart';
+
 class ApprochScreen extends StatelessWidget {
   const ApprochScreen({super.key});
 
@@ -13,12 +17,12 @@ class ApprochScreen extends StatelessWidget {
             Positioned(
             top: 20,
             left: 300,
-            child: Text("Our Approach",
+            child: Text(AppString.ourApproach,
                 style: GoogleFonts.inter(textStyle: TextStyle(
-                fontWeight: FontWeight.w700,
+                fontWeight: FontWeightManager.bold,
                 fontSize: MediaQuery.of(context).size.width/25,
                 letterSpacing: -0.011,
-                color: Color(0xff214188)),)),
+                color: ColorManager.darkBlue),)),
           ),
           SizedBox(height: 20,),
           Positioned(
@@ -32,16 +36,16 @@ class ApprochScreen extends StatelessWidget {
               Padding(
                 padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/8),
                 child: Center(
-                  child: Text("Is driven by innovation and guided by user-friendly designs. We also\nhave a strong commitment to nurturing and educating emerging,\nforward-thinking talent in the field. ",
+                  child: Text(AppString.approachTxt,
                       textAlign: TextAlign.center,
                       style: GoogleFonts.inter(textStyle: TextStyle(
-                          fontWeight: FontWeight.w700,
+                          fontWeight: FontWeightManager.bold,
                           fontSize: MediaQuery.of(context).size.width/50,
                           letterSpacing: -0.011,
-                          color: Color(0xff080913)),)),
+                          color: ColorManager.black,)),
                 ),
               ),
-            ],
+    ),],
           ),
           SizedBox(height: 20,),
             Positioned(
