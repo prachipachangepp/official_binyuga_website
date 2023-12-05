@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../presentation/color_manager.dart';
+import '../../../presentation/font_manager.dart';
+import '../../../presentation/string_manager.dart';
 
 class AboutUs extends StatefulWidget {
   const AboutUs({super.key});
@@ -21,25 +23,25 @@ class _AboutUsState extends State<AboutUs> {
             children: [
               Padding(
                 padding: EdgeInsets.only(top:40,right: 200),
-                child: Text('About Us',
+                child: Text(AppString.aboutUs1,
                   style: TextStyle(
                     fontSize: 70.0,
                     color: ColorManager.darkBlue,
-                    fontWeight: FontWeight.w800,
-                    fontFamily: 'inter',
-
+                    fontWeight: FontWeightManager.extraBold,
+                    fontFamily: FontConstants.fontFamily1,
                   ),),
               ),
             ],
           ),
           SizedBox(height: 30,),
           Text(
-            '\nEvery year, we advance along our path of growth.',
+            AppString.everyYear,
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 38.0,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeightManager.bold,
               color: ColorManager.black,
+              fontFamily: FontConstants.fontFamily1,
             ),
           ),
           SizedBox(height: 60,),
@@ -57,18 +59,19 @@ class _AboutUsState extends State<AboutUs> {
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             fontSize: MediaQuery.of(context).size.width/10,
-                        fontFamily: 'inter',
-                        color: Color(0xff07558D,),),
+                            fontFamily: FontConstants.fontFamily1,
+                        color: ColorManager.skyBlue),
                       ),
                       SizedBox(height: 8,),
                       Text(
-                        'Successfully\ncompleted projects',
+                        AppString.successfullyProject,
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: MediaQuery.of(context).size.width/58,
-                          fontFamily: 'inter',
-                          fontWeight: FontWeight.w500,
-                          color: Color(0xff000000),),
+                          fontWeight: FontWeightManager.medium,
+                          fontFamily: FontConstants.fontFamily1,
+                          color: ColorManager.black,
+                        ),
                       ),
                     ],
                   ),
@@ -86,8 +89,8 @@ class _AboutUsState extends State<AboutUs> {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: MediaQuery.of(context).size.width/10,
-                            fontFamily: 'inter',
-                            color: Color(0xff07558D),
+                            fontFamily: FontConstants.fontFamily1,
+                            color: ColorManager.skyBlue,
                           ),
                         ),
                       ),
@@ -95,13 +98,15 @@ class _AboutUsState extends State<AboutUs> {
                       Padding(
                         padding: EdgeInsets.only(bottom:30),
                         child: Text(
-                          'Revenue Growth',
+                          AppString.revenueGrowth,
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: MediaQuery.of(context).size.width/58,
-                            fontFamily: 'inter',
-                            color: Color(0xff000000),
-                            fontWeight: FontWeight.w500,),
+                            fontFamily: FontConstants.fontFamily1,
+                            color: ColorManager.black,
+                            fontWeight: FontWeightManager.medium,
+                           ),
+
                         ),
                       ),
                     ],
@@ -118,18 +123,20 @@ class _AboutUsState extends State<AboutUs> {
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: MediaQuery.of(context).size.width/10,
-                          fontFamily: 'inter',
-                          color: Color(0xff07558D),),
+                            fontFamily: FontConstants.fontFamily1,
+                          color: ColorManager.skyBlue),
                       ),
                       SizedBox(height: 8.0),
                       Text(
-                        'Training Days conducted\nfor interns',
+                        AppString.trainingDays,
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: MediaQuery.of(context).size.width/58,
-                          fontFamily: 'inter',
-                          color: Color(0xff000000),
-                          fontWeight: FontWeight.w500,),
+                          fontFamily: FontConstants.fontFamily1,
+                          color: ColorManager.black,
+                          fontWeight: FontWeightManager.medium,
+
+                        ),
                       ),
                     ],
                   ),

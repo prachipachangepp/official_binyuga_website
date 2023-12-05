@@ -4,6 +4,7 @@ import 'package:country_picker/country_picker.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 
 import '../../../presentation/color_manager.dart';
+import '../../../presentation/font_manager.dart';
 class BottomNavBarScreen extends StatefulWidget {
   const BottomNavBarScreen({super.key});
 
@@ -58,7 +59,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
               children: [
                 Icon(
                   FontAwesomeIcons.facebook,
-                  color: Colors.white,
+                  color: ColorManager.white,
                   size: 20,
                 ),
                 SizedBox(
@@ -66,7 +67,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                 ),
                 Icon(
                   FontAwesomeIcons.youtube,
-                  color: Colors.white,
+                  color: ColorManager.white,
                   size: 20,
                 ),
                 SizedBox(
@@ -74,7 +75,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                 ),
                 Icon(
                   FontAwesomeIcons.twitter,
-                  color: Colors.white,
+                  color: ColorManager.white,
                   size: 20,
                 ),
                 SizedBox(
@@ -82,7 +83,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                 ),
                 Icon(
                   FontAwesomeIcons.instagram,
-                  color: Colors.white,
+                  color: ColorManager.white,
                   size: 20,
                 ),
                 SizedBox(
@@ -90,7 +91,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                 ),
                 Icon(
                   FontAwesomeIcons.linkedin,
-                  color: Colors.white,
+                  color: ColorManager.white,
                   size: 20,
                 ),
               ],
@@ -98,12 +99,12 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
             const SizedBox(
               width: 90,
             ),
-            const Row(
+            Row(
               children: [
-                Text( 'AppString.email',
+                Text( 'www.career@binyuga.com',
                     style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: 'Inter',
+                      color: ColorManager.white,
+                      fontFamily: FontConstants.fontFamily1,
                       fontSize: 18,
                     )),
               ],
@@ -113,7 +114,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
             ),
             Container(
               decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: ColorManager.white,
                   border:
                   Border.all(color: Colors.white, width: 2),
                   borderRadius: BorderRadius.circular(2)),
@@ -121,11 +122,11 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
               width: MediaQuery.of(context).size.width / 6,
               height: 30,
               child: DropdownButton(
-                focusColor: Colors.white,
+                focusColor: ColorManager.white,
                 alignment: Alignment.center,
                 hint: Text(countries[0],
                   style: TextStyle(
-                      color: Colors.black,
+                      color: ColorManager.black,
                       fontWeight: FontWeight.bold,
                       fontSize: 20
                   ),),
@@ -147,7 +148,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                     child: Center(child: Text(country,
                       style: TextStyle(
                           fontSize: 15,
-                          fontWeight: FontWeight.bold,
+                          fontWeight: FontWeightManager.bold,
                           color: ColorManager.black,
                       ),)),
                   );

@@ -3,7 +3,7 @@ import 'dart:core';
 
 class AppString {
   /// Home screen
-  static const String contactUs = "contact Us";
+  static const String contactUs = "Contact Us";
   static const String aboutUs = "About Us";
   static const String services = "Services";
   static const String portfolio = "Portfolio";
@@ -18,33 +18,41 @@ class AppString {
       'tailored digital products that not\nonly meet but exceed your expectations'
       "";
   static const String exploreMore = "Explore More";
-  static const String whatWeAre = " What We Are ";
-  static const String whatWeDo = " What We Do";
+  static const String whatWeAre = "What We Are";
+  static const String whatWeDo = "What We Do";
   static const String features = "Features";
   static const String career = "Career";
 
+
   /// About Us screen
+  static const String aboutUs1 ="About Us";
   static const String everyYear =
       "\nEvery year, we advance along our path of growth.";
+
   static const String successfullyProject = "Successfully\ncompleted projects";
   static const String revenueGrowth = "Revenue Growth";
   static const String trainingDays = "Training Days conducted\nfor interns";
 
+
   /// description screen
+  static const String whoWeAre = " Who We Are ";
   static const String teamProfiles = "Team Profiles";
   static const String clientTestimonials = "Client Testimonials";
   static const String softwareDevelopment = "Software Development";
   static const String applicationDevelopment = "Application Development ";
   static const String webDevelopment = "Web Development";
-  static const String uiUxDesigning = "UI/UxDesigning ";
+  static const String uiUxDesigning = "UI/UxDesigning";
   static const String careerMonitoring = "Career Monitoring";
+  static const String careerC ="Career";
   static const String hybridApplicationDeveloper =
-      "Hybrid Application Developer";
+      "Hybrid application developer";
+  static const String uIUxDesigning = "UI/UxDesigning";
   static const String uiUxDevelopment = "Ui/Ux Development";
-  static const String backendDevelopment = "BackendDevelopment";
-  static const String fullStackDevelopment = "Full Stack Development";
+  static const String backendDevelopment = "Backend development";
+  static const String fullStackDevelopment = "FullStack development";
   static const String softwareTesting = "Software Testing";
   static const String programmingLanguage = "Programming Language";
+  static const String featuresF ="Features";
   static const String tailoredProducts = "Tailored Products";
   static const String costEffectiveness = "Cost Effectiveness";
   static const String intuitiveUserCenterDesign =
@@ -69,6 +77,7 @@ class AppString {
   static const String ourTeamMembers = "Our Team Members";
   static const String teamTxt =
       "The constant companion on our journey towards success";
+  static const String johnS ="John Smith";
 
   /// Union screen
   static const String unionTxt1 =

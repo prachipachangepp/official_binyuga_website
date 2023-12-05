@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../../../presentation/color_manager.dart';
+import '../../../presentation/font_manager.dart';
+import '../../../presentation/string_manager.dart';
+
 class UnionImageScreen extends StatelessWidget {
   const UnionImageScreen({super.key});
 
@@ -8,7 +12,7 @@ class UnionImageScreen extends StatelessWidget {
     return Scaffold(
       body: Container(
         height: 2200,
-        color: Colors.white,
+        color: ColorManager.white,
         child: Stack(
           children: [
             /// Base Image
@@ -41,27 +45,27 @@ class UnionImageScreen extends StatelessWidget {
                 width: MediaQuery.of(context).size.width /1.9,
               ),
             ),
-            const Positioned(
+             Positioned(
               top: 400,
               right: 100,
               child: Text(
-                 'AppString.String unionTxt1',
+                 AppString.unionTxt1,
                 style: TextStyle(
-                  color: Colors.white,
+                  color: ColorManager.white,
                   fontSize: 25,
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeightManager.medium,
                 ),
               ),
             ),
-            const Positioned(
+             Positioned(
               top: 1000,
               right: 140,
               child: Text(
-                  'String unionTxt2',
+                  AppString.unionTxt2,
                 style: TextStyle(
-                  color: Color(0xff83CAFF),
+                  color: ColorManager.blueShade,
                   fontSize: 37,
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeightManager.medium,
                 ),
               ),
             ),
@@ -85,15 +89,15 @@ class UnionImageScreen extends StatelessWidget {
                 width: MediaQuery.of(context).size.width /1.9,
               ),
             ),
-            const Positioned(
+             Positioned(
               bottom: 400,
               left: 100,
               child: Text(
-                'String unionTxt3',
+                AppString.unionTxt3,
                 style: TextStyle(
-                  color: Colors.white,
                   fontSize: 25,
-                  fontWeight: FontWeight.w500,
+                  color: ColorManager.white,
+                  fontWeight: FontWeightManager.medium,
                 ),
               ),
             ),
