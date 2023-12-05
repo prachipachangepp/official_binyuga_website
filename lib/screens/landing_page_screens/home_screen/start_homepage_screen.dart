@@ -14,7 +14,6 @@ class StartHomeScreen extends StatelessWidget {
           color: Colors.white,
           child: Stack(
             children: [
-
               /// Base Image
               Positioned(
                 // top: 100,

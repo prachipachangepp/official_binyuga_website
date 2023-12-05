@@ -32,8 +32,8 @@ class UnionImageScreen extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 160, // Adjust the position as needed
-              left: 60, // Adjust the position as needed
+              top: 160,
+              left: 60,
               child: Image.network(
                 "images/rectangle.png",
                 height: 780,
@@ -67,8 +67,8 @@ class UnionImageScreen extends StatelessWidget {
               ),
             ),
             Positioned(
-              bottom: 190, // Adjust the position as needed
-              right: 80, // Adjust the position as needed
+              bottom: 190,
+              right: 80,
               child: Image.network(
                 "images/union_2.png",
                 height: 720,
@@ -77,8 +77,8 @@ class UnionImageScreen extends StatelessWidget {
               ),
             ),
             Positioned(
-              bottom: 160, // Adjust the position as needed
-              right: 60, // Adjust the position as needed
+              bottom: 160,
+              right: 60,
               child: Image.network(
                 "images/rectangle.png",
                 height: 780,
