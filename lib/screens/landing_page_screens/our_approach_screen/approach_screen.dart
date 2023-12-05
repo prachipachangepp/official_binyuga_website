@@ -9,13 +9,14 @@ class ApprochScreen extends StatelessWidget {
     return Scaffold(
       body: Container(
         child: Stack(
-          children: [Positioned(
+          children: [
+            Positioned(
             top: 20,
             left: 300,
             child: Text("AppString.ourApproach",
                 style: GoogleFonts.inter(textStyle: TextStyle(
                 fontWeight: FontWeight.w700,
-                fontSize: 60.0,
+                fontSize: MediaQuery.of(context).size.width/25,
                 letterSpacing: -0.011,
                 color: Color(0xff214188)),)),
           ),
@@ -23,18 +24,19 @@ class ApprochScreen extends StatelessWidget {
           Positioned(
               top: 120,
               left: 100,
-              child: Image.asset("images/inverted_start.png")),
+              child: Image.asset("images/inverted_start.png",width: MediaQuery.of(context).size.width/20)),
           SizedBox(height: 20,),
           Row(
+           // mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Padding(
-                padding: const EdgeInsets.only(left: 200.0),
+                padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/8),
                 child: Center(
                   child: Text('AppString.approachTxt',
                       textAlign: TextAlign.center,
                       style: GoogleFonts.inter(textStyle: TextStyle(
                           fontWeight: FontWeight.w700,
-                          fontSize: MediaQuery.of(context).size.width/45,
+                          fontSize: MediaQuery.of(context).size.width/50,
                           letterSpacing: -0.011,
                           color: Color(0xff080913)),)),
                 ),
@@ -45,7 +47,8 @@ class ApprochScreen extends StatelessWidget {
             Positioned(
                 top: 320,
                 right: 350,
-                child: Image.asset("images/inverted_end.png")),
+                child: Image.asset("images/inverted_end.png",
+                width: MediaQuery.of(context).size.width/20,)),
         ]
         ),
       ),

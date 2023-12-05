@@ -10,7 +10,7 @@ class AboutUs extends StatefulWidget {
 class _AboutUsState extends State<AboutUs> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
       body: Column(
         children: [
           ///txt about us
@@ -54,7 +54,7 @@ class _AboutUsState extends State<AboutUs> {
                         'OOO',
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                            fontSize: 140.0,
+                            fontSize: MediaQuery.of(context).size.width/10,
                         fontFamily: 'inter',
                         color: Color(0xff07558D,),),
                       ),
@@ -63,7 +63,7 @@ class _AboutUsState extends State<AboutUs> {
                         'AppString.successfullyProject ',
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          fontSize: 25.0,
+                          fontSize: MediaQuery.of(context).size.width/58,
                           fontFamily: 'inter',
                           fontWeight: FontWeight.w500,
                           color: Color(0xff000000),),
@@ -83,7 +83,7 @@ class _AboutUsState extends State<AboutUs> {
                           'OO',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            fontSize: 140.0,
+                            fontSize: MediaQuery.of(context).size.width/10,
                             fontFamily: 'inter',
                             color: Color(0xff07558D),
                           ),
@@ -96,7 +96,7 @@ class _AboutUsState extends State<AboutUs> {
                           'AppString.revenueGrowth',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            fontSize: 25.0,
+                            fontSize: MediaQuery.of(context).size.width/58,
                             fontFamily: 'inter',
                             color: Color(0xff000000),
                             fontWeight: FontWeight.w500,),
@@ -115,7 +115,7 @@ class _AboutUsState extends State<AboutUs> {
                         'OOO',
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          fontSize: 140.0,
+                          fontSize: MediaQuery.of(context).size.width/10,
                           fontFamily: 'inter',
                           color: Color(0xff07558D),),
                       ),
@@ -124,7 +124,7 @@ class _AboutUsState extends State<AboutUs> {
                         'AppString.trainingDays',
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          fontSize: 25.0,
+                          fontSize: MediaQuery.of(context).size.width/58,
                           fontFamily: 'inter',
                           color: Color(0xff000000),
                           fontWeight: FontWeight.w500,),

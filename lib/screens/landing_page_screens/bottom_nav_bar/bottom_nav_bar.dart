@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:country_picker/country_picker.dart';
-import 'package:dropdown_button2/dropdown_button2.dart';
 class BottomNavBarScreen extends StatefulWidget {
   const BottomNavBarScreen({super.key});
 

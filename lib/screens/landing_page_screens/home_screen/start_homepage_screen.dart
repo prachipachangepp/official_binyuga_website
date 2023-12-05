@@ -1,9 +1,10 @@
 ///start page code
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import '../../../presentation/color_manager.dart';
-
+import 'package:official_binyuga_website/presentation/color_manager.dart';
+import 'package:official_binyuga_website/presentation/font_manager.dart';
+import 'package:official_binyuga_website/presentation/string_manager.dart';
+import 'package:official_binyuga_website/presentation/value_manager.dart';
 
 class StartHomeScreen extends StatelessWidget {
   const StartHomeScreen({super.key});
@@ -13,7 +14,7 @@ class StartHomeScreen extends StatelessWidget {
     return Scaffold(
         body:  Container(
           height: 1000,
-          color: Colors.white,
+          color: ColorManager.white,
           child: Stack(
             children: [
               /// Base Image
@@ -66,17 +67,68 @@ class StartHomeScreen extends StatelessWidget {
                 ),
               ),
               ///bold text(we craft)
-              const Positioned(
+               Positioned(
                 top: 240,
                 right: 500,
-                child: Text(
-                  'We craft\n'
-                      'tailored digital products '
-                      '\nfor your unique needs',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 50,
-                    fontWeight: FontWeight.w700,
+                child: Container(
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          // Column(
+                          //   children: [
+                          //     Image.network(
+                          //       "images/line.png",
+                          //       height: 160,
+                          //       // width: MediaQuery.of(context).size.width * 0.8,
+                          //       width: MediaQuery.of(context).size.width /1,
+                          //       //alignment: Alignment.bottomLeft,
+                          //     ),
+                          //   ],
+                          // ),
+                           Column(
+                           // mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                               Text(
+                              AppString.homesTxt1,
+                                style: TextStyle(
+                                  color: ColorManager.white,
+                                  fontSize: MediaQuery.of(context).size.width/31,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                              SizedBox(height: 10,),
+                              const Text(
+                              AppString.homesTxt2,
+                                textAlign: TextAlign.start,
+                                style: TextStyle(
+                                    color: Color(0xff83E1FF),
+                                    fontSize: 17,
+                                    fontWeight: FontWeight.w500,
+                                    letterSpacing: -0.011
+                                ),
+                              ),
+                              SizedBox(height: 100,),
+                              MaterialButton(
+                                color: ColorManager.white,
+                                shape: const RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(Radius.circular(30.0))),
+                                onPressed: () {},
+                                child:  Padding(
+                                  padding: EdgeInsets.symmetric(
+                                      vertical: 10.0, horizontal: 20.0),
+                                  child: Text(
+                                    AppString.exploreMore,
+                                    style: TextStyle(color: ColorManager.black,fontSize: 15,fontWeight:FontWeightManager.bold),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
                 ),
               ),
@@ -93,39 +145,39 @@ class StartHomeScreen extends StatelessWidget {
                 ),
               ),
               ///big text
-              const Positioned(
-                top: 480,
-                right: 605,
-                child: Text('Whether its custom Software Solution, a User-friendly\napp, or a captivating website, we are commited to\ndelievering innovative and'
-                    'tailored digital products that not\nonly meet but exceed your expectations',
-                  style: TextStyle(
-                      color: Color(0xff83E1FF),
-                      fontSize: 17,
-                      fontWeight: FontWeight.w500,
-                      letterSpacing: -0.011
-                  ),
-                ),
-              ),
+              // const Positioned(
+              //   top: 480,
+              //   right: 605,
+              //   child: Text('Whether its custom Software Solution, a User-friendly\napp, or a captivating website, we are commited to\ndelievering innovative and'
+              //       'tailored digital products that not\nonly meet but exceed your expectations',
+              //     style: TextStyle(
+              //         color: Color(0xff83E1FF),
+              //         fontSize: 17,
+              //         fontWeight: FontWeight.w500,
+              //         letterSpacing: -0.011
+              //     ),
+              //   ),
+              // ),
               ///explore more button
-              Positioned(
-                top: 650,
-                left: 490,
-                child: MaterialButton(
-                  color: Colors.white,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(30.0))),
-                  onPressed: () {},
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 10.0, horizontal: 20.0),
-                    child: Text(
-                      "Explore More",
-                      style: TextStyle(color: ColorManager.black,fontSize: 15,fontWeight:FontWeight.bold),
-                    ),
-                  ),
-
-                ),
-              ),
+              // Positioned(
+              //   top: 650,
+              //   left: 490,
+              //   child: MaterialButton(
+              //     color: Colors.white,
+              //     shape: RoundedRectangleBorder(
+              //         borderRadius: BorderRadius.all(Radius.circular(30.0))),
+              //     onPressed: () {},
+              //     child: Padding(
+              //       padding: const EdgeInsets.symmetric(
+              //           vertical: 10.0, horizontal: 20.0),
+              //       child: Text(
+              //         "Explore More",
+              //         style: TextStyle(color: Colors.black,fontSize: 15,fontWeight:FontWeight.bold),
+              //       ),
+              //     ),
+              //
+              //   ),
+              // ),
               ///sidebar
               Positioned(
                 left: 30,
@@ -141,60 +193,60 @@ class StartHomeScreen extends StatelessWidget {
                       GestureDetector(
                         onTap: (){},
                         child: Text(
-                            "What we are",
+                            AppString.whatWeAre,
                             style: GoogleFonts.inter(textStyle: TextStyle(
-                                fontWeight: FontWeight.w500,
+                                fontWeight: FontWeightManager.medium,
                                 fontSize: 17.0,
                                 letterSpacing: -0.011,
-                                color: Colors.white),)
+                                color: ColorManager.white),)
                         ),
                       ),
-                      SizedBox(height: 50,),
+                      SizedBox(height: AppSize.s50,),
                       GestureDetector(
                         onTap: (){},
                         child: Text(
-                            "What we Do",
+                            AppString.whatWeDo,
                             style: GoogleFonts.inter(textStyle: TextStyle(
-                                fontWeight: FontWeight.w500,
+                                fontWeight: FontWeightManager.medium,
                                 fontSize: 17.0,
                                 letterSpacing: -0.011,
-                                color: Colors.white),)
+                                color: ColorManager.white),)
                         ),
                       ),
-                      SizedBox(height: 50,),
+                      SizedBox(height: AppSize.s50,),
                       GestureDetector(
                         onTap: (){},
                         child: Text(
-                            "Features",
+                            AppString.features,
                             style: GoogleFonts.inter(textStyle: TextStyle(
-                                fontWeight: FontWeight.w500,
+                                fontWeight:FontWeightManager.medium,
                                 fontSize: 17.0,
                                 letterSpacing: -0.011,
-                                color: Colors.white),)
+                                color: ColorManager.white),)
                         ),
                       ),
-                      SizedBox(height: 50,),
+                      SizedBox(height: AppSize.s50,),
                       GestureDetector(
                         onTap: (){},
                         child: Text(
-                            "Career",
+                            AppString.career,
                             style: GoogleFonts.inter(textStyle: TextStyle(
-                                fontWeight: FontWeight.w500,
+                                fontWeight: FontWeightManager.medium,
                                 fontSize: 17.0,
                                 letterSpacing: -0.011,
-                                color: Colors.white),)
+                                color:ColorManager.white),)
                         ),
                       ),
-                      SizedBox(height: 50,),
+                      SizedBox(height: AppSize.s50,),
                       GestureDetector(
                         onTap: (){},
                         child: Text(
-                            "Portfolio",
+                            AppString.portfolio,
                             style: GoogleFonts.inter(textStyle: TextStyle(
-                                fontWeight: FontWeight.w500,
+                                fontWeight: FontWeightManager.medium,
                                 fontSize: 17.0,
                                 letterSpacing: -0.011,
-                                color: Colors.white),)
+                                color: ColorManager.white),)
                         ),
                       ),
 
@@ -224,9 +276,9 @@ class StartHomeScreen extends StatelessWidget {
 
                    // SizedBox(width: MediaQuery.of(context).size.width/1.55,),
                     Text(
-                      'Contact Us',
+                      AppString.contactUs,
                       style: TextStyle(
-                        color: Colors.white,
+                        color: ColorManager.white,
                         fontSize: 20,
                       ),
                     ),
@@ -234,15 +286,15 @@ class StartHomeScreen extends StatelessWidget {
                       width: 30,
                     ),
                     Image.asset(
-                      'images/toggle_bg.png',height: 50,width: 100,
+                      'images/toggle_bg.png',height: AppSize.s50,width: AppSize.s100,
                     ),
 
 //  Icon(Icons.custom_switch_icon,color: Colors.white,size: 40,),
                     SizedBox(
-                      width: 20,
+                      width: AppSize.s20,
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(right: 35.0),
+                      padding: const EdgeInsets.only(right: AppPadding.p35),
                       child: Image.asset(
                         'images/search.png',
                       ),
