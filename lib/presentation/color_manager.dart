@@ -8,6 +8,8 @@ class ColorManager{
   static Color pink      = Color(0xffAA1056);
   static Color purple    = Color(0xff210B32);
   static Color nevyBlue  = Color(0xff090B17);
+  static Color skyBlue  = Color(0xff07558D);
+
 }
 
 extension HexColor on Color {
