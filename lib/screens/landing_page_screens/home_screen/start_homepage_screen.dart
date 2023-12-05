@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../../presentation/color_manager.dart';
+
 
 class StartHomeScreen extends StatelessWidget {
   const StartHomeScreen({super.key});
@@ -35,18 +37,18 @@ class StartHomeScreen extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      Icon(Icons.chevron_right, color: Color(0xff83E1FF),size: MediaQuery.of(context).size.width/30,),
+                      Icon(Icons.chevron_right, color: ColorManager.lightBlue,size: MediaQuery.of(context).size.width/30,),
                       SizedBox(height: 20,),
                       Transform.scale(
                         scale: 1, // Keep the original width
                         child: Icon(
                           Icons.pause,
-                          color: Color(0xff83E1FF),
+                          color: ColorManager.lightBlue,
                           size: MediaQuery.of(context).size.width/40, // Original size
                         ),
                       ),
                       SizedBox(height: 20,),
-                      Icon(Icons.keyboard_arrow_left, color: Color(0xff83E1FF),size: MediaQuery.of(context).size.width/30,),
+                      Icon(Icons.keyboard_arrow_left, color: ColorManager.lightBlue,size: MediaQuery.of(context).size.width/30,),
                     ],
                   ),
                 ),
@@ -118,7 +120,7 @@ class StartHomeScreen extends StatelessWidget {
                         vertical: 10.0, horizontal: 20.0),
                     child: Text(
                       "Explore More",
-                      style: TextStyle(color: Colors.black,fontSize: 15,fontWeight:FontWeight.bold),
+                      style: TextStyle(color: ColorManager.black,fontSize: 15,fontWeight:FontWeight.bold),
                     ),
                   ),
 

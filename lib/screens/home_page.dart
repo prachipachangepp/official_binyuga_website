@@ -199,7 +199,7 @@ Widget webBody() {
                             _animateToIndex(3, screenWidth.height);
                           },
                           child: Text(
-                            "Protfolio",
+                            "Portfolio",
                             style: GoogleFonts.fredoka(
                                 color: Colors.black,
                                 fontWeight: FontWeight.w500,
