@@ -19,7 +19,7 @@ class _AboutUsState extends State<AboutUs> {
             children: [
               Padding(
                 padding: EdgeInsets.only(top:40,right: 200),
-                child: Text('About Us',
+                child: Text('AppString.aboutUs',
                   style: TextStyle(
                     fontSize: 70.0,
                     color: Color(0xff214188),
@@ -32,7 +32,7 @@ class _AboutUsState extends State<AboutUs> {
           ),
           SizedBox(height: 30,),
           Text(
-            '\nEvery year, we advance along our path of growth.',
+            'AppString.everyYear',
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 38.0,
@@ -59,7 +59,7 @@ class _AboutUsState extends State<AboutUs> {
                     ),
                     SizedBox(height: 8,),
                     Text(
-                      'Successfully\ncompleted projects',
+                      'AppString.successfullyProject',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 25.0,
@@ -92,7 +92,7 @@ class _AboutUsState extends State<AboutUs> {
                     Padding(
                       padding: EdgeInsets.only(bottom:30),
                       child: Text(
-                        'Revenue Growth',
+                        'AppString.revenueGrowth',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 25.0,
@@ -120,7 +120,7 @@ class _AboutUsState extends State<AboutUs> {
                     ),
                     SizedBox(height: 8.0),
                     Text(
-                      'Training Days conducted\nfor interns',
+                      ' AppString.trainingDays',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 25.0,
