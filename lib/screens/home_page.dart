@@ -118,7 +118,6 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Responsive(
-
         mobile: webBody(),
         tablet: webBody(),
         desktop: webBody(),
@@ -142,7 +141,6 @@ Widget webBody() {
 
   Size screenWidth;
   return LayoutBuilder(builder: (context, constraints) {
-
     screenWidth = MediaQuery.of(context).size;
     List<Widget> body = [
       Stack(

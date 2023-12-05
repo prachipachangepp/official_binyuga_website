@@ -17,7 +17,7 @@ class AppString {
       'Whether its custom Software Solution, a User-friendly\napp, or a captivating website, we are commited to\ndelievering innovative and'
       'tailored digital products that not\nonly meet but exceed your expectations'
       "";
-  static const String exploreMore = "exploreMore";
+  static const String exploreMore = "Explore More";
   static const String whatWeAre = " What We Are ";
   static const String whatWeDo = " What We Do";
   static const String features = "Features";
