@@ -20,6 +20,7 @@ class MyStackPage extends StatelessWidget {
             children: [
               Container(
                 height: 1000,
+                  // width:MediaQuery.of(context).size.width,
                 color: Colors.pink,
                 child: StartHomeScreen()
               ),
