@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ColorManager{
-  static Color black = Color(0xfc000000);
+  static Color black = Color(0xff000000);
   static Color white = HexColor.fromHex('#FFFFFF');
 }
 
