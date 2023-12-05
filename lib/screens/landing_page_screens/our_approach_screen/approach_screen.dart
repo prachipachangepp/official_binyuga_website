@@ -12,7 +12,7 @@ class ApprochScreen extends StatelessWidget {
           children: [Positioned(
             top: 20,
             left: 300,
-            child: Text("Our Approach",
+            child: Text("AppString.ourApproach",
                 style: GoogleFonts.inter(textStyle: TextStyle(
                 fontWeight: FontWeight.w700,
                 fontSize: 60.0,
@@ -30,7 +30,7 @@ class ApprochScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left: 200.0),
                 child: Center(
-                  child: Text("Is driven by innovation and guided by user-friendly designs. We also\nhave a strong commitment to nurturing and educating emerging,\nforward-thinking talent in the field. ",
+                  child: Text('AppString.approachTxt',
                       textAlign: TextAlign.center,
                       style: GoogleFonts.inter(textStyle: TextStyle(
                           fontWeight: FontWeight.w700,

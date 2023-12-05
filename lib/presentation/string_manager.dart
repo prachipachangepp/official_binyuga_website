@@ -18,10 +18,11 @@ class AppString {
       'tailored digital products that not\nonly meet but exceed your expectations'
       "";
   static const String exploreMore = "exploreMore";
-  static const String whatWeAre = " What We Are ";
-  static const String whatWeDo = " What We Do";
+  static const String whatWeAre = "What We Are";
+  static const String whatWeDo = "What We Do";
   static const String features = "Features";
   static const String career = "Career";
+
 
   /// About Us screen
   static const String everyYear =
@@ -31,18 +32,19 @@ class AppString {
   static const String trainingDays = "Training Days conducted\nfor interns";
 
   /// description screen
+  static const String whoWeAre = " Who We Are ";
   static const String teamProfiles = "Team Profiles";
   static const String clientTestimonials = "Client Testimonials";
   static const String softwareDevelopment = "Software Development";
   static const String applicationDevelopment = "Application Development ";
   static const String webDevelopment = "Web Development";
-  static const String uiUxDesigning = "UI/UxDesigning ";
+  static const String uiUxDesigning = "UI/UxDesigning";
   static const String careerMonitoring = "Career Monitoring";
   static const String hybridApplicationDeveloper =
-      "Hybrid Application Developer";
+      "Hybrid application developer";
   static const String uiUxDevelopment = "Ui/Ux Development";
-  static const String backendDevelopment = "BackendDevelopment";
-  static const String fullStackDevelopment = "Full Stack Development";
+  static const String backendDevelopment = "Backend development";
+  static const String fullStackDevelopment = "FullStack development";
   static const String softwareTesting = "Software Testing";
   static const String programmingLanguage = "Programming Language";
   static const String tailoredProducts = "Tailored Products";

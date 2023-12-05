@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../presentation/color_manager.dart';
 
+
+
 class LastPage extends StatefulWidget {
   const LastPage({super.key});
 
@@ -35,7 +37,7 @@ class _LastPageState extends State<LastPage> {
             ],
           ),
           SizedBox(width: 15),
-          const Row(
+           Row(
             children: [
               ///who we are
               Padding(
@@ -44,9 +46,9 @@ class _LastPageState extends State<LastPage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Who we are',
+                      'AppString.whoWeAre',
                       style: TextStyle(
-                         color: Color(0xffFFFFFF),
+                         color: ColorManager.white,
                         // color:Colors.white,
                         fontFamily: 'inter',
                         fontWeight: FontWeight.w800,
@@ -55,9 +57,9 @@ class _LastPageState extends State<LastPage> {
                     ),
                     SizedBox(height:15),
                         Text(
-                          'About us',
+                          'AppString.aboutUs',
                           style: TextStyle(
-                            color: Color(0xffFFFFFF),
+                            color: ColorManager.white,
                             fontFamily: 'inter',
                              fontSize: 15,
                             fontWeight: FontWeight.w400,
@@ -65,9 +67,9 @@ class _LastPageState extends State<LastPage> {
                           ),),
                     SizedBox(height: 15),
                     Text(
-                      'Team profiles',
+                      'AppString.teamProfiles',
                       style: TextStyle(
-                        color: Colors.white,
+                        color: ColorManager.white,
                         fontFamily: 'inter',
                         fontSize: 15,
                         fontWeight: FontWeight.w400,
@@ -75,7 +77,7 @@ class _LastPageState extends State<LastPage> {
                     ),
                     SizedBox(height: 15),
                     Text(
-                      'Client testimonials',
+                      'AppString.clientTestimonials',
                        style: TextStyle(
                         color: Colors.white,
                         fontFamily: 'inter',
@@ -97,9 +99,9 @@ class _LastPageState extends State<LastPage> {
                     Padding(
                       padding: EdgeInsets.only(top:60),
                       child: Text(
-                        'What We do',
+                        'AppString.whatWeDo',
                         style: TextStyle(
-                          color: Color(0xffFFFFFF),
+                          color: ColorManager.white,
                           fontFamily: 'inter',
                           fontWeight: FontWeight.w800,
                           fontSize: 20,
@@ -108,9 +110,9 @@ class _LastPageState extends State<LastPage> {
                     ),
                     SizedBox(height: 15),
                     Text(
-                      'Software Development',
+                      'AppString.softwareDevelopment',
                       style: TextStyle(
-                        color: Colors.white,
+                        color: ColorManager.white,
                         fontFamily: 'inter',
                         fontWeight: FontWeight.w400,
                         fontSize: 15,
@@ -118,9 +120,9 @@ class _LastPageState extends State<LastPage> {
                     ),
                     SizedBox(height: 15),
                     Text(
-                      'Application development',
+                      'AppString.applicationDevelopment',
                       style: TextStyle(
-                        color: Colors.white,
+                        color: ColorManager.white,
                         fontFamily: 'inter',
                         fontWeight: FontWeight.w400,
                         fontSize: 15,
@@ -128,9 +130,9 @@ class _LastPageState extends State<LastPage> {
                     ),
                     SizedBox(height: 15),
                     Text(
-                      'Web development',
+                      'AppString.webDevelopment',
                       style: TextStyle(
-                        color: Colors.white,
+                        color: ColorManager.white,
                         fontFamily: 'inter',
                         fontWeight: FontWeight.w400,
                         fontSize: 15,
@@ -138,10 +140,10 @@ class _LastPageState extends State<LastPage> {
                     ),
                     SizedBox(height: 15),
                     Text(
-                      'UI/UX designing',
+                      'AppString.uiUxDesigning',
                       textAlign: TextAlign.left,
                       style: TextStyle(
-                        color: Colors.white,
+                        color: ColorManager.white,
                         fontFamily: 'inter',
                         fontSize: 15,
                         fontWeight: FontWeight.w400,
@@ -149,10 +151,10 @@ class _LastPageState extends State<LastPage> {
                     ),
                     SizedBox(height: 15),
                     Text(
-                      'Career montoring',
+                      'AppString.careerMonitoring',
                       textAlign: TextAlign.left,
                       style: TextStyle(
-                        color: Colors.white,
+                        color: ColorManager.white,
                         fontFamily: 'inter',
                         fontWeight: FontWeight.w400,
                         fontSize: 15,
@@ -171,9 +173,9 @@ class _LastPageState extends State<LastPage> {
                     Padding(
                       padding: EdgeInsets.only(top: 120),
                       child: Text(
-                        'Career',
+                        'AppString.Career',
                         style: TextStyle(
-                          color: Color(0xffFFFFFF),
+                          color: ColorManager.white,
                           fontFamily: 'inter',
                           fontWeight: FontWeight.w800,
                           fontSize: 20,
@@ -182,7 +184,17 @@ class _LastPageState extends State<LastPage> {
                     ),
                     SizedBox(height: 15),
                     Text(
-                      'Hybrid application developer',
+                      'AppString.hybridApplicationDeveloper',
+                      style: TextStyle(
+                        color: ColorManager.white,
+                        fontFamily: 'inter',
+                        fontWeight: FontWeight.w400,
+                        fontSize: 15,
+                      ),
+                    ),
+                    SizedBox(height: 15),
+                    Text(
+                      'AppString.UI/UxDesigning',
                       style: TextStyle(
                         color: Colors.white,
                         fontFamily: 'inter',
@@ -192,9 +204,9 @@ class _LastPageState extends State<LastPage> {
                     ),
                     SizedBox(height: 15),
                     Text(
-                      'UI/UX designing',
+                      'AppString.uiUxDevelopment',
                       style: TextStyle(
-                        color: Colors.white,
+                        color: ColorManager.white,
                         fontFamily: 'inter',
                         fontWeight: FontWeight.w400,
                         fontSize: 15,
@@ -202,9 +214,9 @@ class _LastPageState extends State<LastPage> {
                     ),
                     SizedBox(height: 15),
                     Text(
-                      'UI/UX development',
+                      'AppString.backendDevelopment',
                       style: TextStyle(
-                        color: Colors.white,
+                        color: ColorManager.white,
                         fontFamily: 'inter',
                         fontWeight: FontWeight.w400,
                         fontSize: 15,
@@ -212,9 +224,9 @@ class _LastPageState extends State<LastPage> {
                     ),
                     SizedBox(height: 15),
                     Text(
-                      'Backend development',
+                      'AppString.fullStackDevelopment',
                       style: TextStyle(
-                        color: Colors.white,
+                        color: ColorManager.white,
                         fontFamily: 'inter',
                         fontWeight: FontWeight.w400,
                         fontSize: 15,
@@ -222,9 +234,9 @@ class _LastPageState extends State<LastPage> {
                     ),
                     SizedBox(height: 15),
                     Text(
-                      'Fullstack development',
+                      'AppString.softwareTesting',
                       style: TextStyle(
-                        color: Colors.white,
+                        color: ColorManager.white,
                         fontFamily: 'inter',
                         fontWeight: FontWeight.w400,
                         fontSize: 15,
@@ -232,19 +244,9 @@ class _LastPageState extends State<LastPage> {
                     ),
                     SizedBox(height: 15),
                     Text(
-                      'Software testing',
+                      'AppString.programmingLanguage',
                       style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: 'inter',
-                        fontWeight: FontWeight.w400,
-                        fontSize: 15,
-                      ),
-                    ),
-                    SizedBox(height: 15),
-                    Text(
-                      'Programming Language',
-                      style: TextStyle(
-                        color: Colors.white,
+                        color: ColorManager.white,
                         fontFamily: 'inter',
                         fontWeight: FontWeight.w400,
                         fontSize: 15,
@@ -263,7 +265,7 @@ class _LastPageState extends State<LastPage> {
                     Padding(
                       padding: EdgeInsets.only(top: 100),
                       child: Text(
-                        'Features',
+                        'AppString.features',
                         style: TextStyle(
                           color: Color(0xffFFFFFF),
                           fontFamily: 'inter',
@@ -274,7 +276,7 @@ class _LastPageState extends State<LastPage> {
                     ),
                     SizedBox(height: 15),
                     Text(
-                      'Tailored products',
+                      'AppString.tailoredProducts',
                       style: TextStyle(
                         color: Colors.white,
                         fontFamily: 'inter',
@@ -284,7 +286,7 @@ class _LastPageState extends State<LastPage> {
                     ),
                     SizedBox(height: 15),
                     Text(
-                      'Cost effectiveness',
+                      'AppString.costEffectiveness',
                       style: TextStyle(
                         color: Colors.white,
                         fontFamily: 'inter',
@@ -294,7 +296,7 @@ class _LastPageState extends State<LastPage> {
                     ),
                     SizedBox(height: 15),
                     Text(
-                      'Intuitive & user center design',
+                      'AppString.intuitiveUserCenterDesign',
                       style: TextStyle(
                         color: Colors.white,
                         fontFamily: 'inter',
@@ -304,9 +306,9 @@ class _LastPageState extends State<LastPage> {
                     ),
                     SizedBox(height: 15),
                     Text(
-                      'Problem solving',
+                      'AppString.problemSolving',
                       style: TextStyle(
-                        color: Colors.white,
+                        color: ColorManager.white,
                         fontFamily: 'inter',
                         fontWeight: FontWeight.w400,
                         fontSize: 15,
@@ -314,9 +316,9 @@ class _LastPageState extends State<LastPage> {
                     ),
                     SizedBox(height: 15),
                     Text(
-                      'Rough & tough software',
+                      'AppString.roughToughSoftware',
                       style: TextStyle(
-                        color: Colors.white,
+                        color: ColorManager.white,
                         fontFamily: 'inter',
                         fontWeight: FontWeight.w400,
                         fontSize: 15,
@@ -324,9 +326,9 @@ class _LastPageState extends State<LastPage> {
                     ),
                     SizedBox(height: 15),
                     Text(
-                      'Innovative projects',
+                      'AppString.innovativeProjects',
                       style: TextStyle(
-                        color: Colors.white,
+                        color: ColorManager.white,
                         fontFamily: 'inter',
                         fontWeight: FontWeight.w400,
                         fontSize: 15,
@@ -343,50 +345,50 @@ class _LastPageState extends State<LastPage> {
             padding: const EdgeInsets.only(left: 120),
             child: Row(
               children: [
-                Text('Privacy Notice',
+                Text('AppString.privacyNotice',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: ColorManager.white,
                     fontFamily: 'inter',
                     fontWeight: FontWeight.w400,
                     fontSize: 12,
                   ),
                 ),
                 SizedBox(width: 60,),
-                Text('Cookie Policy',
+                Text('AppString.cookiePolicy',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: ColorManager.white,
                     fontFamily: 'inter',
                     fontWeight: FontWeight.w400,
                     fontSize: 12,
                   ),),
                 SizedBox(width: 40,),
-                Text('Disclaimer',
+                Text('AppString.disclaimer',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: ColorManager.white,
                     fontFamily: 'inter',
                     fontWeight: FontWeight.w400,
                     fontSize: 12,
                   ),),
                 SizedBox(width: 60,),
-                Text('Security Policy',
+                Text('AppString.securityPolicy',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: ColorManager.white,
                     fontFamily: 'inter',
                     fontWeight: FontWeight.w400,
                     fontSize: 12,
                   ),),
                 SizedBox(width: 60,),
-                Text('California Notice at Collection',
+                Text('AppString.californiaNoticeAtCollection',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: ColorManager.white,
                     fontFamily: 'inter',
                     fontWeight: FontWeight.w400,
                     fontSize: 12,
                   ),),
                 SizedBox(width: 60,),
-                Text('Customize Cookies',
+                Text('AppString.customizeCookies',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: ColorManager.white,
                     fontFamily: 'inter',
                     fontWeight: FontWeight.w400,
                     fontSize: 12,
