@@ -147,7 +147,7 @@ class _LastPageState extends State<LastPage> {
                     ),
                     SizedBox(height: 15),
                     Text(
-                      'Carrer montoring',
+                      'Career montoring',
                       textAlign: TextAlign.left,
                       style: TextStyle(
                         color: Colors.white,
