@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../../../presentation/color_manager.dart';
+import '../../../presentation/font_manager.dart';
+import '../../../presentation/string_manager.dart';
+
 class TeamMemberScreen extends StatelessWidget {
   const TeamMemberScreen({super.key});
 
@@ -8,7 +12,7 @@ class TeamMemberScreen extends StatelessWidget {
     return Scaffold(
       body: Container(
         height: 1300,
-        color: Colors.white,
+        color: ColorManager.white,
         child: Stack(
           children: [
             ///background image
@@ -22,29 +26,29 @@ class TeamMemberScreen extends StatelessWidget {
               ),
             ),
 ///txt 1
-            const Positioned(
+             Positioned(
               top: 140,
               right: 500,
               child: Text(
-                ' Our Team Members',
+                AppString.ourTeamMembers,
                 style: TextStyle(
-                  color: Colors.white,
+                  color: ColorManager.white,
                   fontSize: 70,
-                  fontWeight: FontWeight.w700,
+                  fontWeight: FontWeightManager.bold,
                 ),
               ),
             ),
             ///txt 2
-            const Positioned(
+             Positioned(
               top: 280,
               left: 350,
               child: Text(
-                'The constant companion on our journey towards success',
+                AppString.teamTxt,
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  color: Color(0xff83CAFF),
+                  color: ColorManager.blueShade,
                   fontSize: 30,
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeightManager.medium,
                 ),
               ),
             ),
@@ -53,21 +57,21 @@ class TeamMemberScreen extends StatelessWidget {
                 top: 450,
                 left: 200,
                 child: Container(
-              child: const Row(
+              child:  Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Column(
                     children: [
                       CircleAvatar(
-                        backgroundColor: Color(0xffDFDFDF),
+                        backgroundColor: ColorManager.white1,
                         radius: 140,
                       ),
                       SizedBox(height: 10,),
-                      Text('John Smith',
+                      Text(AppString.johnS,
                         style: TextStyle(
                             fontSize: 25,
-                            color: Color(0xff000000,),
-                            fontWeight: FontWeight.w500
+                            color: ColorManager.black,
+                            fontWeight: FontWeightManager.medium,
                         ),),
                     ],
                   ),
@@ -75,14 +79,14 @@ class TeamMemberScreen extends StatelessWidget {
                   Column(
                     children: [
                       CircleAvatar(
-                        backgroundColor: Color(0xffDFDFDF),
+                        backgroundColor: ColorManager.white1,
                         radius: 140,
                       ),
                       SizedBox(height: 10,),
-                      Text('John Smith',style: TextStyle(
+                      Text(AppString.johnS,style: TextStyle(
                           fontSize: 25,
-                          color: Color(0xff000000,),
-                          fontWeight: FontWeight.w500
+                          color: ColorManager.black,
+                          fontWeight: FontWeightManager.medium,
                       ),
                       ),
                     ],
@@ -91,15 +95,15 @@ class TeamMemberScreen extends StatelessWidget {
                   Column(
                     children: [
                       CircleAvatar(
-                        backgroundColor: Color(0xffDFDFDF),
+                        backgroundColor: ColorManager.white1,
                         radius: 140,
                       ),
                       SizedBox(height: 10,),
-                      Text('John Smith',
+                      Text(AppString.johnS,
                         style: TextStyle(
                             fontSize: 25,
-                            color: Color(0xff000000,),
-                            fontWeight: FontWeight.w500
+                            color: ColorManager.black,
+                            fontWeight: FontWeightManager.medium,
                         ),),
                     ],
                   )
@@ -111,21 +115,21 @@ class TeamMemberScreen extends StatelessWidget {
                 top: 900,
                 left: 400,
                 child: Container(
-                  child: const Row(
+                  child:  Row(
                     //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Column(
                         children: [
                           CircleAvatar(
-                            backgroundColor: Color(0xffDFDFDF),
+                            backgroundColor: ColorManager.white1,
                             radius: 140,
                           ),
                           SizedBox(height: 10,),
-                          Text('John Smith',
+                          Text(AppString.johnS,
                           style: TextStyle(
                             fontSize: 25,
-                            color: Color(0xff000000,),
-                            fontWeight: FontWeight.w500
+                            color: ColorManager.black,
+                            fontWeight: FontWeightManager.medium,
                           ),),
                         ],
                       ),
@@ -133,15 +137,15 @@ class TeamMemberScreen extends StatelessWidget {
                       Column(
                         children: [
                           CircleAvatar(
-                            backgroundColor: Color(0xffDFDFDF),
+                            backgroundColor:ColorManager.white1,
                             radius: 140,
                           ),
                           SizedBox(height: 10,),
-                          Text('John Smith',
+                          Text(AppString.johnS,
                             style: TextStyle(
                                 fontSize: 25,
-                                color: Color(0xff000000,),
-                                fontWeight: FontWeight.w500
+                                color: ColorManager.black,
+                                fontWeight: FontWeightManager.medium,
                             ),),
                         ],
                       ),
