@@ -1,6 +1,7 @@
 class AppString {
   /// Home screen
-  static const String signinhead = "Sign In";
+  static const String contactUs = "Contact Us";
+  static const String email = "www.career@binyuga.com";
 
   /// About Us screen
 

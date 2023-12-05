@@ -64,17 +64,72 @@ class StartHomeScreen extends StatelessWidget {
                 ),
               ),
               ///bold text(we craft)
-              const Positioned(
+               Positioned(
                 top: 240,
                 right: 500,
-                child: Text(
-                  'We craft\n'
-                      'tailored digital products '
-                      '\nfor your unique needs',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 50,
-                    fontWeight: FontWeight.w700,
+                child: Container(
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          // Column(
+                          //   children: [
+                          //     Image.network(
+                          //       "images/line.png",
+                          //       height: 160,
+                          //       // width: MediaQuery.of(context).size.width * 0.8,
+                          //       width: MediaQuery.of(context).size.width /1,
+                          //       //alignment: Alignment.bottomLeft,
+                          //     ),
+                          //   ],
+                          // ),
+                           Column(
+                           // mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                               Text(
+                                'We craft\n'
+                                    'tailored digital products '
+                                    '\nfor your unique needs',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: MediaQuery.of(context).size.width/31,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                              SizedBox(height: 10,),
+                              const Text('Whether its custom Software Solution, a User-friendly\napp, or a captivating website, we are commited to\ndelievering innovative and'
+                                  'tailored digital products that not\nonly meet but exceed your expectations',
+                                textAlign: TextAlign.start,
+                                style: TextStyle(
+                                    color: Color(0xff83E1FF),
+                                    fontSize: 17,
+                                    fontWeight: FontWeight.w500,
+                                    letterSpacing: -0.011
+                                ),
+                              ),
+                              SizedBox(height: 100,),
+                              MaterialButton(
+                                color: Colors.white,
+                                shape: const RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(Radius.circular(30.0))),
+                                onPressed: () {},
+                                child: const Padding(
+                                  padding: EdgeInsets.symmetric(
+                                      vertical: 10.0, horizontal: 20.0),
+                                  child: Text(
+                                    "Explore More",
+                                    style: TextStyle(color: Colors.black,fontSize: 15,fontWeight:FontWeight.bold),
+                                  ),
+                                ),
+
+                              ),
+                            ],
+                          ),
+
+                        ],
+                      ),
+                    ],
                   ),
                 ),
               ),
@@ -91,39 +146,39 @@ class StartHomeScreen extends StatelessWidget {
                 ),
               ),
               ///big text
-              const Positioned(
-                top: 480,
-                right: 605,
-                child: Text('Whether its custom Software Solution, a User-friendly\napp, or a captivating website, we are commited to\ndelievering innovative and'
-                    'tailored digital products that not\nonly meet but exceed your expectations',
-                  style: TextStyle(
-                      color: Color(0xff83E1FF),
-                      fontSize: 17,
-                      fontWeight: FontWeight.w500,
-                      letterSpacing: -0.011
-                  ),
-                ),
-              ),
+              // const Positioned(
+              //   top: 480,
+              //   right: 605,
+              //   child: Text('Whether its custom Software Solution, a User-friendly\napp, or a captivating website, we are commited to\ndelievering innovative and'
+              //       'tailored digital products that not\nonly meet but exceed your expectations',
+              //     style: TextStyle(
+              //         color: Color(0xff83E1FF),
+              //         fontSize: 17,
+              //         fontWeight: FontWeight.w500,
+              //         letterSpacing: -0.011
+              //     ),
+              //   ),
+              // ),
               ///explore more button
-              Positioned(
-                top: 650,
-                left: 490,
-                child: MaterialButton(
-                  color: Colors.white,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(30.0))),
-                  onPressed: () {},
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 10.0, horizontal: 20.0),
-                    child: Text(
-                      "Explore More",
-                      style: TextStyle(color: Colors.black,fontSize: 15,fontWeight:FontWeight.bold),
-                    ),
-                  ),
-
-                ),
-              ),
+              // Positioned(
+              //   top: 650,
+              //   left: 490,
+              //   child: MaterialButton(
+              //     color: Colors.white,
+              //     shape: RoundedRectangleBorder(
+              //         borderRadius: BorderRadius.all(Radius.circular(30.0))),
+              //     onPressed: () {},
+              //     child: Padding(
+              //       padding: const EdgeInsets.symmetric(
+              //           vertical: 10.0, horizontal: 20.0),
+              //       child: Text(
+              //         "Explore More",
+              //         style: TextStyle(color: Colors.black,fontSize: 15,fontWeight:FontWeight.bold),
+              //       ),
+              //     ),
+              //
+              //   ),
+              // ),
               ///sidebar
               Positioned(
                 left: 30,
