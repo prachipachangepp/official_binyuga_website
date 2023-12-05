@@ -1,167 +1,57 @@
 import 'package:flutter/material.dart';
 
-class Navbar extends StatelessWidget {
+class NavBar extends StatelessWidget {
+  const NavBar({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        if (constraints.maxWidth > 1200) {
-          return DesktopNavbar();
-        } else if (constraints.maxWidth > 800 && constraints.maxWidth < 1200) {
-          return DesktopNavbar();
-        } else {
-          return MobileNavbar();
-        }
-      },
-    );
-  }
-}
-//
-class DesktopNavbar extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 12,right: 80),
-      child: Image.asset(
-        "assets/imaage.png",
-
-        //  width: width,
-      ),
-    );
-    // child: Padding(
-    //   padding: const EdgeInsets.symmetric(vertical: 160, horizontal: 10),
-    //   child: Column(
-    //     mainAxisAlignment: MainAxisAlignment.center,
-    //     children: [
-    //       Text(
-    //         '    Who we are',
-    //         style: TextStyle(
-    //           decoration: TextDecoration.none,
-    //           color: Colors.white,
-    //           fontSize: 15,
-    //           //  fontWeight: FontWeight.w600
-    //         ),
-    //       ),
-    //       SizedBox(
-    //         height: 35,
-    //       ),
-    //       Text(
-    //         '    What we do',
-    //         style: TextStyle(
-    //           color: Colors.white,
-    //           decoration: TextDecoration.none,
-    //           fontSize: 15,
-    //           // fontWeight: FontWeight.w600
-    //         ),
-    //       ),
-    //       SizedBox(
-    //         height: 35,
-    //       ),
-    //       Text(
-    //         'Features',
-    //         style: TextStyle(
-    //             color: Colors.white,
-    //             decoration: TextDecoration.none,
-    //             fontSize: 15,
-    //             fontWeight: FontWeight.w600),
-    //       ),
-    //       SizedBox(
-    //         height: 35,
-    //       ),
-    //       Text(
-    //         'Career',
-    //         style: TextStyle(
-    //           color: Colors.white,
-    //           decoration: TextDecoration.none,
-    //           fontSize: 15,
-    //           // fontWeight: FontWeight.w600
-    //         ),
-    //       ),
-    //       SizedBox(
-    //         height: 35,
-    //       ),
-    //       Text(
-    //         ' Portfollio',
-    //         style: TextStyle(
-    //           color: Colors.white,
-    //           decoration: TextDecoration.none,
-    //           fontSize: 15,
-    //           // fontWeight: FontWeight.w600
-    //         ),
-    //       ),
-    //     ],
-    //   ),
-    //
-    // ),
-
-    return  Padding(
-      padding: const EdgeInsets.only(top:80),
-      child: Container(
-
-        padding: const EdgeInsets.all(12.0),
-        child: Column(
-          children: [
-            Row(
-              children: [
-                Text(
-                  "Who we are", style: TextStyle(
+    return  Scaffold(
+        resizeToAvoidBottomInset: false,
+        body: Container(
+        decoration: BoxDecoration(
+        image: DecorationImage(
+        image: AssetImage('assets/background.png'), // Replace with your image asset path
+    fit: BoxFit.cover,
+    ),
+    ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.only(top: 20),
+            child: Image.asset(
+              'assets/images/imaage.png',
+            ),
+          ),
+          Row(
+            children: <Widget>[
+              Text(
+                'Contact Us',
+                style: TextStyle(
                   color: Colors.white,
-                  //  fontSize: 13,
-                  //  fontWeight: FontWeight.w600
+                  fontSize: 20,
                 ),
-                ),
-              ],
-            ),
-
-            Text(
-              "What we do",
-              style: TextStyle(
-                color: Colors.white,
-                //   fontSize: 13,
-                // fontWeight: FontWeight.w600
               ),
-            ),
-            Text(
-              "Features",
-              style: TextStyle(
-                color: Colors.white,
-                //   fontSize: 15,
-                //  fontWeight: FontWeight.w600
+              SizedBox(
+                width: 20,
               ),
-            ),
-            Text(
-              "Career",
-              style: TextStyle(
-                color: Colors.white,
-                //  fontSize: 15,
-                // fontWeight: FontWeight.w600
-              ),
-            ),
-            Text(
-              "Portfollio",
-              style: TextStyle(
-                color: Colors.white,
-                //  fontSize: 15,
-                // fontWeight: FontWeight.w600
+              Image.asset(
+                'assets/images/toggle.jpg',
               ),
 
-            ),
-          ],
-        ),),);
-  }
-}
+//  Icon(Icons.custom_switch_icon,color: Colors.white,size: 40,),
+              SizedBox(
+                width: 20,
+              ),
+//   Icon(Icons.search_outlined,color: Colors.white,),
 
-class MobileNavbar extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 12,right: 80),
-      child: Image.asset(
-        "assets/imaage.png",
-
-        //  width: width,
+              Image.asset(
+                'assets/images/search.png',
+              ),
+            ],
+          ),
+        ],
       ),
-    );
-
+    ),);
   }
 }
