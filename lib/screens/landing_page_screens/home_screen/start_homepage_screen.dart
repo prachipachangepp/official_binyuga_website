@@ -1,7 +1,10 @@
 ///start page code
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
+import 'package:official_binyuga_website/presentation/color_manager.dart';
+import 'package:official_binyuga_website/presentation/font_manager.dart';
+import 'package:official_binyuga_website/presentation/string_manager.dart';
+import 'package:official_binyuga_website/presentation/value_manager.dart';
 
 class StartHomeScreen extends StatelessWidget {
   const StartHomeScreen({super.key});
@@ -11,7 +14,7 @@ class StartHomeScreen extends StatelessWidget {
     return Scaffold(
         body:  Container(
           height: 1000,
-          color: Colors.white,
+          color: ColorManager.white,
           child: Stack(
             children: [
               /// Base Image
@@ -35,18 +38,18 @@ class StartHomeScreen extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      Icon(Icons.chevron_right, color: Color(0xff83E1FF),size: MediaQuery.of(context).size.width/30,),
+                      Icon(Icons.chevron_right, color: ColorManager.lightBlue,size: MediaQuery.of(context).size.width/30,),
                       SizedBox(height: 20,),
                       Transform.scale(
                         scale: 1, // Keep the original width
                         child: Icon(
                           Icons.pause,
-                          color: Color(0xff83E1FF),
+                          color: ColorManager.lightBlue,
                           size: MediaQuery.of(context).size.width/40, // Original size
                         ),
                       ),
                       SizedBox(height: 20,),
-                      Icon(Icons.keyboard_arrow_left, color: Color(0xff83E1FF),size: MediaQuery.of(context).size.width/30,),
+                      Icon(Icons.keyboard_arrow_left, color: ColorManager.lightBlue,size: MediaQuery.of(context).size.width/30,),
                     ],
                   ),
                 ),
@@ -88,18 +91,16 @@ class StartHomeScreen extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                                Text(
-                                'We craft\n'
-                                    'tailored digital products '
-                                    '\nfor your unique needs',
+                              AppString.homesTxt1,
                                 style: TextStyle(
-                                  color: Colors.white,
+                                  color: ColorManager.white,
                                   fontSize: MediaQuery.of(context).size.width/31,
                                   fontWeight: FontWeight.w700,
                                 ),
                               ),
                               SizedBox(height: 10,),
-                              const Text('Whether its custom Software Solution, a User-friendly\napp, or a captivating website, we are commited to\ndelievering innovative and'
-                                  'tailored digital products that not\nonly meet but exceed your expectations',
+                              const Text(
+                              AppString.homesTxt2,
                                 textAlign: TextAlign.start,
                                 style: TextStyle(
                                     color: Color(0xff83E1FF),
@@ -110,23 +111,21 @@ class StartHomeScreen extends StatelessWidget {
                               ),
                               SizedBox(height: 100,),
                               MaterialButton(
-                                color: Colors.white,
+                                color: ColorManager.white,
                                 shape: const RoundedRectangleBorder(
                                     borderRadius: BorderRadius.all(Radius.circular(30.0))),
                                 onPressed: () {},
-                                child: const Padding(
+                                child:  Padding(
                                   padding: EdgeInsets.symmetric(
                                       vertical: 10.0, horizontal: 20.0),
                                   child: Text(
-                                    "Explore More",
-                                    style: TextStyle(color: Colors.black,fontSize: 15,fontWeight:FontWeight.bold),
+                                    AppString.exploreMore,
+                                    style: TextStyle(color: ColorManager.black,fontSize: 15,fontWeight:FontWeightManager.bold),
                                   ),
                                 ),
-
                               ),
                             ],
                           ),
-
                         ],
                       ),
                     ],
@@ -194,60 +193,60 @@ class StartHomeScreen extends StatelessWidget {
                       GestureDetector(
                         onTap: (){},
                         child: Text(
-                            "What we are",
+                            AppString.whatWeAre,
                             style: GoogleFonts.inter(textStyle: TextStyle(
-                                fontWeight: FontWeight.w500,
+                                fontWeight: FontWeightManager.medium,
                                 fontSize: 17.0,
                                 letterSpacing: -0.011,
-                                color: Colors.white),)
+                                color: ColorManager.white),)
                         ),
                       ),
-                      SizedBox(height: 50,),
+                      SizedBox(height: AppSize.s50,),
                       GestureDetector(
                         onTap: (){},
                         child: Text(
-                            "What we Do",
+                            AppString.whatWeDo,
                             style: GoogleFonts.inter(textStyle: TextStyle(
-                                fontWeight: FontWeight.w500,
+                                fontWeight: FontWeightManager.medium,
                                 fontSize: 17.0,
                                 letterSpacing: -0.011,
-                                color: Colors.white),)
+                                color: ColorManager.white),)
                         ),
                       ),
-                      SizedBox(height: 50,),
+                      SizedBox(height: AppSize.s50,),
                       GestureDetector(
                         onTap: (){},
                         child: Text(
-                            "Features",
+                            AppString.features,
                             style: GoogleFonts.inter(textStyle: TextStyle(
-                                fontWeight: FontWeight.w500,
+                                fontWeight:FontWeightManager.medium,
                                 fontSize: 17.0,
                                 letterSpacing: -0.011,
-                                color: Colors.white),)
+                                color: ColorManager.white),)
                         ),
                       ),
-                      SizedBox(height: 50,),
+                      SizedBox(height: AppSize.s50,),
                       GestureDetector(
                         onTap: (){},
                         child: Text(
-                            "Career",
+                            AppString.career,
                             style: GoogleFonts.inter(textStyle: TextStyle(
-                                fontWeight: FontWeight.w500,
+                                fontWeight: FontWeightManager.medium,
                                 fontSize: 17.0,
                                 letterSpacing: -0.011,
-                                color: Colors.white),)
+                                color:ColorManager.white),)
                         ),
                       ),
-                      SizedBox(height: 50,),
+                      SizedBox(height: AppSize.s50,),
                       GestureDetector(
                         onTap: (){},
                         child: Text(
-                            "Portfolio",
+                            AppString.portfolio,
                             style: GoogleFonts.inter(textStyle: TextStyle(
-                                fontWeight: FontWeight.w500,
+                                fontWeight: FontWeightManager.medium,
                                 fontSize: 17.0,
                                 letterSpacing: -0.011,
-                                color: Colors.white),)
+                                color: ColorManager.white),)
                         ),
                       ),
 
@@ -277,9 +276,9 @@ class StartHomeScreen extends StatelessWidget {
 
                    // SizedBox(width: MediaQuery.of(context).size.width/1.55,),
                     Text(
-                      'Contact Us',
+                      AppString.contactUs,
                       style: TextStyle(
-                        color: Colors.white,
+                        color: ColorManager.white,
                         fontSize: 20,
                       ),
                     ),
@@ -287,15 +286,15 @@ class StartHomeScreen extends StatelessWidget {
                       width: 30,
                     ),
                     Image.asset(
-                      'images/toggle_bg.png',height: 50,width: 100,
+                      'images/toggle_bg.png',height: AppSize.s50,width: AppSize.s100,
                     ),
 
 //  Icon(Icons.custom_switch_icon,color: Colors.white,size: 40,),
                     SizedBox(
-                      width: 20,
+                      width: AppSize.s20,
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(right: 35.0),
+                      padding: const EdgeInsets.only(right: AppPadding.p35),
                       child: Image.asset(
                         'images/search.png',
                       ),
