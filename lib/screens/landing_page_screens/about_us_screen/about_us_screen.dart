@@ -35,9 +35,10 @@ class _AboutUsState extends State<AboutUs> {
             AppString.everyYear,
             textAlign: TextAlign.center,
             style: AllScreensConstant.customTextStyle(
-                MediaQuery.of(context).size.width/58,
+                MediaQuery.of(context).size.width/38,
                 FontWeightManager.bold,
                 ColorManager.black),
+
           ),
           SizedBox(height:  AppSize.s60,),
           Expanded(
