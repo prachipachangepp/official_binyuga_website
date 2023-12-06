@@ -271,8 +271,7 @@ Widget webBody() {
       StartHomeScreen(),
       ApprochScreen(),
       UnionImageScreen(),
-     // ApprochScreen(),
-     // AboutUs(),
+      AboutUs(),
       TeamMemberScreen(),
       LastPage(),
       BottomNavBarScreen()
