@@ -110,7 +110,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
               ],
             ),
             const SizedBox(
-              width: 350,
+              width: 30,
             ),
             Container(
               decoration: BoxDecoration(

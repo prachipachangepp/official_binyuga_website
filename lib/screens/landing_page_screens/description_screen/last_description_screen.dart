@@ -44,8 +44,8 @@ class _LastPageState extends State<LastPage> {
               ///who we are
               Padding(
                 padding: EdgeInsets.only(
-                  left: 100,
-                  top: 30,
+                  left: MediaQuery.of(context).size.width / 100,
+                  top: MediaQuery.of(context).size.width / 30,
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -79,7 +79,7 @@ class _LastPageState extends State<LastPage> {
 
               ///what we do
               Padding(
-                padding: EdgeInsets.only(top: 30, left: 100),
+                padding: EdgeInsets.only(top: MediaQuery.of(context).size.width / 30, left: MediaQuery.of(context).size.width / 100),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -124,7 +124,7 @@ class _LastPageState extends State<LastPage> {
 
               ///career
               Padding(
-                padding: EdgeInsets.only(left: 100, top: 30),
+                padding: EdgeInsets.only(left: MediaQuery.of(context).size.width / 100, top: MediaQuery.of(context).size.width / 30),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -179,13 +179,13 @@ class _LastPageState extends State<LastPage> {
               Padding(
                 padding: EdgeInsets.only(
                     left: MediaQuery.of(context).size.width / 30,
-                    top: 10,
-                    right: 50),
+                    top: MediaQuery.of(context).size.width / 10,
+                    right: MediaQuery.of(context).size.width / 50),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
-                      padding: EdgeInsets.only(top: 100),
+                      padding: EdgeInsets.only(top:MediaQuery.of(context).size.width / 100,),
                       child: Text(AppString.featuresF,
                           style: LastDescriptionScreen.rowTextStyle),
                     ),
@@ -218,7 +218,7 @@ class _LastPageState extends State<LastPage> {
 
           ///bottom row
           Padding(
-            padding: const EdgeInsets.only(left: 120),
+            padding: const EdgeInsets.only(left: 100),
             child: Row(
               children: [
                 Text(AppString.privacyNotice,
