@@ -16,9 +16,9 @@ class LastPage extends StatefulWidget {
 class _LastPageState extends State<LastPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: ColorManager.nevyBlue,
-      body:Column(
+    return Container(
+      color: ColorManager.nevyBlue,
+      child:Column(
         children: [
           Row(
             children: [

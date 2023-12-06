@@ -9,8 +9,7 @@ class TeamMemberScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
+    return Container(
         height: 1300,
         color: ColorManager.white,
         child: Stack(
@@ -155,7 +154,6 @@ class TeamMemberScreen extends StatelessWidget {
                 ))
           ],
         ),
-      ),
-    );
+      );
   }
 }

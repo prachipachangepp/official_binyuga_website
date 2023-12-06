@@ -31,7 +31,6 @@ class DesktopNavbar extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 0),
                 child: Image.asset(
                   'images/binyuga_logo.png',
-
                 ),
               ),
               Row(
@@ -45,8 +44,6 @@ class DesktopNavbar extends StatelessWidget {
                   Icon(Icons.toggle_off_sharp,color: Colors.white,size: 30,),
                   SizedBox(width: 20,),
                   Icon(Icons.search_outlined,color: Colors.white,),
-
-
 
                 ],
               )

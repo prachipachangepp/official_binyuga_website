@@ -35,8 +35,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
   }
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body:Container(
+    return Container(
         height: 187,
         decoration: const BoxDecoration(
           image: DecorationImage(
@@ -157,8 +156,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
               ),),
           ],
         ),
-      ),
-    );
+      );
   }
 }
 

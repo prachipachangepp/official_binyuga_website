@@ -9,8 +9,7 @@ class UnionImageScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
+    return Container(
         height: 2200,
         color: ColorManager.white,
         child: Stack(
@@ -103,7 +102,6 @@ class UnionImageScreen extends StatelessWidget {
             ),
           ],
         ),
-      ),
-    );
+      );
   }
 }
