@@ -45,9 +45,6 @@ class DesktopNavbar extends StatelessWidget {
                   Icon(Icons.toggle_off_sharp,color: Colors.white,size: 30,),
                   SizedBox(width: 20,),
                   Icon(Icons.search_outlined,color: Colors.white,),
-
-
-
                 ],
               )
             ],
@@ -85,8 +82,6 @@ class MobileNavbar extends StatelessWidget {
               Icon(Icons.toggle_off_sharp,color: Colors.white,size: 30,),
               SizedBox(width: 20,),
               Icon(Icons.search_outlined,color: Colors.white,),
-
-
 
             ]),
       ),
