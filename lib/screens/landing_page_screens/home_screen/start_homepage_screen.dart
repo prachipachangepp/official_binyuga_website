@@ -11,8 +11,7 @@ class StartHomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body:  Container(
+    return Container(
           height: AppSize.s1000,
           color: ColorManager.white,
           child: Stack(
@@ -71,7 +70,7 @@ class StartHomeScreen extends StatelessWidget {
               ///bold text(we craft)
                Positioned(
                 top: 240,
-                right: 500,
+                right: MediaQuery.of(context).size.width/3,
                 child: Container(
                   child: Column(
                     children: [
@@ -224,7 +223,7 @@ class StartHomeScreen extends StatelessWidget {
                 ),),
             ],
           ),
-        ),
-    );
+        );
+
   }
 }

@@ -12,8 +12,7 @@ class ApprochScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
+    return Container(
         child: Stack(
           children: [
             Positioned(
@@ -58,7 +57,6 @@ class ApprochScreen extends StatelessWidget {
                 width: MediaQuery.of(context).size.width/20,)),
         ]
         ),
-      ),
-    );
+      );
   }
 }

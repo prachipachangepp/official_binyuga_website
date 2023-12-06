@@ -103,6 +103,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:official_binyuga_website/screens/landing_page_screens/about_us_screen/about_us_screen.dart';
+import 'package:official_binyuga_website/screens/landing_page_screens/bottom_nav_bar/bottom_nav_bar.dart';
+import 'package:official_binyuga_website/screens/landing_page_screens/description_screen/last_description_screen.dart';
+import 'package:official_binyuga_website/screens/landing_page_screens/home_screen/start_homepage_screen.dart';
+import 'package:official_binyuga_website/screens/landing_page_screens/our_approach_screen/approach_screen.dart';
+import 'package:official_binyuga_website/screens/landing_page_screens/team_member_screen/team_member_screen.dart';
+import 'package:official_binyuga_website/screens/landing_page_screens/union_image_screen/union_image_screen.dart';
 
 import '../responsive_screen/responsive_scr.dart';
 
@@ -143,123 +150,132 @@ Widget webBody() {
   return LayoutBuilder(builder: (context, constraints) {
     screenWidth = MediaQuery.of(context).size;
     List<Widget> body = [
-      Stack(
-        children: [
-          // HeaderSection(
-          //   screenWidth: screenWidth,
-          //   key: headerKey,
-          // ),
-          Row(
-            children: [
-              Expanded(flex: 1, child: Container()),
-              //th
-              Expanded(
-                  flex: 2,
-                  child: Container(
-                    margin: EdgeInsets.symmetric(
-                        vertical: MediaQuery.of(context).size.width / 30,
-                        horizontal: MediaQuery.of(context).size.width / 40),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        const SizedBox(
-                          width: 10,
-                        ),
-                        InkWell(
-                            child: Text(
-                              "About us",
-                              style: GoogleFonts.fredoka(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.w500,
-                                  fontSize:
-                                  MediaQuery.of(context).size.width / 75),
-                            ),
-                            // We will jump to the bottom of the list
-
-                            onTap: () {
-                              _animateToIndex(1, screenWidth.height);
-                            }),
-                        InkWell(
-                          onTap: () {
-                            _animateToIndex(2, screenWidth.height);
-                          },
-                          child: Text(
-                            "Services",
-                            style: GoogleFonts.fredoka(
-                                color: Colors.black,
-                                fontWeight: FontWeight.w500,
-                                fontSize:
-                                MediaQuery.of(context).size.width / 75),
-                          ),
-                        ),
-                        InkWell(
-                          onTap: () {
-                            _animateToIndex(3, screenWidth.height);
-                          },
-                          child: Text(
-                            "Portfolio",
-                            style: GoogleFonts.fredoka(
-                                color: Colors.black,
-                                fontWeight: FontWeight.w500,
-                                fontSize:
-                                MediaQuery.of(context).size.width / 75),
-                          ),
-                        ),
-                        InkWell(
-                          onTap: () {
-                            _animateToIndex(4, screenWidth.height);
-                          },
-                          child: Text(
-                            "Workshop & Training",
-                            style: GoogleFonts.fredoka(
-                                color: Colors.black,
-                                fontWeight: FontWeight.w500,
-                                fontSize:
-                                MediaQuery.of(context).size.width / 75),
-                          ),
-                        ),
-                        MaterialButton(
-                            elevation: 4,
-                            color: const Color(0xffFFFFFF),
-                            padding: EdgeInsets.symmetric(
-                                horizontal:
-                                MediaQuery.of(context).size.width / 40,
-                                vertical:
-                                MediaQuery.of(context).size.width / 120),
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(30)),
-                            onPressed: () {
-                              _animateToIndex(5, screenWidth.height);
-                            },
-                            child: ShaderMask(
-                              shaderCallback: (Rect bounds) {
-                                return const LinearGradient(
-                                  colors: [
-                                    Color(0xffAA1056),
-                                    Color(0xff210B32)
-                                  ],
-                                ).createShader(bounds);
-                              },
-                              child: Text(
-                                "Contact Us",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.w700,
-                                  fontSize:
-                                  MediaQuery.of(context).size.width / 75,
-                                  color:  Colors.black,
-                                ),
-                              ),
-                            )),
-                      ],
-                    ),
-                  ))
-            ],
-          ),
-        ],
-      ),
+      // Stack(
+      //   children: [
+      //     // HeaderSection(
+      //     //   screenWidth: screenWidth,
+      //     //   key: headerKey,
+      //     // ),
+      //     Row(
+      //       children: [
+      //         Expanded(flex: 1, child: Container()),
+      //         //th
+      //         Expanded(
+      //             flex: 2,
+      //             child: Container(
+      //               margin: EdgeInsets.symmetric(
+      //                   vertical: MediaQuery.of(context).size.width / 30,
+      //                   horizontal: MediaQuery.of(context).size.width / 40),
+      //               child: Row(
+      //                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      //                 children: [
+      //                   const SizedBox(
+      //                     width: 10,
+      //                   ),
+      //                   InkWell(
+      //                       child: Text(
+      //                         "About us",
+      //                         style: GoogleFonts.fredoka(
+      //                             color: Colors.black,
+      //                             fontWeight: FontWeight.w500,
+      //                             fontSize:
+      //                             MediaQuery.of(context).size.width / 75),
+      //                       ),
+      //                       // We will jump to the bottom of the list
+      //
+      //                       onTap: () {
+      //                         _animateToIndex(1, screenWidth.height);
+      //                       }),
+      //                   InkWell(
+      //                     onTap: () {
+      //                       _animateToIndex(2, screenWidth.height);
+      //                     },
+      //                     child: Text(
+      //                       "Services",
+      //                       style: GoogleFonts.fredoka(
+      //                           color: Colors.black,
+      //                           fontWeight: FontWeight.w500,
+      //                           fontSize:
+      //                           MediaQuery.of(context).size.width / 75),
+      //                     ),
+      //                   ),
+      //                   InkWell(
+      //                     onTap: () {
+      //                       _animateToIndex(3, screenWidth.height);
+      //                     },
+      //                     child: Text(
+      //                       "Portfolio",
+      //                       style: GoogleFonts.fredoka(
+      //                           color: Colors.black,
+      //                           fontWeight: FontWeight.w500,
+      //                           fontSize:
+      //                           MediaQuery.of(context).size.width / 75),
+      //                     ),
+      //                   ),
+      //                   InkWell(
+      //                     onTap: () {
+      //                       _animateToIndex(4, screenWidth.height);
+      //                     },
+      //                     child: Text(
+      //                       "Workshop & Training",
+      //                       style: GoogleFonts.fredoka(
+      //                           color: Colors.black,
+      //                           fontWeight: FontWeight.w500,
+      //                           fontSize:
+      //                           MediaQuery.of(context).size.width / 75),
+      //                     ),
+      //                   ),
+      //                   MaterialButton(
+      //                       elevation: 4,
+      //                       color: const Color(0xffFFFFFF),
+      //                       padding: EdgeInsets.symmetric(
+      //                           horizontal:
+      //                           MediaQuery.of(context).size.width / 40,
+      //                           vertical:
+      //                           MediaQuery.of(context).size.width / 120),
+      //                       shape: RoundedRectangleBorder(
+      //                           borderRadius: BorderRadius.circular(30)),
+      //                       onPressed: () {
+      //                         _animateToIndex(5, screenWidth.height);
+      //                       },
+      //                       child: ShaderMask(
+      //                         shaderCallback: (Rect bounds) {
+      //                           return const LinearGradient(
+      //                             colors: [
+      //                               Color(0xffAA1056),
+      //                               Color(0xff210B32)
+      //                             ],
+      //                           ).createShader(bounds);
+      //                         },
+      //                         child: Text(
+      //                           "Contact Us",
+      //                           style: TextStyle(
+      //                             fontWeight: FontWeight.w700,
+      //                             fontSize:
+      //                             MediaQuery.of(context).size.width / 75,
+      //                             color:  Colors.black,
+      //                           ),
+      //                         ),
+      //                       )),
+      //                 ],
+      //               ),
+      //             ))
+      //       ],
+      //     ),
+      //   ],
+      // ),
     //  const AboutUsSection(),
 
       ///todo for Prachi
+
+      StartHomeScreen(),
+      ApprochScreen(),
+      UnionImageScreen(),
+     // ApprochScreen(),
+     // AboutUs(),
+      TeamMemberScreen(),
+      LastPage(),
+      BottomNavBarScreen()
 
 //      OurServicesSection(),
 
@@ -277,6 +293,7 @@ Widget webBody() {
     ];
 
     return ListView.builder(
+      shrinkWrap: true,
         controller: _controller,
         itemCount: body.length,
         itemBuilder: (context, index) {

@@ -3,17 +3,14 @@ import 'package:flutter/material.dart';
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
-import '../../../presentation/theme_manager.dart';
-import '../../../presentation/value_manager.dart';
 
 class UnionImageScreen extends StatelessWidget {
   const UnionImageScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        height:  AppSize.s2200,
+    return Container(
+        height: 2200,
         color: ColorManager.white,
         child: Stack(
           children: [
@@ -23,7 +20,7 @@ class UnionImageScreen extends StatelessWidget {
               child: Image.network(
                 'images/union.png',
                 fit: BoxFit.fill,
-                height: AppSize.s2200,
+                height: 2200,
                 width: MediaQuery.of(context).size.width,
               ),
             ),
@@ -32,7 +29,7 @@ class UnionImageScreen extends StatelessWidget {
               left: 80, // Adjust the position as needed
               child: Image.network(
                 "images/union_1.png",
-                height: AppSize.s720,
+                height: 720,
                 // width: MediaQuery.of(context).size.width * 0.8,
                 width: MediaQuery.of(context).size.width /2,
               ),
@@ -42,7 +39,7 @@ class UnionImageScreen extends StatelessWidget {
               left: 60,
               child: Image.network(
                 "images/rectangle.png",
-                height: AppSize.s780,
+                height: 780,
                 // width: MediaQuery.of(context).size.width * 0.8,
                 width: MediaQuery.of(context).size.width /1.9,
               ),
@@ -52,7 +49,11 @@ class UnionImageScreen extends StatelessWidget {
               right: 100,
               child: Text(
                  AppString.unionTxt1,
-                  style: UnionTxtScreen1.union1TextStyle
+                style: TextStyle(
+                  color: ColorManager.white,
+                  fontSize: 25,
+                  fontWeight: FontWeightManager.medium,
+                ),
               ),
             ),
              Positioned(
@@ -60,7 +61,11 @@ class UnionImageScreen extends StatelessWidget {
               right: 140,
               child: Text(
                   AppString.unionTxt2,
-                  style: UnionTxtScreen2.union2TextStyle
+                style: TextStyle(
+                  color: ColorManager.blueShade,
+                  fontSize: 37,
+                  fontWeight: FontWeightManager.medium,
+                ),
               ),
             ),
             Positioned(
@@ -68,7 +73,7 @@ class UnionImageScreen extends StatelessWidget {
               right: 80,
               child: Image.network(
                 "images/union_2.png",
-                height: AppSize.s720,
+                height: 720,
                 // width: MediaQuery.of(context).size.width * 0.8,
                 width: MediaQuery.of(context).size.width /2,
               ),
@@ -88,12 +93,15 @@ class UnionImageScreen extends StatelessWidget {
               left: 100,
               child: Text(
                 AppString.unionTxt3,
-                  style: UnionTxtScreen1.union1TextStyle
+                style: TextStyle(
+                  fontSize: 25,
+                  color: ColorManager.white,
+                  fontWeight: FontWeightManager.medium,
+                ),
               ),
             ),
           ],
         ),
-      ),
-    );
+      );
   }
 }
