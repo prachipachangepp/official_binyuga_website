@@ -20,18 +20,19 @@ class ApprochScreen extends StatelessWidget {
             top: 20,
             left: 300,
             child: Text(AppString.ourApproach,
-              style: AllScreensConstant.customTextStyle(
-                  MediaQuery.of(context).size.width/25,
-                  FontWeightManager.bold,
-                  ColorManager.darkBlue
-            ),),
-          ),
-            SizedBox(height:  AppSize.s20,),
+                style: AllScreensConstant.customTextStyle(
+                    MediaQuery.of(context).size.width/25,
+                    FontWeightManager.bold,
+                    ColorManager.darkBlue),
+            ),
+            ),
+
+          SizedBox(height:  AppSize.s20,),
           Positioned(
               top: 120,
               left: 100,
               child: Image.asset("images/inverted_start.png",width: MediaQuery.of(context).size.width/20)),
-          SizedBox(height: 20,),
+          SizedBox(height:  AppSize.s20,),
           Row(
            // mainAxisAlignment: MainAxisAlignment.end,
             children: [
@@ -40,15 +41,16 @@ class ApprochScreen extends StatelessWidget {
                 child: Center(
                   child: Text(AppString.approachTxt,
                       textAlign: TextAlign.center,
-                    style: AllScreensConstant.customTextStyle(
-                        MediaQuery.of(context).size.width/50,
-                        FontWeightManager.bold,
-                        ColorManager.black),
+                      style: AllScreensConstant.customTextStyle(
+                          MediaQuery.of(context).size.width/50,
+                          FontWeightManager.bold,
+                          ColorManager.black),
+                  ),
                 ),
               ),
-    ),],
+            ],
           ),
-            SizedBox(height:  AppSize.s20,),
+          SizedBox(height:  AppSize.s20,),
             Positioned(
                 top: 320,
                 right: 350,
