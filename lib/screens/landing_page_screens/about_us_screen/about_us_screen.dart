@@ -30,7 +30,7 @@ class _AboutUsState extends State<AboutUs> {
               ),
             ],
           ),
-          SizedBox(height:  AppSize.s30,),
+          SizedBox(height:30,),
           Text(
             AppString.everyYear,
             textAlign: TextAlign.center,
@@ -59,7 +59,7 @@ class _AboutUsState extends State<AboutUs> {
                               ColorManager.skyBlue)
                   ),
 
-                      SizedBox(height:  AppSize.s8,),
+                      SizedBox(height: 8,),
                       Text(
                         AppString.successfullyProject,
                         textAlign: TextAlign.center,
@@ -89,7 +89,7 @@ class _AboutUsState extends State<AboutUs> {
                         ),
                         ),
 
-        SizedBox(height:  AppSize.s5,),
+        SizedBox(height: 5,),
                       Padding(
                         padding: EdgeInsets.only(bottom:50),
                         child: Text(
@@ -122,7 +122,7 @@ class _AboutUsState extends State<AboutUs> {
                               ColorManager.skyBlue)
 
                       ),
-                      SizedBox(height:  AppSize.s8,),
+                      SizedBox(height:  8,),
                       Text(
                         AppString.trainingDays,
                         textAlign: TextAlign.center,

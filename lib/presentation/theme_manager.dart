@@ -40,6 +40,28 @@ class AllScreensConstant {
     );
   }
 }
+/// about us
+ class AboutUsConstant{
+   static TextStyle aboutTextStyle = GoogleFonts.inter(
+     //textStyle: TextStyle(
+     fontSize: 70.0,
+       fontWeight: FontWeightManager.extraBold,
+       color: ColorManager.darkBlue
+     //)
+   );
+ }
+
+ ///Team member
+
+class TeamMemberConstant{
+  static TextStyle nameTextStyle = GoogleFonts.inter(
+    //textStyle: TextStyle(
+      fontWeight: FontWeightManager.medium,
+      color: ColorManager.black
+    //)
+  );
+}
+
 /// last DescriptionScreen
 class LastDescriptionScreen {
   static TextStyle rowTextStyle = GoogleFonts.inter(
