@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
+import '../../../presentation/theme_manager.dart';
 
 class TeamMemberScreen extends StatelessWidget {
   const TeamMemberScreen({super.key});
@@ -67,27 +68,7 @@ class TeamMemberScreen extends StatelessWidget {
                         radius: 140,
                       ),
                       SizedBox(height: 10,),
-                      Text(AppString.johnS,
-                        style: TextStyle(
-                            fontSize: 25,
-                            color: ColorManager.black,
-                            fontWeight: FontWeightManager.medium,
-                        ),),
-                    ],
-                  ),
-                  SizedBox(width: 150,),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        backgroundColor: ColorManager.white1,
-                        radius: 140,
-                      ),
-                      SizedBox(height: 10,),
-                      Text(AppString.johnS,style: TextStyle(
-                          fontSize: 25,
-                          color: ColorManager.black,
-                          fontWeight: FontWeightManager.medium,
-                      ),
+                      Text(AppString.johnS,style:TeamMember.nameTextStyle
                       ),
                     ],
                   ),
@@ -99,13 +80,20 @@ class TeamMemberScreen extends StatelessWidget {
                         radius: 140,
                       ),
                       SizedBox(height: 10,),
-                      Text(AppString.johnS,
-                        style: TextStyle(
-                            fontSize: 25,
-                            color: ColorManager.black,
-                            fontWeight: FontWeightManager.medium,
-                        ),),
+                      Text(AppString.johnS,style:TeamMember.nameTextStyle
+                      ),
                     ],
+                  ),
+                  SizedBox(width: 150,),
+                  Column(
+                    children: [
+                      CircleAvatar(
+                        backgroundColor: ColorManager.white1,
+                        radius: 140,
+                      ),
+                      SizedBox(height: 10,),
+                      Text(AppString.johnS,style:TeamMember.nameTextStyle
+                      ),],
                   )
                 ],
               ),
@@ -125,12 +113,8 @@ class TeamMemberScreen extends StatelessWidget {
                             radius: 140,
                           ),
                           SizedBox(height: 10,),
-                          Text(AppString.johnS,
-                          style: TextStyle(
-                            fontSize: 25,
-                            color: ColorManager.black,
-                            fontWeight: FontWeightManager.medium,
-                          ),),
+                          Text(AppString.johnS,style:TeamMember.nameTextStyle
+    ),
                         ],
                       ),
                       SizedBox(width: 150,),
@@ -141,12 +125,9 @@ class TeamMemberScreen extends StatelessWidget {
                             radius: 140,
                           ),
                           SizedBox(height: 10,),
-                          Text(AppString.johnS,
-                            style: TextStyle(
-                                fontSize: 25,
-                                color: ColorManager.black,
-                                fontWeight: FontWeightManager.medium,
-                            ),),
+    Text(AppString.johnS,
+        style:TeamMember.nameTextStyle
+    ),
                         ],
                       ),
 

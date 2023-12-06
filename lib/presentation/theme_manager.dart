@@ -9,23 +9,22 @@ import 'font_manager.dart';
 class HomeScreen {
   static TextStyle sidebarTextStyle = GoogleFonts.inter(
       //textStyle: TextStyle(
-  fontWeight: FontWeightManager.medium,
-  fontSize: FontSize.s17,
-  letterSpacing: -0.011,
-  color: ColorManager.white
-  //)
-  );
+      fontWeight: FontWeightManager.medium,
+      fontSize: FontSize.s17,
+      letterSpacing: -0.011,
+      color: ColorManager.white
+      //)
+      );
 }
 
-
 ///rounded button theme constant
-class RButtonTheme{
+class RButtonTheme {
   static TextStyle roundedButtonTextStyle = GoogleFonts.inter(
-  //textStyle: TextStyle(
-  fontWeight: FontWeightManager.semiBold,
-  fontSize: AppSize.s15,
-  letterSpacing: -0.011,
-  color: ColorManager.black);
+      //textStyle: TextStyle(
+      fontWeight: FontWeightManager.semiBold,
+      fontSize: AppSize.s15,
+      letterSpacing: -0.011,
+      color: ColorManager.black);
 }
 
 ///changing elements
@@ -39,4 +38,19 @@ class AllScreensConstant {
       color: color,
     );
   }
+}
+
+class TeamMember {
+  static TextStyle nameTextStyle = GoogleFonts.inter(
+    fontSize: FontSize.s25,
+    color: ColorManager.black,
+    fontWeight: FontWeightManager.medium,
+  );
+}
+
+class AboutUsConstant {
+  static TextStyle aboutTextStyle = GoogleFonts.inter(
+  fontSize: FontSize.s70,
+  color: ColorManager.darkBlue,
+  fontWeight: FontWeightManager.extraBold,);
 }
