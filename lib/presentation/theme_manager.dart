@@ -73,7 +73,7 @@ class bottomRowScreen {
     //)
   );
 }
-
+///Union imageScreen
 class UnionTxtScreen1 {
   static TextStyle union1TextStyle = GoogleFonts.inter(
     //textStyle: TextStyle(
@@ -97,4 +97,22 @@ class UnionTxtScreen2 {
     //)
   );
 }
-
+///AboutUs Screen
+class AboutUsConstant{
+  static TextStyle aboutTextStyle = GoogleFonts.inter(
+    //textStyle: TextStyle(
+      fontSize: 70.0,
+      fontWeight: FontWeightManager.extraBold,
+      color: ColorManager.darkBlue
+    //)
+  );
+}
+/// TeamMember Screen
+class TeamMemberConstant{
+  static TextStyle nameTextStyle = GoogleFonts.inter(
+    //textStyle: TextStyle(
+      fontWeight: FontWeightManager.medium,
+      color: ColorManager.black
+    //)
+  );
+}
