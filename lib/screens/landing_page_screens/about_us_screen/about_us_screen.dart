@@ -78,12 +78,12 @@ class _AboutUsState extends State<AboutUs> {
                 ),
                 SizedBox(width: 50,),
                 Padding(
-                  padding: EdgeInsets.only(left: 100),
+                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/50,top:30 ),
                   child: Column(
                      crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(top:20,bottom: 10),
+                         padding: EdgeInsets.only(bottom: 10),
                         child: Text(
                           'OO',
                           textAlign: TextAlign.center,
@@ -96,7 +96,7 @@ class _AboutUsState extends State<AboutUs> {
                       ),
                       SizedBox(height: 5.0),
                       Padding(
-                        padding: EdgeInsets.only(bottom:30),
+                        padding: EdgeInsets.only(bottom:50),
                         child: Text(
                           AppString.revenueGrowth,
                           textAlign: TextAlign.center,
@@ -114,7 +114,7 @@ class _AboutUsState extends State<AboutUs> {
                 ),
                 SizedBox(width: 50,),
                 Padding(
-                  padding: EdgeInsets.only(left: 100,top: 30),
+                  padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/50,top: 30),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
