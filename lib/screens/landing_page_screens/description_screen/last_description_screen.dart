@@ -264,7 +264,7 @@ class _LastPageState extends State<LastPage> {
               SizedBox(width: 80,),
               ///features
               Padding(
-                padding: EdgeInsets.only(left:120,top:30,right: 50),
+                padding: EdgeInsets.only(left: MediaQuery.of(context).size.width /30,top:10,right: 50),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
