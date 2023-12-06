@@ -8,15 +8,9 @@ class AppString {
   static const String services = "Services";
   static const String portfolio = "Portfolio";
   static const String workshopTraining = "Workshop & Training";
-  static const String homesTxt1 = ""
-      'We craft\n'
-      'tailored digital products '
-      '\nfor your unique needs'
-      "";
-  static const String homesTxt2 = ""
-      'Whether its custom Software Solution, a User-friendly\napp, or a captivating website, we are commited to\ndelievering innovative and'
-      'tailored digital products that not\nonly meet but exceed your expectations'
-      "";
+  static const String homesTxt1 = "We craft\ntailored digital products \nfor your unique needs";
+  static const String homesTxt2 = "Whether its custom Software Solution, a User-friendly\napp, or a captivating website, we are commited to\ndelievering innovative and"
+      "tailored digital products that not\nonly meet but exceed your expectations";
   static const String exploreMore = "Explore More";
   static const String whatWeAre = "What We Are";
   static const String whatWeDo = "What We Do";
@@ -44,8 +38,7 @@ class AppString {
   static const String uiUxDesigning = "UI/UxDesigning";
   static const String careerMonitoring = "Career Monitoring";
   static const String careerC ="Career";
-  static const String hybridApplicationDeveloper =
-      "Hybrid application developer";
+  static const String hybridApplicationDeveloper = "Hybrid application developer";
   static const String uIUxDesigning = "UI/UxDesigning";
   static const String uiUxDevelopment = "Ui/Ux Development";
   static const String backendDevelopment = "Backend development";
@@ -70,25 +63,22 @@ class AppString {
 
   /// Approach screen
   static const String ourApproach = "Our Approach";
-  static const String approachTxt =
-      "Is driven by innovation and guided by user-friendly designs. We also\nhave a strong commitment to nurturing and educating emerging,\nforward-thinking talent in the field.";
+  static const String approachTxt = "Is driven by innovation and guided by user-friendly designs. We also\nhave a strong commitment to nurturing and educating emerging,\nforward-thinking talent in the field.";
 
   /// Team Member screen
   static const String ourTeamMembers = "Our Team Members";
-  static const String teamTxt =
-      "The constant companion on our journey towards success";
+  static const String teamTxt = "The constant companion on our journey towards success";
   static const String johnS ="John Smith";
 
   /// Union screen
-  static const String unionTxt1 =
-      "'We adopt a fresh and distinctive approach\nfor every project, investing time to deeply\ncomprehend our clients requirements."
+  static const String unionTxt1 = "We adopt a fresh and distinctive approach\nfor every project, investing time to deeply\ncomprehend our clients requirements.\n"
       '\nContinual learning is at our core, allowing us\nto embrace new trends and technologies\nand incorporate them into our projects,\nensuring that our work remains at the\nforefront of the industry.';
 
   static const String unionTxt2 =
-      "'We also have a strong commitment to nurturing and educating\nemerging, forward-thinking talent in the field...',";
+      "We also have a strong commitment to nurturing and educating\nemerging, forward-thinking talent in the field...,";
 
   static const String unionTxt3 =
-      "'In addition to our primary endeavors, we hold\na steadfast dedication to cultivating and\ninstructing up-and-coming, innovative talent\nwithin the industry."
+      "In addition to our primary endeavors, we hold\na steadfast dedication to cultivating and\ninstructing up-and-coming, innovative talent\nwithin the industry.\n"
       '\nThis is achieved through a multifaceted\napproach that encompasses organizing\ndiverse courses and internships, allowing\nnewcomers to gain hands-on experience.';
 
   ///Bottom Navbar screen
