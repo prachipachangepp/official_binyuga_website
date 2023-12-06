@@ -59,7 +59,7 @@ class _LastPageState extends State<LastPage> {
                     ),
                     SizedBox(height:15),
                         Text(
-                          'AppString.aboutUs',
+                          AppString.aboutUs,
                           style: TextStyle(
                             color: ColorManager.white,
                             fontFamily: FontConstants.fontFamily1,
