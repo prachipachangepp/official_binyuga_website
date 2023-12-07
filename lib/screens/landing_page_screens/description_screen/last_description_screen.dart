@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
@@ -25,58 +24,54 @@ class _LastPageState extends State<LastPage> {
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: 12),
-                child: Positioned(
-                  child: Image.asset(
-                    "images/binyuga_logo.png",
-                  ),
+                padding: const EdgeInsets.only(top:12,),
+                child: Image.asset(
+                  "images/binyuga_logo.png",
                 ),
               ),
               Spacer(),
               Padding(
-                padding: const EdgeInsets.only( right: 40),
-                child: Positioned(
-                  child: Image.asset(
-                    "images/search.png",
-                  ),
+                padding: const EdgeInsets.only( right:40,),
+                child: Image.asset(
+                  "images/search.png",
                 ),
               ),
 
             ],
           ),
           SizedBox(width: 15),
-           Row(
+          Row(
             children: [
               ///who we are
               Padding(
-                padding: EdgeInsets.only(left: 100,top: 30,),
+                padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/50,top:MediaQuery.of(context).size.width/50,),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      AppString.whoWeAre,
+                        AppString.whoWeAre,
                         style: LastDescriptionScreen.rowTextStyle
                     ),
                     SizedBox(height: AppSize.s15,),
-                        Text(
-                             AppString.aboutUs,
-                            style: LastColumnScreen.columnTextStyle
-                        ),
+                    Text(
+                        AppString.aboutUs,
+                        style: LastColumnScreen.columnTextStyle
+                    ),
                     SizedBox(height: AppSize.s15, ),
                     Text(
-                      AppString.teamProfiles,
+                        AppString.teamProfiles,
                         style: LastColumnScreen.columnTextStyle
                     ),
                     SizedBox(height: 15),
                     Text(
-                      AppString.clientTestimonials,
+                        AppString.clientTestimonials,
                         style: LastColumnScreen.columnTextStyle
                     ),
                     SizedBox(height: AppSize.s15,),
                   ],
                 ),
               ),
-              SizedBox(width:  AppSize.s80,),
+              SizedBox(width:  MediaQuery.of(context).size.width/60,),
               ///what we do
               Padding(
                 padding: EdgeInsets.only(top: 30,left: 100),
@@ -86,41 +81,41 @@ class _LastPageState extends State<LastPage> {
                     Padding(
                       padding: EdgeInsets.only(top:60),
                       child: Text(
-                        AppString.whatWeDo,
+                          AppString.whatWeDo,
                           style: LastDescriptionScreen.rowTextStyle
                       ),
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.softwareDevelopment,
+                        AppString.softwareDevelopment,
                         style: LastColumnScreen.columnTextStyle
                     ),
                     SizedBox(height:  AppSize.s15,),
                     Text(
-                      AppString.applicationDevelopment,
+                        AppString.applicationDevelopment,
                         style: LastColumnScreen.columnTextStyle
                     ),
                     SizedBox(height:  AppSize.s15,),
                     Text(
-                      AppString.webDevelopment,
+                        AppString.webDevelopment,
                         style: LastColumnScreen.columnTextStyle
                     ),
                     SizedBox(height:  AppSize.s15,),
                     Text(
-                      AppString.uiUxDesigning,
-                      textAlign: TextAlign.left,
+                        AppString.uiUxDesigning,
+                        textAlign: TextAlign.left,
                         style: LastColumnScreen.columnTextStyle
                     ),
                     SizedBox(height:AppSize.s15, ),
                     Text(
-                      AppString.careerMonitoring,
-                      textAlign: TextAlign.left,
+                        AppString.careerMonitoring,
+                        textAlign: TextAlign.left,
                         style: LastColumnScreen.columnTextStyle
                     ),
                   ],
                 ),
               ),
-              SizedBox(width: AppSize.s80,),
+              SizedBox(width: MediaQuery.of(context).size.width/60,),
               ///career
               Padding(
                 padding: EdgeInsets.only(left:100,top: 30),
@@ -130,49 +125,49 @@ class _LastPageState extends State<LastPage> {
                     Padding(
                       padding: EdgeInsets.only(top: 120),
                       child: Text(
-                        AppString.careerC,
+                          AppString.careerC,
                           style: LastDescriptionScreen.rowTextStyle
                       ),
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.hybridApplicationDeveloper,
+                        AppString.hybridApplicationDeveloper,
                         style: LastColumnScreen.columnTextStyle
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.uIUxDesigning,
+                        AppString.uIUxDesigning,
                         style: LastColumnScreen.columnTextStyle
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.uiUxDevelopment,
+                        AppString.uiUxDevelopment,
                         style: LastColumnScreen.columnTextStyle
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.backendDevelopment,
+                        AppString.backendDevelopment,
                         style: LastColumnScreen.columnTextStyle
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.fullStackDevelopment,
+                        AppString.fullStackDevelopment,
                         style: LastColumnScreen.columnTextStyle
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.softwareTesting,
+                        AppString.softwareTesting,
                         style: LastColumnScreen.columnTextStyle
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.programmingLanguage,
+                        AppString.programmingLanguage,
                         style: LastColumnScreen.columnTextStyle
                     ),
                   ],
                 ),
               ),
-              SizedBox(width: AppSize.s80,),
+              SizedBox(width:  MediaQuery.of(context).size.width/60,),
               ///features
               Padding(
                 padding: EdgeInsets.only(left:120,top:30,right: 50),
@@ -182,38 +177,38 @@ class _LastPageState extends State<LastPage> {
                     Padding(
                       padding: EdgeInsets.only(top: 100),
                       child: Text(
-                        AppString.featuresF,
+                          AppString.featuresF,
                           style: LastDescriptionScreen.rowTextStyle
                       ),
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.tailoredProducts,
+                        AppString.tailoredProducts,
                         style: LastColumnScreen.columnTextStyle
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.costEffectiveness,
+                        AppString.costEffectiveness,
                         style: LastColumnScreen.columnTextStyle
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.intuitiveUserCenterDesign,
+                        AppString.intuitiveUserCenterDesign,
                         style: LastColumnScreen.columnTextStyle
                     ),
                     SizedBox(height:AppSize.s15,),
                     Text(
-                      AppString.problemSolving,
+                        AppString.problemSolving,
                         style: LastColumnScreen.columnTextStyle
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.roughToughSoftware,
+                        AppString.roughToughSoftware,
                         style: LastColumnScreen.columnTextStyle
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.innovativeProjects,
+                        AppString.innovativeProjects,
                         style: LastColumnScreen.columnTextStyle
                     ),
                   ],
@@ -221,10 +216,10 @@ class _LastPageState extends State<LastPage> {
               ),
             ],
           ),
-          SizedBox(height:AppSize.s130,),
+          SizedBox(height:50),
           ///bottom row
           Padding(
-            padding: const EdgeInsets.only(left: 120),
+            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/20,),
             child: Row(
               children: [
                 Text(AppString.privacyNotice,
@@ -250,6 +245,7 @@ class _LastPageState extends State<LastPage> {
                 Text(AppString.customizeCookies,
                     style: bottomRowScreen.bottomRowTextStyle
                 ),
+                SizedBox(height: 60,),
               ],
             ),
           ),
@@ -258,3 +254,4 @@ class _LastPageState extends State<LastPage> {
     );
   }
 }
+
