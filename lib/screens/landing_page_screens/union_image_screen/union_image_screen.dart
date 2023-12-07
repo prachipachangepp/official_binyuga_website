@@ -48,9 +48,13 @@ class UnionImageScreen extends StatelessWidget {
              Positioned(
               top: 400,
               right: 100,
-              child: Text(
-                 AppString.unionTxt1,
-                  style: UnionTxtScreen1.union1TextStyle
+              child: Row(
+                children: [
+                  Text(
+                     AppString.unionTxt1,
+                      style: UnionTxtScreen1.union1TextStyle
+                  ),
+                ],
               ),
             ),
              Positioned(
