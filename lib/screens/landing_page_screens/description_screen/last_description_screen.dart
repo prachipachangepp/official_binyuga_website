@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
+import '../../../presentation/theme_manager.dart';
+import '../../../presentation/value_manager.dart';
 
 
 
@@ -23,14 +24,14 @@ class _LastPageState extends State<LastPage> {
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: 12),
+                padding: const EdgeInsets.only(top:12,),
                 child: Image.asset(
                   "images/binyuga_logo.png",
                 ),
               ),
               Spacer(),
               Padding(
-                padding: const EdgeInsets.only( right: 40),
+                padding: const EdgeInsets.only( right:40,),
                 child: Image.asset(
                   "images/search.png",
                 ),
@@ -39,62 +40,38 @@ class _LastPageState extends State<LastPage> {
             ],
           ),
           SizedBox(width: 15),
-           Row(
+          Row(
             children: [
               ///who we are
               Padding(
-                padding: EdgeInsets.only(left: 100,top: 30,),
+                padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/50,top:MediaQuery.of(context).size.width/50,),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      AppString.whoWeAre,
-                      style: TextStyle(
-                         color: ColorManager.white,
-                        // color:Colors.white,
-                        fontFamily: FontConstants.fontFamily1,
-                        fontWeight: FontWeightManager.extraBold,
-                        fontSize: 20,
-                      ),
+                        AppString.whoWeAre,
+                        style: LastDescriptionScreen.rowTextStyle
                     ),
-                    SizedBox(height:15),
-                        Text(
-                          AppString.aboutUs,
-                          style: TextStyle(
-                            color: ColorManager.white,
-                            fontFamily: FontConstants.fontFamily1,
-                            fontWeight: FontWeightManager.regular,
-                             fontSize: 15,
-
-
-                          ),),
-                    SizedBox(height: 15),
+                    SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.teamProfiles,
-                      style: TextStyle(
-                        color: ColorManager.white,
-                        fontFamily: FontConstants.fontFamily1,
-                        fontWeight: FontWeightManager.regular,
-                        fontSize: 15,
-
-                      ),
+                        AppString.aboutUs,
+                        style: LastColumnScreen.columnTextStyle
+                    ),
+                    SizedBox(height: AppSize.s15, ),
+                    Text(
+                        AppString.teamProfiles,
+                        style: LastColumnScreen.columnTextStyle
                     ),
                     SizedBox(height: 15),
                     Text(
-                      AppString.clientTestimonials,
-                       style: TextStyle(
-                        color: ColorManager.white,
-                         fontFamily: FontConstants.fontFamily1,
-                         fontWeight: FontWeightManager.regular,
-                        fontSize: 15,
-
-                      ),
+                        AppString.clientTestimonials,
+                        style: LastColumnScreen.columnTextStyle
                     ),
-                    SizedBox(height: 15),
+                    SizedBox(height: AppSize.s15,),
                   ],
                 ),
               ),
-              SizedBox(width: 80,),
+              SizedBox(width:  MediaQuery.of(context).size.width/60,),
               ///what we do
               Padding(
                 padding: EdgeInsets.only(top: 30,left: 100),
@@ -104,72 +81,41 @@ class _LastPageState extends State<LastPage> {
                     Padding(
                       padding: EdgeInsets.only(top:60),
                       child: Text(
-                        AppString.whatWeDo,
-                        style: TextStyle(
-                          color: ColorManager.white,
-                          fontFamily: FontConstants.fontFamily1,
-                          fontWeight: FontWeightManager.extraBold,
-                          fontSize: 20,
-                        ),
+                          AppString.whatWeDo,
+                          style: LastDescriptionScreen.rowTextStyle
                       ),
                     ),
-                    SizedBox(height: 15),
+                    SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.softwareDevelopment,
-                      style: TextStyle(
-                        color: ColorManager.white,
-                        fontFamily: FontConstants.fontFamily1,
-                        fontWeight: FontWeightManager.regular,
-                        fontSize: 15,
-                      ),
+                        AppString.softwareDevelopment,
+                        style: LastColumnScreen.columnTextStyle
                     ),
-                    SizedBox(height: 15),
+                    SizedBox(height:  AppSize.s15,),
                     Text(
-                      AppString.applicationDevelopment,
-                      style: TextStyle(
-                        color: ColorManager.white,
-                        fontFamily: FontConstants.fontFamily1,
-                        fontWeight: FontWeightManager.regular,
-                        fontSize: 15,
-                      ),
+                        AppString.applicationDevelopment,
+                        style: LastColumnScreen.columnTextStyle
                     ),
-                    SizedBox(height: 15),
+                    SizedBox(height:  AppSize.s15,),
                     Text(
-                      AppString.webDevelopment,
-                      style: TextStyle(
-                        color: ColorManager.white,
-                        fontFamily: FontConstants.fontFamily1,
-                        fontWeight: FontWeightManager.regular,
-                        fontSize: 15,
-                      ),
+                        AppString.webDevelopment,
+                        style: LastColumnScreen.columnTextStyle
                     ),
-                    SizedBox(height: 15),
+                    SizedBox(height:  AppSize.s15,),
                     Text(
-                      AppString.uiUxDesigning,
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        color: ColorManager.white,
-                        fontFamily: FontConstants.fontFamily1,
-                        fontWeight: FontWeightManager.regular,
-                        fontSize: 15,
-
-                      ),
+                        AppString.uiUxDesigning,
+                        textAlign: TextAlign.left,
+                        style: LastColumnScreen.columnTextStyle
                     ),
-                    SizedBox(height: 15),
+                    SizedBox(height:AppSize.s15, ),
                     Text(
-                      AppString.careerMonitoring,
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        color: ColorManager.white,
-                        fontFamily: FontConstants.fontFamily1,
-                        fontWeight: FontWeightManager.regular,
-                        fontSize: 15,
-                      ),
+                        AppString.careerMonitoring,
+                        textAlign: TextAlign.left,
+                        style: LastColumnScreen.columnTextStyle
                     ),
                   ],
                 ),
               ),
-              SizedBox(width: 80,),
+              SizedBox(width: MediaQuery.of(context).size.width/60,),
               ///career
               Padding(
                 padding: EdgeInsets.only(left:100,top: 30),
@@ -179,89 +125,49 @@ class _LastPageState extends State<LastPage> {
                     Padding(
                       padding: EdgeInsets.only(top: 120),
                       child: Text(
-                        AppString.careerC,
-                        style: TextStyle(
-                          color: ColorManager.white,
-                          fontFamily: FontConstants.fontFamily1,
-                          fontWeight: FontWeightManager.extraBold,
-                          fontSize: 20,
-                        ),
+                          AppString.careerC,
+                          style: LastDescriptionScreen.rowTextStyle
                       ),
                     ),
-                    SizedBox(height: 15),
+                    SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.hybridApplicationDeveloper,
-                      style: TextStyle(
-                        color: ColorManager.white,
-                        fontFamily: FontConstants.fontFamily1,
-                        fontWeight: FontWeightManager.regular,
-                        fontSize: 15,
-                      ),
+                        AppString.hybridApplicationDeveloper,
+                        style: LastColumnScreen.columnTextStyle
                     ),
-                    SizedBox(height: 15),
+                    SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.uIUxDesigning,
-                      style: TextStyle(
-                        color: ColorManager.white,
-                        fontFamily: FontConstants.fontFamily1,
-                        fontWeight: FontWeightManager.regular,
-                        fontSize: 15,
-                      ),
+                        AppString.uIUxDesigning,
+                        style: LastColumnScreen.columnTextStyle
                     ),
-                    SizedBox(height: 15),
+                    SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.uiUxDevelopment,
-                      style: TextStyle(
-                        color: ColorManager.white,
-                        fontFamily: FontConstants.fontFamily1,
-                        fontWeight: FontWeightManager.regular,
-                        fontSize: 15,
-                      ),
+                        AppString.uiUxDevelopment,
+                        style: LastColumnScreen.columnTextStyle
                     ),
-                    SizedBox(height: 15),
+                    SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.backendDevelopment,
-                      style: TextStyle(
-                        color: ColorManager.white,
-                        fontFamily: FontConstants.fontFamily1,
-                        fontWeight: FontWeightManager.regular,
-                        fontSize: 15,
-                      ),
+                        AppString.backendDevelopment,
+                        style: LastColumnScreen.columnTextStyle
                     ),
-                    SizedBox(height: 15),
+                    SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.fullStackDevelopment,
-                      style: TextStyle(
-                        color: ColorManager.white,
-                        fontFamily: FontConstants.fontFamily1,
-                        fontWeight: FontWeightManager.regular,
-                        fontSize: 15,
-                      ),
+                        AppString.fullStackDevelopment,
+                        style: LastColumnScreen.columnTextStyle
                     ),
-                    SizedBox(height: 15),
+                    SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.softwareTesting,
-                      style: TextStyle(
-                        color: ColorManager.white,
-                        fontFamily: FontConstants.fontFamily1,
-                        fontWeight: FontWeightManager.regular,
-                        fontSize: 15,
-                      ),
+                        AppString.softwareTesting,
+                        style: LastColumnScreen.columnTextStyle
                     ),
-                    SizedBox(height: 15),
+                    SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.programmingLanguage,
-                      style: TextStyle(
-                        color: ColorManager.white,
-                        fontFamily: FontConstants.fontFamily1,
-                        fontWeight: FontWeightManager.regular,
-                        fontSize: 15,
-                      ),
+                        AppString.programmingLanguage,
+                        style: LastColumnScreen.columnTextStyle
                     ),
                   ],
                 ),
               ),
-              SizedBox(width: 80,),
+              SizedBox(width:  MediaQuery.of(context).size.width/60,),
               ///features
               Padding(
                 padding: EdgeInsets.only(left:120,top:30,right: 50),
@@ -271,134 +177,75 @@ class _LastPageState extends State<LastPage> {
                     Padding(
                       padding: EdgeInsets.only(top: 100),
                       child: Text(
-                        AppString.featuresF,
-                        style: TextStyle(
-                          color: ColorManager.white,
-                          fontFamily: FontConstants.fontFamily1,
-                          fontWeight: FontWeightManager.extraBold,
-                          fontSize: 20,
-                        ),
+                          AppString.featuresF,
+                          style: LastDescriptionScreen.rowTextStyle
                       ),
                     ),
-                    SizedBox(height: 15),
+                    SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.tailoredProducts,
-                      style: TextStyle(
-                        color: ColorManager.white,
-                        fontFamily: FontConstants.fontFamily1,
-                        fontWeight: FontWeightManager.regular,
-                        fontSize: 15,
-                      ),
+                        AppString.tailoredProducts,
+                        style: LastColumnScreen.columnTextStyle
                     ),
-                    SizedBox(height: 15),
+                    SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.costEffectiveness,
-                      style: TextStyle(
-                        color: ColorManager.white,
-                        fontFamily: FontConstants.fontFamily1,
-                        fontWeight: FontWeightManager.regular,
-                        fontSize: 15,
-                      ),
+                        AppString.costEffectiveness,
+                        style: LastColumnScreen.columnTextStyle
                     ),
-                    SizedBox(height: 15),
+                    SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.intuitiveUserCenterDesign,
-                      style: TextStyle(
-                        color: ColorManager.white,
-                        fontFamily: FontConstants.fontFamily1,
-                        fontWeight: FontWeightManager.regular,
-                        fontSize: 15,
-                      ),
+                        AppString.intuitiveUserCenterDesign,
+                        style: LastColumnScreen.columnTextStyle
                     ),
-                    SizedBox(height: 15),
+                    SizedBox(height:AppSize.s15,),
                     Text(
-                      AppString.problemSolving,
-                      style: TextStyle(
-                        color: ColorManager.white,
-                        fontFamily: FontConstants.fontFamily1,
-                        fontWeight: FontWeightManager.regular,
-                        fontSize: 15,
-                      ),
+                        AppString.problemSolving,
+                        style: LastColumnScreen.columnTextStyle
                     ),
-                    SizedBox(height: 15),
+                    SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.roughToughSoftware,
-                      style: TextStyle(
-                        color: ColorManager.white,
-                        fontFamily: FontConstants.fontFamily1,
-                        fontWeight: FontWeightManager.regular,
-                        fontSize: 15,
-                      ),
+                        AppString.roughToughSoftware,
+                        style: LastColumnScreen.columnTextStyle
                     ),
-                    SizedBox(height: 15),
+                    SizedBox(height: AppSize.s15,),
                     Text(
-                      AppString.innovativeProjects,
-                      style: TextStyle(
-                        color: ColorManager.white,
-                        fontFamily: FontConstants.fontFamily1,
-                        fontWeight: FontWeightManager.regular,
-                        fontSize: 15,
-                      ),
+                        AppString.innovativeProjects,
+                        style: LastColumnScreen.columnTextStyle
                     ),
                   ],
                 ),
               ),
             ],
           ),
-          SizedBox(height:130,),
+          SizedBox(height:50),
           ///bottom row
           Padding(
-            padding: const EdgeInsets.only(left: 120),
+            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/20,),
             child: Row(
               children: [
                 Text(AppString.privacyNotice,
-                  style: TextStyle(
-                    color: ColorManager.white,
-                    fontFamily: FontConstants.fontFamily1,
-                    fontWeight: FontWeightManager.regular,
-                    fontSize: 12,
-                  ),
+                    style: bottomRowScreen.bottomRowTextStyle
                 ),
-                SizedBox(width: 60,),
+                SizedBox(width: AppSize.s60,),
                 Text(AppString.cookiePolicy,
-                  style: TextStyle(
-                    color: ColorManager.white,
-                    fontFamily: FontConstants.fontFamily1,
-                    fontWeight: FontWeightManager.regular,
-                    fontSize: 12,
-                  ),),
-                SizedBox(width: 40,),
+                    style: bottomRowScreen.bottomRowTextStyle
+                ),
+                SizedBox(width: AppSize.s40,),
                 Text(AppString.disclaimer,
-                  style: TextStyle(
-                    color: ColorManager.white,
-                    fontFamily:FontConstants.fontFamily1,
-                    fontWeight: FontWeightManager.regular,
-                    fontSize: 12,
-                  ),),
-                SizedBox(width: 60,),
+                    style: bottomRowScreen.bottomRowTextStyle
+                ),
+                SizedBox(width: AppSize.s60,),
                 Text(AppString.securityPolicy,
-                  style: TextStyle(
-                    color: ColorManager.white,
-                    fontFamily: FontConstants.fontFamily1,
-                    fontWeight: FontWeightManager.regular,
-                    fontSize: 12,
-                  ),),
-                SizedBox(width: 60,),
+                    style: bottomRowScreen.bottomRowTextStyle
+                ),
+                SizedBox(width: AppSize.s60,),
                 Text(AppString.californiaNoticeAtCollection,
-                  style: TextStyle(
-                    color: ColorManager.white,
-                    fontFamily: FontConstants.fontFamily1,
-                    fontWeight: FontWeightManager.regular,
-                    fontSize: 12,
-                  ),),
-                SizedBox(width: 60,),
+                    style: bottomRowScreen.bottomRowTextStyle
+                ),
+                SizedBox(width: AppSize.s60,),
                 Text(AppString.customizeCookies,
-                  style: TextStyle(
-                    color: ColorManager.white,
-                    fontFamily: FontConstants.fontFamily1,
-                    fontWeight: FontWeightManager.regular,
-                    fontSize: 12,
-                  ),),
+                    style: bottomRowScreen.bottomRowTextStyle
+                ),
+                SizedBox(height: 60,),
               ],
             ),
           ),
@@ -407,3 +254,4 @@ class _LastPageState extends State<LastPage> {
     );
   }
 }
+
