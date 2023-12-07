@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
+import '../../../presentation/theme_manager.dart';
 
 class AboutUs extends StatefulWidget {
   const AboutUs({super.key});
@@ -24,12 +25,12 @@ class _AboutUsState extends State<AboutUs> {
                 Padding(
                   padding: EdgeInsets.only(top:40,right: 200),
                   child: Text(AppString.aboutUs1,
-                    style: TextStyle(
-                      fontSize: 70.0,
-                      color: ColorManager.darkBlue,
-                      fontWeight: FontWeightManager.extraBold,
-                      fontFamily: FontConstants.fontFamily1,
-                    ),),
+                    style: AllScreensConstant.customTextStyle(
+                        FontSize.s70,
+                        FontWeightManager.extraBold,
+                        ColorManager.darkBlue
+                      )
+                   ),
                 ),
               ],
             ),
@@ -37,12 +38,11 @@ class _AboutUsState extends State<AboutUs> {
             Text(
               AppString.everyYear,
               textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 38.0,
-                fontWeight: FontWeightManager.bold,
-                color: ColorManager.black,
-                fontFamily: FontConstants.fontFamily1,
-              ),
+                style:AllScreensConstant.customTextStyle(
+                    MediaQuery.of(context).size.width/38,
+                    FontWeightManager.bold,
+                    ColorManager.black)
+
             ),
             SizedBox(height: 60,),
             Row(
@@ -65,12 +65,10 @@ class _AboutUsState extends State<AboutUs> {
                       Text(
                         AppString.successfullyProject,
                         textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: MediaQuery.of(context).size.width/58,
-                          fontWeight: FontWeightManager.medium,
-                          fontFamily: FontConstants.fontFamily1,
-                          color: ColorManager.black,
-                        ),
+                          style:AllScreensConstant.customTextStyle(
+                              MediaQuery.of(context).size.width/58,
+                              FontWeightManager.medium,
+                              ColorManager.black)
                       ),
                     ],
                   ),
@@ -99,12 +97,11 @@ class _AboutUsState extends State<AboutUs> {
                         child: Text(
                           AppString.revenueGrowth,
                           textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: MediaQuery.of(context).size.width/58,
-                            fontFamily: FontConstants.fontFamily1,
-                            color: ColorManager.black,
-                            fontWeight: FontWeightManager.medium,
-                           ),
+                            style:AllScreensConstant.customTextStyle(
+                                MediaQuery.of(context).size.width/58,
+                                FontWeightManager.medium,
+                                ColorManager.black)
+
 
                         ),
                       ),
@@ -129,13 +126,11 @@ class _AboutUsState extends State<AboutUs> {
                       Text(
                         AppString.trainingDays,
                         textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: MediaQuery.of(context).size.width/58,
-                          fontFamily: FontConstants.fontFamily1,
-                          color: ColorManager.black,
-                          fontWeight: FontWeightManager.medium,
+                          style:AllScreensConstant.customTextStyle(
+                              MediaQuery.of(context).size.width/58,
+                              FontWeightManager.medium,
+                              ColorManager.black)
 
-                        ),
                       ),
                     ],
                   ),

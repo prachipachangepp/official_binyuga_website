@@ -40,28 +40,6 @@ class AllScreensConstant {
     );
   }
 }
-/// about us
- class AboutUsConstant{
-   static TextStyle aboutTextStyle = GoogleFonts.inter(
-     //textStyle: TextStyle(
-     fontSize: 70.0,
-       fontWeight: FontWeightManager.extraBold,
-       color: ColorManager.darkBlue
-     //)
-   );
- }
-
- ///Team member
-
-class TeamMemberConstant{
-  static TextStyle nameTextStyle = GoogleFonts.inter(
-    //textStyle: TextStyle(
-      fontWeight: FontWeightManager.medium,
-      color: ColorManager.black
-    //)
-  );
-}
-
 /// last DescriptionScreen
 class LastDescriptionScreen {
   static TextStyle rowTextStyle = GoogleFonts.inter(
@@ -95,7 +73,7 @@ class bottomRowScreen {
     //)
   );
 }
-
+///Union imageScreen
 class UnionTxtScreen1 {
   static TextStyle union1TextStyle = GoogleFonts.inter(
     //textStyle: TextStyle(
@@ -119,4 +97,22 @@ class UnionTxtScreen2 {
     //)
   );
 }
-
+///AboutUs Screen
+class AboutUsConstant{
+  static TextStyle aboutTextStyle = GoogleFonts.inter(
+    //textStyle: TextStyle(
+      fontWeight: FontWeightManager.medium,
+      fontSize: FontSize.s58,
+      color: ColorManager.black
+    //)
+  );
+}
+/// TeamMember Screen
+class TeamMemberConstant{
+  static TextStyle nameTextStyle = GoogleFonts.inter(
+    //textStyle: TextStyle(
+      fontWeight: FontWeightManager.medium,
+      color: ColorManager.black
+    //)
+  );
+}
