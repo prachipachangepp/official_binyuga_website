@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
+import '../../../presentation/theme_manager.dart';
 
 class UnionImageScreen extends StatelessWidget {
   const UnionImageScreen({super.key});
@@ -49,11 +50,7 @@ class UnionImageScreen extends StatelessWidget {
               right: 100,
               child: Text(
                  AppString.unionTxt1,
-                style: TextStyle(
-                  color: ColorManager.white,
-                  fontSize: 25,
-                  fontWeight: FontWeightManager.medium,
-                ),
+                  style: UnionTxtScreen1.union1TextStyle
               ),
             ),
              Positioned(
@@ -61,11 +58,7 @@ class UnionImageScreen extends StatelessWidget {
               right: 140,
               child: Text(
                   AppString.unionTxt2,
-                style: TextStyle(
-                  color: ColorManager.blueShade,
-                  fontSize: 37,
-                  fontWeight: FontWeightManager.medium,
-                ),
+                  style: UnionTxtScreen2.union2TextStyle
               ),
             ),
             Positioned(
@@ -93,11 +86,7 @@ class UnionImageScreen extends StatelessWidget {
               left: 100,
               child: Text(
                 AppString.unionTxt3,
-                style: TextStyle(
-                  fontSize: 25,
-                  color: ColorManager.white,
-                  fontWeight: FontWeightManager.medium,
-                ),
+                  style: UnionTxtScreen1.union1TextStyle
               ),
             ),
           ],
