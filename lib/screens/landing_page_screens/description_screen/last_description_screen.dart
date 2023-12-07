@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
@@ -25,20 +24,16 @@ class _LastPageState extends State<LastPage> {
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: 12),
-                child: Positioned(
-                  child: Image.asset(
-                    "images/binyuga_logo.png",
-                  ),
+                padding: const EdgeInsets.only(top:12,),
+                child: Image.asset(
+                  "images/binyuga_logo.png",
                 ),
               ),
               Spacer(),
               Padding(
-                padding: const EdgeInsets.only( right: 40),
-                child: Positioned(
-                  child: Image.asset(
-                    "images/search.png",
-                  ),
+                padding: const EdgeInsets.only( right:40,),
+                child: Image.asset(
+                  "images/search.png",
                 ),
               ),
 
@@ -49,7 +44,7 @@ class _LastPageState extends State<LastPage> {
             children: [
               ///who we are
               Padding(
-                padding: EdgeInsets.only(left: 100,top: 30,),
+                padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/50,top:MediaQuery.of(context).size.width/50,),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -76,7 +71,7 @@ class _LastPageState extends State<LastPage> {
                   ],
                 ),
               ),
-              SizedBox(width:  AppSize.s80,),
+              SizedBox(width:  MediaQuery.of(context).size.width/60,),
               ///what we do
               Padding(
                 padding: EdgeInsets.only(top: 30,left: 100),
@@ -120,7 +115,7 @@ class _LastPageState extends State<LastPage> {
                   ],
                 ),
               ),
-              SizedBox(width: AppSize.s80,),
+              SizedBox(width: MediaQuery.of(context).size.width/60,),
               ///career
               Padding(
                 padding: EdgeInsets.only(left:100,top: 30),
@@ -172,7 +167,7 @@ class _LastPageState extends State<LastPage> {
                   ],
                 ),
               ),
-              SizedBox(width: AppSize.s80,),
+              SizedBox(width:  MediaQuery.of(context).size.width/60,),
               ///features
               Padding(
                 padding: EdgeInsets.only(left:120,top:30,right: 50),
@@ -221,10 +216,10 @@ class _LastPageState extends State<LastPage> {
               ),
             ],
           ),
-          SizedBox(height:AppSize.s130,),
+          SizedBox(height:50),
           ///bottom row
           Padding(
-            padding: const EdgeInsets.only(left: 120),
+            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/20,),
             child: Row(
               children: [
                 Text(AppString.privacyNotice,
@@ -250,6 +245,7 @@ class _LastPageState extends State<LastPage> {
                 Text(AppString.customizeCookies,
                     style: bottomRowScreen.bottomRowTextStyle
                 ),
+                SizedBox(height: 60,),
               ],
             ),
           ),
@@ -258,3 +254,4 @@ class _LastPageState extends State<LastPage> {
     );
   }
 }
+

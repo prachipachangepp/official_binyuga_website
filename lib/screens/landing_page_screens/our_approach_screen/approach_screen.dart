@@ -18,7 +18,7 @@ class ApprochScreen extends StatelessWidget {
                 Row(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.only(left: 200),
                       child: Text(AppString.ourApproach,
                           style: GoogleFonts.inter(textStyle: TextStyle(
                               fontWeight: FontWeightManager.bold,
@@ -31,7 +31,7 @@ class ApprochScreen extends StatelessWidget {
                 Row(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.only(left: 100),
                       child: Image.asset("images/inverted_start.png",width: MediaQuery.of(context).size.width/20),
                     ),
                   ],
@@ -55,8 +55,11 @@ class ApprochScreen extends StatelessWidget {
                     ),],
                 ),
                 SizedBox(height: 20,),
-                Image.asset("images/inverted_end.png",
-                  width: MediaQuery.of(context).size.width/20,),
+                Padding(
+                  padding: const EdgeInsets.only(left:500),
+                  child: Image.asset("images/inverted_end.png",
+                    width: MediaQuery.of(context).size.width/20,),
+                ),
                 SizedBox(height: 40,),
               ],
             ),
