@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:official_binyuga_website/screens/home_page.dart';
 import 'package:official_binyuga_website/screens/landing_page_screens/landing_page_screen.dart';
 
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(primarySwatch: Colors.blue, fontFamily: "Montserrat"),
-      home: MyStackPage(),
+      home: HomePage(),
     );
   }
 }
