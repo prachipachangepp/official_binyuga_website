@@ -10,7 +10,7 @@ class HomeScreen {
   static TextStyle sidebarTextStyle = GoogleFonts.inter(
       //textStyle: TextStyle(
   fontWeight: FontWeightManager.medium,
-  fontSize: FontSize.s17,
+  fontSize: FontSize.s15,
   letterSpacing: -0.011,
   color: ColorManager.white
   //)
@@ -23,7 +23,7 @@ class RButtonTheme{
   static TextStyle roundedButtonTextStyle = GoogleFonts.inter(
   //textStyle: TextStyle(
   fontWeight: FontWeightManager.semiBold,
-  fontSize: AppSize.s15,
+  fontSize: FontSize.s15,
   letterSpacing: -0.011,
   color: ColorManager.black);
 }
@@ -42,36 +42,48 @@ class AllScreensConstant {
 }
 /// last DescriptionScreen
 class LastDescriptionScreen {
-  static TextStyle rowTextStyle = GoogleFonts.inter(
-    //textStyle: TextStyle(
-      fontWeight: FontWeightManager.extraBold,
-      fontSize: FontSize.s20,
-      letterSpacing: -0.011,
-      color: ColorManager.white
-    //)
-  );
+  static double getHeadingFontSize(BuildContext context) {
+    return MediaQuery.of(context).size.width / 80;
+  }
+  static TextStyle rowTextStyle(BuildContext context){
+   return GoogleFonts.inter(
+      //textStyle: TextStyle(
+        fontWeight: FontWeightManager.extraBold,
+        fontSize: getHeadingFontSize(context),
+        letterSpacing: -0.011,
+        color: ColorManager.white
+    );
+  }
 }
 
 class LastColumnScreen {
-  static TextStyle columnTextStyle = GoogleFonts.inter(
-    //textStyle: TextStyle(
+  static double getFontSize(BuildContext context) {
+    return MediaQuery.of(context).size.width / 100;
+  }
+
+  static TextStyle columnTextStyle(BuildContext context) {
+    return GoogleFonts.inter(
       fontWeight: FontWeightManager.regular,
-      fontSize: FontSize.s15,
+      fontSize: getFontSize(context),
       letterSpacing: -0.011,
-      color: ColorManager.white
-    //)
-  );
+      color: ColorManager.white,
+    );
+  }
 }
 
-class bottomRowScreen {
-  static TextStyle bottomRowTextStyle = GoogleFonts.inter(
-    //textStyle: TextStyle(
-      fontWeight: FontWeightManager.regular,
-      fontSize: FontSize.s12,
-      letterSpacing: -0.011,
-      color: ColorManager.white
-    //)
-  );
+
+class BottomRowScreen {
+  static double getNewFontSize(BuildContext context) {
+    return MediaQuery.of(context).size.width / 120;
+  }
+  static TextStyle bottomRowTextStyle(BuildContext context) {
+    return GoogleFonts.inter(
+        fontWeight: FontWeightManager.regular,
+        fontSize: getNewFontSize(context),
+        letterSpacing: -0.011,
+        color: ColorManager.white
+    );
+  }
 }
 ///Union imageScreen
 class UnionTxtScreen1 {
@@ -101,9 +113,9 @@ class UnionTxtScreen2 {
 class AboutUsConstant{
   static TextStyle aboutTextStyle = GoogleFonts.inter(
     //textStyle: TextStyle(
-      fontSize: 70.0,
-      fontWeight: FontWeightManager.extraBold,
-      color: ColorManager.darkBlue
+      fontWeight: FontWeightManager.medium,
+      fontSize: FontSize.s58,
+      color: ColorManager.black
     //)
   );
 }
