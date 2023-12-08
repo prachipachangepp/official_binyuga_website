@@ -37,10 +37,8 @@ class StartHomeScreen extends StatelessWidget {
                   //alignment: Alignment.bottomLeft,
                 ),
               ),
-
-
               Padding(
-                padding:  EdgeInsets.only(top: 150.0,left: MediaQuery.of(context).size.width/40),
+                padding:  EdgeInsets.only(top: AppPadding.p150,left: MediaQuery.of(context).size.width/40),
                 child: Row(
                   children: [
                     ///sidebar
@@ -158,6 +156,7 @@ class StartHomeScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: AppSize.s20,),
+              ///side 3 icons
               Padding(
                 padding:  EdgeInsets.only(top: AppPadding.p650,right: MediaQuery.of(context).size.width/40),
                 child: Row(
@@ -170,12 +169,9 @@ class StartHomeScreen extends StatelessWidget {
                           color: ColorManager.lightBlue,
                           size: MediaQuery.of(context).size.width/30,),
                         SizedBox(height: AppSize.s20,),
-                        Transform.scale(
-                          scale: 1, /// Keep the original width
-                          child: Icon(Icons.pause,
-                            color: ColorManager.lightBlue,
-                            size: MediaQuery.of(context).size.width/40, // Original size
-                          ),
+                        Icon(Icons.pause,
+                          color: ColorManager.lightBlue,
+                          size: MediaQuery.of(context).size.width/40, // Original size
                         ),
                         SizedBox(height: AppSize.s20,),
                         Icon(Icons.keyboard_arrow_left,
@@ -186,59 +182,48 @@ class StartHomeScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              ///top appbar
+              /// Binyuga logo
              Container(
                 color: Colors.transparent,
                 width: MediaQuery.of(context).size.width,
                 child: Row(
                   children: [
-                    /// Binyuga logo
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.only(top: MediaQuery.of(context).size.height / 40),
-                          child: Image.asset(
-                            'images/binyuga_logo.png',
-                          ),
-                        ),
-                      ],
+                    Padding(
+                      padding: EdgeInsets.only(top: MediaQuery.of(context).size.height / 40),
+                      child: Image.asset(
+                        'images/binyuga_logo.png',
+                      ),
                     ),
-                    SizedBox(width: MediaQuery.of(context).size.width / 1.6),
-                    /// Contact us, search
-                    Expanded(
-                      child: Column(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.only(top: MediaQuery.of(context).size.width / 100),
-                            child: Row(
-                              children: <Widget>[
-                                /// Contact us
-                                Text(
-                                  AppString.contactUs,
-                                  style: TextStyle(
-                                    color: ColorManager.white,
-                                    fontSize: MediaQuery.of(context).size.width / 70,
-                                  ),
-                                ),
-                                SizedBox(width: MediaQuery.of(context).size.width / 22),
-                                Image.asset(
-                                  'images/toggle_bg.png',
-                                  height: MediaQuery.of(context).size.height / 18,
-                                  width: MediaQuery.of(context).size.width / 18,
-                                ),
-                                SizedBox(width: MediaQuery.of(context).size.width / 50),
-                                Padding(
-                                  padding: EdgeInsets.only(right: MediaQuery.of(context).size.width / 80),
-                                  child: Image.asset(
-                                    'images/search.png',
-                                    width: MediaQuery.of(context).size.width / 25,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
+                    //SizedBox(width: MediaQuery.of(context).size.width / 1.6),
+                  ],
+                ),
+              ),
+              /// Contact us, search
+              Padding(
+                padding: EdgeInsets.only(top: MediaQuery.of(context).size.width / 100),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    /// Contact us
+                    Text(
+                      AppString.contactUs,
+                      style: TextStyle(
+                        color: ColorManager.white,
+                        fontSize: MediaQuery.of(context).size.width / 70,
+                      ),
+                    ),
+                    SizedBox(width: MediaQuery.of(context).size.width / 22),
+                    Image.asset(
+                      'images/toggle_bg.png',
+                      height: MediaQuery.of(context).size.height / 18,
+                      width: MediaQuery.of(context).size.width / 18,
+                    ),
+                    SizedBox(width: MediaQuery.of(context).size.width / 50),
+                    Padding(
+                      padding: EdgeInsets.only(right: MediaQuery.of(context).size.width / 80),
+                      child: Image.asset(
+                        'images/search.png',
+                        width: MediaQuery.of(context).size.width / 25,
                       ),
                     ),
                   ],
