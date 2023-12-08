@@ -29,11 +29,11 @@ class MyStackPage extends StatelessWidget {
                 color: Colors.red,
                 child: ApprochScreen(),
               ),
-              Container(
-                height: 2200,
-                color: Colors.grey,
-                child: UnionImageScreen(),
-              ),
+              // Container(
+              //   height: 2200,
+              //   color: Colors.grey,
+              //   child: UnionImageScreen(),
+              // ),
               Container(
                 height: 720,
                 child: AboutUs(),
