@@ -50,22 +50,22 @@ class _LastPageState extends State<LastPage> {
                   children: [
                     Text(
                         AppString.whoWeAre,
-                        style: LastDescriptionScreen.rowTextStyle
+                        style: LastDescriptionScreen.rowTextStyle(context)
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
                         AppString.aboutUs,
-                        style: LastColumnScreen.columnTextStyle
+                        style: LastColumnScreen.columnTextStyle(context),
                     ),
                     SizedBox(height: AppSize.s15, ),
                     Text(
                         AppString.teamProfiles,
-                        style: LastColumnScreen.columnTextStyle
+                        style: LastColumnScreen.columnTextStyle(context),
                     ),
                     SizedBox(height: 15),
                     Text(
                         AppString.clientTestimonials,
-                        style: LastColumnScreen.columnTextStyle
+                        style: LastColumnScreen.columnTextStyle(context),
                     ),
                     SizedBox(height: AppSize.s15,),
                   ],
@@ -82,35 +82,35 @@ class _LastPageState extends State<LastPage> {
                       padding: EdgeInsets.only(top:60),
                       child: Text(
                           AppString.whatWeDo,
-                          style: LastDescriptionScreen.rowTextStyle
+                          style: LastDescriptionScreen.rowTextStyle(context)
                       ),
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
                         AppString.softwareDevelopment,
-                        style: LastColumnScreen.columnTextStyle
+                        style: LastColumnScreen.columnTextStyle(context),
                     ),
                     SizedBox(height:  AppSize.s15,),
                     Text(
                         AppString.applicationDevelopment,
-                        style: LastColumnScreen.columnTextStyle
+                        style: LastColumnScreen.columnTextStyle(context),
                     ),
                     SizedBox(height:  AppSize.s15,),
                     Text(
                         AppString.webDevelopment,
-                        style: LastColumnScreen.columnTextStyle
+                        style: LastColumnScreen.columnTextStyle(context),
                     ),
                     SizedBox(height:  AppSize.s15,),
                     Text(
                         AppString.uiUxDesigning,
                         textAlign: TextAlign.left,
-                        style: LastColumnScreen.columnTextStyle
+                        style: LastColumnScreen.columnTextStyle(context),
                     ),
                     SizedBox(height:AppSize.s15, ),
                     Text(
                         AppString.careerMonitoring,
                         textAlign: TextAlign.left,
-                        style: LastColumnScreen.columnTextStyle
+                        style: LastColumnScreen.columnTextStyle(context),
                     ),
                   ],
                 ),
@@ -126,43 +126,43 @@ class _LastPageState extends State<LastPage> {
                       padding: EdgeInsets.only(top: 120),
                       child: Text(
                           AppString.careerC,
-                          style: LastDescriptionScreen.rowTextStyle
+                          style: LastDescriptionScreen.rowTextStyle(context)
                       ),
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
                         AppString.hybridApplicationDeveloper,
-                        style: LastColumnScreen.columnTextStyle
+                        style: LastColumnScreen.columnTextStyle(context),
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
                         AppString.uIUxDesigning,
-                        style: LastColumnScreen.columnTextStyle
+                        style: LastColumnScreen.columnTextStyle(context),
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
                         AppString.uiUxDevelopment,
-                        style: LastColumnScreen.columnTextStyle
+                        style:LastColumnScreen.columnTextStyle(context),
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
                         AppString.backendDevelopment,
-                        style: LastColumnScreen.columnTextStyle
+                        style: LastColumnScreen.columnTextStyle(context),
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
                         AppString.fullStackDevelopment,
-                        style: LastColumnScreen.columnTextStyle
+                        style: LastColumnScreen.columnTextStyle(context),
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
                         AppString.softwareTesting,
-                        style: LastColumnScreen.columnTextStyle
+                        style: LastColumnScreen.columnTextStyle(context),
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
                         AppString.programmingLanguage,
-                        style: LastColumnScreen.columnTextStyle
+                        style:LastColumnScreen.columnTextStyle(context),
                     ),
                   ],
                 ),
@@ -178,38 +178,38 @@ class _LastPageState extends State<LastPage> {
                       padding: EdgeInsets.only(top: 100),
                       child: Text(
                           AppString.featuresF,
-                          style: LastDescriptionScreen.rowTextStyle
+                          style: LastDescriptionScreen.rowTextStyle(context)
                       ),
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
                         AppString.tailoredProducts,
-                        style: LastColumnScreen.columnTextStyle
+                        style: LastColumnScreen.columnTextStyle(context),
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
                         AppString.costEffectiveness,
-                        style: LastColumnScreen.columnTextStyle
+                        style: LastColumnScreen.columnTextStyle(context),
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
                         AppString.intuitiveUserCenterDesign,
-                        style: LastColumnScreen.columnTextStyle
+                        style: LastColumnScreen.columnTextStyle(context),
                     ),
                     SizedBox(height:AppSize.s15,),
                     Text(
                         AppString.problemSolving,
-                        style: LastColumnScreen.columnTextStyle
+                        style: LastColumnScreen.columnTextStyle(context),
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
                         AppString.roughToughSoftware,
-                        style: LastColumnScreen.columnTextStyle
+                        style: LastColumnScreen.columnTextStyle(context),
                     ),
                     SizedBox(height: AppSize.s15,),
                     Text(
                         AppString.innovativeProjects,
-                        style: LastColumnScreen.columnTextStyle
+                        style: LastColumnScreen.columnTextStyle(context),
                     ),
                   ],
                 ),
@@ -223,27 +223,27 @@ class _LastPageState extends State<LastPage> {
             child: Row(
               children: [
                 Text(AppString.privacyNotice,
-                    style: bottomRowScreen.bottomRowTextStyle
+                    style: BottomRowScreen.bottomRowTextStyle(context)
                 ),
-                SizedBox(width: AppSize.s60,),
+                SizedBox(width: MediaQuery.of(context).size.width/25,),
                 Text(AppString.cookiePolicy,
-                    style: bottomRowScreen.bottomRowTextStyle
+                    style:BottomRowScreen.bottomRowTextStyle(context)
                 ),
-                SizedBox(width: AppSize.s40,),
+                SizedBox(width: MediaQuery.of(context).size.width/25,),
                 Text(AppString.disclaimer,
-                    style: bottomRowScreen.bottomRowTextStyle
+                    style: BottomRowScreen.bottomRowTextStyle(context)
                 ),
-                SizedBox(width: AppSize.s60,),
+                SizedBox(width: MediaQuery.of(context).size.width/25,),
                 Text(AppString.securityPolicy,
-                    style: bottomRowScreen.bottomRowTextStyle
+                    style:BottomRowScreen.bottomRowTextStyle(context)
                 ),
-                SizedBox(width: AppSize.s60,),
+                SizedBox(width: MediaQuery.of(context).size.width/25,),
                 Text(AppString.californiaNoticeAtCollection,
-                    style: bottomRowScreen.bottomRowTextStyle
+                    style: BottomRowScreen.bottomRowTextStyle(context)
                 ),
-                SizedBox(width: AppSize.s60,),
+                SizedBox(width:MediaQuery.of(context).size.width/25,),
                 Text(AppString.customizeCookies,
-                    style: bottomRowScreen.bottomRowTextStyle
+                    style: BottomRowScreen.bottomRowTextStyle(context)
                 ),
                 SizedBox(height: 60,),
               ],

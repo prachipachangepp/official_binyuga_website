@@ -266,17 +266,64 @@ Widget webBody() {
       // ),
     //  const AboutUsSection(),
 
-      ///todo for Prachi
+      Stack(
+        children: [
+          Column(
+            children: [
+              Row(
+                children: [
+                  Expanded(
+                      flex: 2,
+                      child: Container(child: StartHomeScreen())),
+                ],
+              ),
+              Row(
+                children: [
+                  Expanded(
+                      flex: 1,
+                      child: Container(child: ApprochScreen())),
+                ],
+              ),
+              // Row(
+              //   children: [
+              //     Expanded(
+              //         flex: 1,
+              //         child: Container(child: UnionImageScreen())),
+              //   ],
+              // ),
+              Row(
+                children: [
+                  Expanded(
+                      flex: 3,
+                      child: Container(child: AboutUs())),
+                ],
+              ),
+              Row(
+                children: [
+                  Expanded(
+                      flex: 3,
+                      child: Container(child: TeamMemberScreen())),
+                ],
+              ),
+              Row(
+                children: [
+                  Expanded(
+                      flex: 3,
+                      child: Container(child: LastPage())),
+                ],
+              ),
+              Row(
+                children: [
+                  Expanded(
+                      flex: 3,
+                      child: Container(child: BottomNavBarScreen())),
+                ],
+              ),
 
-      StartHomeScreen(),
-      ApprochScreen(),
-    //  UnionImageScreen(),
-      AboutUs(),
-      TeamMemberScreen(),
-      LastPage(),
-      BottomNavBarScreen()
-
-//      OurServicesSection(),
+            ],
+          ),
+        ],
+      )
 
       ///todo for Prachi
 
@@ -292,7 +339,7 @@ Widget webBody() {
     ];
 
     return ListView.builder(
-      shrinkWrap: true,
+        shrinkWrap: true,
         controller: _controller,
         itemCount: body.length,
         itemBuilder: (context, index) {
