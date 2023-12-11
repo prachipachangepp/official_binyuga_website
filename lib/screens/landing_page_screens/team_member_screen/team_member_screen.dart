@@ -55,7 +55,7 @@ class TeamMemberScreen extends StatelessWidget {
                     children: [
                       CircleAvatar(
                         backgroundColor: ColorManager.white1,
-                        radius: 140,
+                        radius: MediaQuery.of(context).size.width/12,
                       ),
                       SizedBox(
                         height: 10,
@@ -71,7 +71,7 @@ class TeamMemberScreen extends StatelessWidget {
                     children: [
                       CircleAvatar(
                         backgroundColor: ColorManager.white1,
-                        radius: 140,
+                        radius: MediaQuery.of(context).size.width/12,
                       ),
                       SizedBox(
                         height: 10,
@@ -87,7 +87,7 @@ class TeamMemberScreen extends StatelessWidget {
                     children: [
                       CircleAvatar(
                         backgroundColor: ColorManager.white1,
-                        radius: 140,
+                        radius: MediaQuery.of(context).size.width/12,
                       ),
                       SizedBox(
                         height: 10,
@@ -113,7 +113,7 @@ class TeamMemberScreen extends StatelessWidget {
                                 children: [
                                   CircleAvatar(
                                     backgroundColor: ColorManager.white1,
-                                    radius: 140,
+                                    radius: MediaQuery.of(context).size.width/12,
                                   ),
                                   SizedBox(
                                     height: 10,
@@ -129,7 +129,7 @@ class TeamMemberScreen extends StatelessWidget {
                                 children: [
                                   CircleAvatar(
                                     backgroundColor: ColorManager.white1,
-                                    radius: 140,
+                                    radius: MediaQuery.of(context).size.width/12,
                                   ),
                                   SizedBox(
                                     height: 10,

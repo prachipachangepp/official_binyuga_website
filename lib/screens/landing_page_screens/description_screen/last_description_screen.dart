@@ -39,12 +39,13 @@ class _LastPageState extends State<LastPage> {
 
             ],
           ),
-          SizedBox(width: 15),
+        //  SizedBox(width: 15),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ///who we are
               Padding(
-                padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/50,top:MediaQuery.of(context).size.width/50,),
+                padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/50,top:MediaQuery.of(context).size.height/50,),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -74,7 +75,7 @@ class _LastPageState extends State<LastPage> {
               SizedBox(width:  MediaQuery.of(context).size.width/60,),
               ///what we do
               Padding(
-                padding: EdgeInsets.only(top: 30,left: 100),
+                padding: EdgeInsets.only(top: 30,left: MediaQuery.of(context).size.width/50),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -118,7 +119,7 @@ class _LastPageState extends State<LastPage> {
               SizedBox(width: MediaQuery.of(context).size.width/60,),
               ///career
               Padding(
-                padding: EdgeInsets.only(left:100,top: 30),
+                padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/50,top: 30),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -170,7 +171,7 @@ class _LastPageState extends State<LastPage> {
               SizedBox(width:  MediaQuery.of(context).size.width/60,),
               ///features
               Padding(
-                padding: EdgeInsets.only(left:120,top:30,right: 50),
+                padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/40,top:30,right: 50),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [

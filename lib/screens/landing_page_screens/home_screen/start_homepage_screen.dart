@@ -6,6 +6,8 @@ import 'package:official_binyuga_website/presentation/string_manager.dart';
 import 'package:official_binyuga_website/presentation/theme_manager.dart';
 import 'package:official_binyuga_website/presentation/value_manager.dart';
 import 'package:official_binyuga_website/screens/common_screens/start-page_app_bar.dart';
+import 'package:official_binyuga_website/screens/what_we_do/what_we_do.dart';
+import 'package:official_binyuga_website/screens/what_we_do/what_we_do_start_screen.dart';
 
 import '../../common_screens/responsive_app_bar.dart';
 
@@ -48,7 +50,10 @@ class StartHomeScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           GestureDetector(
-                            onTap: (){},
+                            onTap: (){
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => WhatWeDoScreen()),);                            },
                             child: Text(
                                 AppString.whatWeAre,
                                 style: HomeScreen.sidebarTextStyle

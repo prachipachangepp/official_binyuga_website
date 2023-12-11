@@ -285,13 +285,13 @@ Widget webBody() {
                       child: Container(child: ApprochScreen())),
                 ],
               ),
-              // Row(
-              //   children: [
-              //     Expanded(
-              //         flex: 1,
-              //         child: Container(child: UnionImageScreen())),
-              //   ],
-              // ),
+              Row(
+                children: [
+                  Expanded(
+                      flex: 1,
+                      child: Container(child: UnionImageScreen())),
+                ],
+              ),
               Row(
                 children: [
                   Expanded(
@@ -326,17 +326,6 @@ Widget webBody() {
         ],
       )
 
-      ///todo for Prachi
-
-      // PortfolioSection(),
-
-      ///todo for Prachi
-
-      //WorkShopAndTrainingSection(),
-
-     // ContactUsSection(),
-
-      ///todo for Prachi
     ];
 
     return ListView.builder(

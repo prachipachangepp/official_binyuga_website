@@ -87,27 +87,36 @@ class BottomRowScreen {
 }
 ///Union imageScreen
 class UnionTxtScreen1 {
-  static TextStyle union1TextStyle = GoogleFonts.inter(
-    //textStyle: TextStyle(
-      fontWeight: FontWeightManager.medium,
-      fontSize: FontSize.s25,
-      letterSpacing: -0.011,
-      color: ColorManager.white
-    //)
-  );
+  static double getNewFont1Size(BuildContext context) {
+    return MediaQuery.of(context).size.width / 45;
+  }
+
+  static TextStyle union1TextStyle(BuildContext context) {
+    return GoogleFonts.inter(
+        fontWeight: FontWeightManager.medium,
+        fontSize: getNewFont1Size(context),
+        letterSpacing: -0.011,
+        color: ColorManager.white
+      //)
+    );
+  }
 }
 
-
-
 class UnionTxtScreen2 {
-  static TextStyle union2TextStyle = GoogleFonts.inter(
-    //textStyle: TextStyle(
-      fontWeight: FontWeightManager.medium,
-      fontSize: FontSize.s37,
-      letterSpacing: -0.011,
-      color: ColorManager.blueShade
-    //)
-  );
+  static double getNewFont2Size(BuildContext context) {
+    return MediaQuery.of(context).size.width / 32;
+  }
+
+  static TextStyle union2TextStyle(BuildContext context) {
+    return GoogleFonts.inter(
+      //textStyle: TextStyle(
+        fontWeight: FontWeightManager.medium,
+        fontSize: getNewFont2Size(context),
+        letterSpacing: -0.011,
+        color: ColorManager.blueShade
+      //)
+    );
+  }
 }
 ///AboutUs Screen
 class AboutUsConstant{
