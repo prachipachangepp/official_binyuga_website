@@ -104,7 +104,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:official_binyuga_website/screens/landing_page_screens/about_us_screen/about_us_screen.dart';
-import 'package:official_binyuga_website/screens/landing_page_screens/bottom_nav_bar/bottom_nav_bar.dart';
+import 'package:official_binyuga_website/screens/common_screens/bottom_nav_bar.dart';
 import 'package:official_binyuga_website/screens/landing_page_screens/description_screen/last_description_screen.dart';
 import 'package:official_binyuga_website/screens/landing_page_screens/home_screen/start_homepage_screen.dart';
 import 'package:official_binyuga_website/screens/landing_page_screens/our_approach_screen/approach_screen.dart';

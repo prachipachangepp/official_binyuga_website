@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:official_binyuga_website/screens/home_page.dart';
 import 'package:official_binyuga_website/screens/landing_page_screens/landing_page_screen.dart';
 
-
-
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
