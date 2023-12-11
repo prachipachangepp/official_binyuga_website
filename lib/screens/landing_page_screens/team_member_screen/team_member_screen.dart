@@ -4,6 +4,7 @@ import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
 import '../../../presentation/theme_manager.dart';
+import '../../../presentation/value_manager.dart';
 
 class TeamMemberScreen extends StatelessWidget {
   const TeamMemberScreen({super.key});
@@ -11,7 +12,7 @@ class TeamMemberScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 1300,
+      height: 1000,
       color: ColorManager.white,
       child: Stack(
         children: [
@@ -57,76 +58,109 @@ class TeamMemberScreen extends StatelessWidget {
           SizedBox(height: 20,),
           ///cirle avtar row 1
           Padding(
-            padding:  EdgeInsets.only(top:MediaQuery.of(context).size.width/2,),
+            padding:  EdgeInsets.only(left:80,top:550,),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                CircleAvatar(
-                  backgroundColor: ColorManager.white1,
-                  radius: MediaQuery.of(context).size.width/20,
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Text(AppString.johnS,
-                    style: TeamMemberConstant.nameTextStyle),
-                SizedBox(
-                  width: 50,
-                ),
-                Row(
+                Column(
                   children: [
                     CircleAvatar(
                       backgroundColor: ColorManager.white1,
-                      radius:  MediaQuery.of(context).size.width/20,
+                      radius: MediaQuery.of(context).size.width/15,
+                    ),
+                    Text(AppString.johnS,
+                        style: TeamMemberConstant.nameTextStyle),
+                    SizedBox(
+                      width:  MediaQuery.of(context).size.width/20,
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: AppSize.s10,
+                ),
+
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: ColorManager.white1,
+                          radius:  MediaQuery.of(context).size.width/15,
+                        ),
+                        Text(AppString.johnS,
+                            style: TeamMemberConstant.nameTextStyle),
+                      ],
                     ),
                     SizedBox(
-                      height: 10,
+                      width:  MediaQuery.of(context).size.width/20,
+                    ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: AppSize.s10,
+                    ),
+
+                Column(
+                  children: [
+                    CircleAvatar(
+                      backgroundColor: ColorManager.white1,
+                      radius:  MediaQuery.of(context).size.width/15,
                     ),
                     Text(AppString.johnS,
                         style: TeamMemberConstant.nameTextStyle),
                   ],
                 ),
                 SizedBox(
-                  width: 50,
+                  height: 60,
                 ),
-                CircleAvatar(
-                  backgroundColor: ColorManager.white1,
-                  radius:  MediaQuery.of(context).size.width/20,
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Text(AppString.johnS,
-                    style: TeamMemberConstant.nameTextStyle)
+
               ],
             ),
           ),
-
+          SizedBox(
+            height: 80,
+          ),
           ///cirle avtar row 2
-           Row(
-             //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-             children: [
-               CircleAvatar(
-                 backgroundColor: ColorManager.white1,
-                 radius: MediaQuery.of(context).size.width/20,
-               ),
-               SizedBox(
-                 height: 10,
-               ),
-               Text(AppString.johnS,
-                   style: TeamMemberConstant.nameTextStyle),
-               SizedBox(
-                 width: MediaQuery.of(context).size.width/5,
-               ),
-               CircleAvatar(
-                 backgroundColor: ColorManager.white1,
-                 radius: MediaQuery.of(context).size.width/20,
-               ),
-               SizedBox(
-                 height: 10,
-               ),
-               Text(AppString.johnS,
-                   style: TeamMemberConstant.nameTextStyle),],),
+           Padding(
+             padding: const EdgeInsets.only(left:80,top:700),
+             child: Row(
+               //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+               children: [
+                 Column(
+                   children: [
+                     CircleAvatar(
+                       backgroundColor: ColorManager.white1,
+                       radius: MediaQuery.of(context).size.width/15,
+                     ),
+                     Text(AppString.johnS,
+                         style: TeamMemberConstant.nameTextStyle),
+                     SizedBox(
+                       width: MediaQuery.of(context).size.width/2,
+                     ),
+                   ],
+                 ),
+
+                 SizedBox(
+                   height: AppSize.s10,
+                 ),
+
+                 Column(
+                   children: [
+                     CircleAvatar(
+                       backgroundColor: ColorManager.white1,
+                       radius: MediaQuery.of(context).size.width/15,
+                     ),
+                     Text(AppString.johnS,
+                         style: TeamMemberConstant.nameTextStyle),
+                   ],
+                 ),
+
+                 SizedBox(
+                   height: 10,
+                 ),
+
+               ],),
+           ),
       ],),
     );
   }

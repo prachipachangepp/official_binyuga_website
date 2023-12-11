@@ -121,6 +121,9 @@ class AboutUsConstant{
 }
 /// TeamMember Screen
 class TeamMemberConstant{
+  static double getHeadingFontSize(BuildContext context) {
+    return MediaQuery.of(context).size.width / 80;
+  }
   static TextStyle nameTextStyle = GoogleFonts.inter(
     //textStyle: TextStyle(
       fontWeight: FontWeightManager.medium,
@@ -128,3 +131,5 @@ class TeamMemberConstant{
     //)
   );
 }
+
+
