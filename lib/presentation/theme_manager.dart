@@ -9,23 +9,22 @@ import 'font_manager.dart';
 class HomeScreen {
   static TextStyle sidebarTextStyle = GoogleFonts.inter(
       //textStyle: TextStyle(
-  fontWeight: FontWeightManager.medium,
-  fontSize: FontSize.s15,
-  letterSpacing: -0.011,
-  color: ColorManager.white
-  //)
-  );
+      fontWeight: FontWeightManager.medium,
+      fontSize: FontSize.s15,
+      letterSpacing: -0.011,
+      color: ColorManager.white
+      //)
+      );
 }
 
-
 ///rounded button theme constant
-class RButtonTheme{
+class RButtonTheme {
   static TextStyle roundedButtonTextStyle = GoogleFonts.inter(
-  //textStyle: TextStyle(
-  fontWeight: FontWeightManager.semiBold,
-  fontSize: FontSize.s15,
-  letterSpacing: -0.011,
-  color: ColorManager.black);
+      //textStyle: TextStyle(
+      fontWeight: FontWeightManager.semiBold,
+      fontSize: FontSize.s15,
+      letterSpacing: -0.011,
+      color: ColorManager.black);
 }
 
 ///changing elements
@@ -40,19 +39,20 @@ class AllScreensConstant {
     );
   }
 }
+
 /// last DescriptionScreen
 class LastDescriptionScreen {
   static double getHeadingFontSize(BuildContext context) {
     return MediaQuery.of(context).size.width / 80;
   }
-  static TextStyle rowTextStyle(BuildContext context){
-   return GoogleFonts.inter(
-      //textStyle: TextStyle(
+
+  static TextStyle rowTextStyle(BuildContext context) {
+    return GoogleFonts.inter(
+        //textStyle: TextStyle(
         fontWeight: FontWeightManager.extraBold,
         fontSize: getHeadingFontSize(context),
         letterSpacing: -0.011,
-        color: ColorManager.white
-    );
+        color: ColorManager.white);
   }
 }
 
@@ -71,60 +71,71 @@ class LastColumnScreen {
   }
 }
 
-
 class BottomRowScreen {
   static double getNewFontSize(BuildContext context) {
     return MediaQuery.of(context).size.width / 120;
   }
+
   static TextStyle bottomRowTextStyle(BuildContext context) {
     return GoogleFonts.inter(
         fontWeight: FontWeightManager.regular,
         fontSize: getNewFontSize(context),
         letterSpacing: -0.011,
-        color: ColorManager.white
-    );
+        color: ColorManager.white);
   }
 }
+
 ///Union imageScreen
 class UnionTxtScreen1 {
-  static TextStyle union1TextStyle = GoogleFonts.inter(
-    //textStyle: TextStyle(
-      fontWeight: FontWeightManager.medium,
-      fontSize: FontSize.s25,
-      letterSpacing: -0.011,
-      color: ColorManager.white
-    //)
-  );
+  static double getNewFont1Size(BuildContext context) {
+    return MediaQuery.of(context).size.width / 45;
+  }
+
+  static TextStyle union1TextStyle(BuildContext context) {
+    return GoogleFonts.inter(
+        fontWeight: FontWeightManager.medium,
+        fontSize: getNewFont1Size(context),
+        letterSpacing: -0.011,
+        color: ColorManager.white
+        //)
+        );
+  }
 }
-
-
 
 class UnionTxtScreen2 {
-  static TextStyle union2TextStyle = GoogleFonts.inter(
-    //textStyle: TextStyle(
-      fontWeight: FontWeightManager.medium,
-      fontSize: FontSize.s37,
-      letterSpacing: -0.011,
-      color: ColorManager.blueShade
-    //)
-  );
+  static double getNewFont2Size(BuildContext context) {
+    return MediaQuery.of(context).size.width / 32;
+  }
+
+  static TextStyle union2TextStyle(BuildContext context) {
+    return GoogleFonts.inter(
+        //textStyle: TextStyle(
+        fontWeight: FontWeightManager.medium,
+        fontSize: getNewFont2Size(context),
+        letterSpacing: -0.011,
+        color: ColorManager.blueShade
+        //)
+        );
+  }
 }
+
 ///AboutUs Screen
-class AboutUsConstant{
+class AboutUsConstant {
   static TextStyle aboutTextStyle = GoogleFonts.inter(
-    //textStyle: TextStyle(
+      //textStyle: TextStyle(
       fontWeight: FontWeightManager.medium,
       fontSize: FontSize.s58,
       color: ColorManager.black
-    //)
-  );
+      //)
+      );
 }
+
 /// TeamMember Screen
-class TeamMemberConstant{
+class TeamMemberConstant {
   static TextStyle nameTextStyle = GoogleFonts.inter(
-    //textStyle: TextStyle(
+      //textStyle: TextStyle(
       fontWeight: FontWeightManager.medium,
       color: ColorManager.black
-    //)
-  );
+      //)
+      );
 }

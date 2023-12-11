@@ -284,13 +284,13 @@ Widget webBody() {
                       child: Container(child: ApprochScreen())),
                 ],
               ),
-              // Row(
-              //   children: [
-              //     Expanded(
-              //         flex: 1,
-              //         child: Container(child: UnionImageScreen())),
-              //   ],
-              // ),
+              Row(
+                children: [
+                  Expanded(
+                      flex: 1,
+                      child: Container(child: UnionImageScreen())),
+                ],
+              ),
               Row(
                 children: [
                   Expanded(

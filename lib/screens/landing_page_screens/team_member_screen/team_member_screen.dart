@@ -27,16 +27,18 @@ class TeamMemberScreen extends StatelessWidget {
           ),
 
           ///txt 1
-          Padding(
-            padding: const EdgeInsets.only(top:40,left:40),
+          Positioned(
+            top: 140,
+            right: 500,
             child: Text(AppString.ourTeamMembers,
                 style: AllScreensConstant.customTextStyle(
                     FontSize.s70, FontWeightManager.bold, ColorManager.white)),
           ),
 
           ///txt 2
-          Padding(
-            padding: const EdgeInsets.only(top:200,left:85),
+          Positioned(
+            top: 280,
+            left: 350,
             child: Text(AppString.teamTxt,
                 textAlign: TextAlign.center,
                 style: AllScreensConstant.customTextStyle(FontSize.s30,
@@ -44,102 +46,104 @@ class TeamMemberScreen extends StatelessWidget {
           ),
 
           ///cirle avtar row 1
-          Container(
-            child: Padding(
-              padding:  EdgeInsets.only(top:MediaQuery.of(context).size.width/3,),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      CircleAvatar(
-                        backgroundColor: ColorManager.white1,
-                        radius: 140,
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Text(AppString.johnS,
-                          style: TeamMemberConstant.nameTextStyle),
-                    ],
-                  ),
-                  SizedBox(
-                    width: 150,
-                  ),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        backgroundColor: ColorManager.white1,
-                        radius: 140,
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Text(AppString.johnS,
-                          style: TeamMemberConstant.nameTextStyle),
-                    ],
-                  ),
-                  SizedBox(
-                    width: 150,
-                  ),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        backgroundColor: ColorManager.white1,
-                        radius: 140,
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Text(AppString.johnS,
-                          style: TeamMemberConstant.nameTextStyle),
-                    ],
-                  )
-                ],
-              ),
-            ),
-          ),
+          Positioned(
+              top: 450,
+              left: 200,
+              child: Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: ColorManager.white1,
+                          radius: 140,
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(AppString.johnS,
+                            style: TeamMemberConstant.nameTextStyle),
+                      ],
+                    ),
+                    SizedBox(
+                      width: 150,
+                    ),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: ColorManager.white1,
+                          radius: 140,
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(AppString.johnS,
+                            style: TeamMemberConstant.nameTextStyle),
+                      ],
+                    ),
+                    SizedBox(
+                      width: 150,
+                    ),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: ColorManager.white1,
+                          radius: 140,
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(AppString.johnS,
+                            style: TeamMemberConstant.nameTextStyle),
+                      ],
+                    )
+                  ],
+                ),
+              )),
 
           ///cirle avtar row 2
-           Positioned(
-                        top: 900,
-                        left: 400,
-                        child: Container(
-                          child: Row(
-                            //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              Column(
-                                children: [
-                                  CircleAvatar(
-                                    backgroundColor: ColorManager.white1,
-                                    radius: 140,
-                                  ),
-                                  SizedBox(
-                                    height: 10,
-                                  ),
-                                  Text(AppString.johnS,
-                                      style: TeamMemberConstant.nameTextStyle),
-                                ],
-                              ),
-                              SizedBox(
-                                width: 150,
-                              ),
-                              Column(
-                                children: [
-                                  CircleAvatar(
-                                    backgroundColor: ColorManager.white1,
-                                    radius: 140,
-                                  ),
-                                  SizedBox(
-                                    height: 10,
-                                  ),
-                                  Text(AppString.johnS,
-                                      style: TeamMemberConstant.nameTextStyle),
-                                ],
-
-    ),],),),),
-      ],),
+          Positioned(
+              top: 900,
+              left: 400,
+              child: Container(
+                child: Row(
+                  //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: ColorManager.white1,
+                          radius: 140,
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(AppString.johnS,
+                            style: TeamMemberConstant.nameTextStyle),
+                      ],
+                    ),
+                    SizedBox(
+                      width: 150,
+                    ),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: ColorManager.white1,
+                          radius: 140,
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(AppString.johnS,
+                            style: TeamMemberConstant.nameTextStyle),
+                      ],
+                    ),
+                  ],
+                ),
+              ))
+        ],
+      ),
     );
   }
 }
