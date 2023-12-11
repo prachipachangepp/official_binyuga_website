@@ -35,9 +35,12 @@ class UnionImageScreen extends StatelessWidget {
                 SizedBox(
                   width: MediaQuery.of(context).size.width / 50,
                 ),
-                Text(
-                  AppString.unionTxt1,
-                  style: UnionTxtScreen1.union1TextStyle(context),
+                Padding(
+                  padding: const EdgeInsets.only(left:15),
+                  child: Text(
+                    AppString.unionTxt1,
+                    style: UnionTxtScreen1.union1TextStyle(context),
+                  ),
                 ),
               ],
             ),
@@ -68,30 +71,36 @@ class UnionImageScreen extends StatelessWidget {
             padding: const EdgeInsets.only(top: 1200.0, left: 10),
             child: Row(
               children: [
-                Text(
-                  AppString.unionTxt3,
-                  style: UnionTxtScreen1.union1TextStyle(context),
+                Padding(
+                  padding: const EdgeInsets.only(left:15),
+                  child: Text(
+                    AppString.unionTxt3,
+                    style: UnionTxtScreen1.union1TextStyle(context),
+                  ),
                 ),
                 SizedBox(
                   width: MediaQuery.of(context).size.width / 50,
                 ),
-                Image.network(
-                  "images/union_2.png",
-                  height: 720,
-                  // width: MediaQuery.of(context).size.width * 0.8,
-                  width: MediaQuery.of(context).size.width / 2,
+                Padding(
+                  padding: EdgeInsets.only(right:MediaQuery.of(context).size.width /61,left:MediaQuery.of(context).size.width /57,top:MediaQuery.of(context).size.width/27),
+                  child: Image.network(
+                    "images/union_2.png",
+                    height: 700,
+                    // width: MediaQuery.of(context).size.width * 0.8,
+                    width: MediaQuery.of(context).size.width / 1.9,
+                  ),
                 ),
               ],
             ),
           ),
 
           Padding(
-            padding: EdgeInsets.only(top: 1150,right: MediaQuery.of(context).size.width / 50,left: MediaQuery.of(context).size.width /2.2,),
+            padding: EdgeInsets.only(top: 1150,right: MediaQuery.of(context).size.width / 50,left: MediaQuery.of(context).size.width / 2.5),
             child: Image.network(
               "images/rectangle.png",
-              height: 820,
+              height: 855,
               // width: MediaQuery.of(context).size.width * 0.8,
-              width: MediaQuery.of(context).size.width / 1.9,
+              width: MediaQuery.of(context).size.width / 1.8,
             ),
           ),
         ],
