@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:official_binyuga_website/screens/common_screens/description_bottom_row.dart';
 import '../../../presentation/color_manager.dart';
+import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
 import '../../../presentation/theme_manager.dart';
 import '../../../presentation/value_manager.dart';
@@ -56,18 +58,18 @@ class _LastPageState extends State<LastPage> {
                       ),
                       SizedBox(height: AppSize.s15,),
                       Text(
-                          AppString.aboutUs,
-                          style: LastColumnScreen.columnTextStyle(context),
+                        AppString.aboutUs,
+                        style: LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height: AppSize.s15, ),
                       Text(
-                          AppString.teamProfiles,
-                          style: LastColumnScreen.columnTextStyle(context),
+                        AppString.teamProfiles,
+                        style: LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height: 15),
                       Text(
-                          AppString.clientTestimonials,
-                          style: LastColumnScreen.columnTextStyle(context),
+                        AppString.clientTestimonials,
+                        style: LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height: AppSize.s15,),
                     ],
@@ -89,30 +91,30 @@ class _LastPageState extends State<LastPage> {
                       ),
                       SizedBox(height: AppSize.s15,),
                       Text(
-                          AppString.softwareDevelopment,
-                          style: LastColumnScreen.columnTextStyle(context),
+                        AppString.softwareDevelopment,
+                        style: LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height:  AppSize.s15,),
                       Text(
-                          AppString.applicationDevelopment,
-                          style: LastColumnScreen.columnTextStyle(context),
+                        AppString.applicationDevelopment,
+                        style: LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height:  AppSize.s15,),
                       Text(
-                          AppString.webDevelopment,
-                          style: LastColumnScreen.columnTextStyle(context),
+                        AppString.webDevelopment,
+                        style: LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height:  AppSize.s15,),
                       Text(
-                          AppString.uiUxDesigning,
-                          textAlign: TextAlign.left,
-                          style: LastColumnScreen.columnTextStyle(context),
+                        AppString.uiUxDesigning,
+                        textAlign: TextAlign.left,
+                        style: LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height:AppSize.s15, ),
                       Text(
-                          AppString.careerMonitoring,
-                          textAlign: TextAlign.left,
-                          style: LastColumnScreen.columnTextStyle(context),
+                        AppString.careerMonitoring,
+                        textAlign: TextAlign.left,
+                        style: LastColumnScreen.columnTextStyle(context),
                       ),
                     ],
                   ),
@@ -133,38 +135,38 @@ class _LastPageState extends State<LastPage> {
                       ),
                       SizedBox(height: AppSize.s15,),
                       Text(
-                          AppString.hybridApplicationDeveloper,
-                          style: LastColumnScreen.columnTextStyle(context),
+                        AppString.hybridApplicationDeveloper,
+                        style: LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height: AppSize.s15,),
                       Text(
-                          AppString.uIUxDesigning,
-                          style: LastColumnScreen.columnTextStyle(context),
+                        AppString.uIUxDesigning,
+                        style: LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height: AppSize.s15,),
                       Text(
-                          AppString.uiUxDevelopment,
-                          style:LastColumnScreen.columnTextStyle(context),
+                        AppString.uiUxDevelopment,
+                        style:LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height: AppSize.s15,),
                       Text(
-                          AppString.backendDevelopment,
-                          style: LastColumnScreen.columnTextStyle(context),
+                        AppString.backendDevelopment,
+                        style: LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height: AppSize.s15,),
                       Text(
-                          AppString.fullStackDevelopment,
-                          style: LastColumnScreen.columnTextStyle(context),
+                        AppString.fullStackDevelopment,
+                        style: LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height: AppSize.s15,),
                       Text(
-                          AppString.softwareTesting,
-                          style: LastColumnScreen.columnTextStyle(context),
+                        AppString.softwareTesting,
+                        style: LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height: AppSize.s15,),
                       Text(
-                          AppString.programmingLanguage,
-                          style:LastColumnScreen.columnTextStyle(context),
+                        AppString.programmingLanguage,
+                        style:LastColumnScreen.columnTextStyle(context),
                       ),
                     ],
                   ),
@@ -185,33 +187,33 @@ class _LastPageState extends State<LastPage> {
                       ),
                       SizedBox(height: AppSize.s15,),
                       Text(
-                          AppString.tailoredProducts,
-                          style: LastColumnScreen.columnTextStyle(context),
+                        AppString.tailoredProducts,
+                        style: LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height: AppSize.s15,),
                       Text(
-                          AppString.costEffectiveness,
-                          style: LastColumnScreen.columnTextStyle(context),
+                        AppString.costEffectiveness,
+                        style: LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height: AppSize.s15,),
                       Text(
-                          AppString.intuitiveUserCenterDesign,
-                          style: LastColumnScreen.columnTextStyle(context),
+                        AppString.intuitiveUserCenterDesign,
+                        style: LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height:AppSize.s15,),
                       Text(
-                          AppString.problemSolving,
-                          style: LastColumnScreen.columnTextStyle(context),
+                        AppString.problemSolving,
+                        style: LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height: AppSize.s15,),
                       Text(
-                          AppString.roughToughSoftware,
-                          style: LastColumnScreen.columnTextStyle(context),
+                        AppString.roughToughSoftware,
+                        style: LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height: AppSize.s15,),
                       Text(
-                          AppString.innovativeProjects,
-                          style: LastColumnScreen.columnTextStyle(context),
+                        AppString.innovativeProjects,
+                        style: LastColumnScreen.columnTextStyle(context),
                       ),
                     ],
                   ),
@@ -223,34 +225,7 @@ class _LastPageState extends State<LastPage> {
           ///bottom row
           Padding(
             padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/10,),
-            child: Row(
-              children: [
-                Text(AppString.privacyNotice,
-                    style: BottomRowScreen.bottomRowTextStyle(context)
-                ),
-                SizedBox(width: MediaQuery.of(context).size.width/25,),
-                Text(AppString.cookiePolicy,
-                    style:BottomRowScreen.bottomRowTextStyle(context)
-                ),
-                SizedBox(width: MediaQuery.of(context).size.width/25,),
-                Text(AppString.disclaimer,
-                    style: BottomRowScreen.bottomRowTextStyle(context)
-                ),
-                SizedBox(width: MediaQuery.of(context).size.width/25,),
-                Text(AppString.securityPolicy,
-                    style:BottomRowScreen.bottomRowTextStyle(context)
-                ),
-                SizedBox(width: MediaQuery.of(context).size.width/25,),
-                Text(AppString.californiaNoticeAtCollection,
-                    style: BottomRowScreen.bottomRowTextStyle(context)
-                ),
-                SizedBox(width:MediaQuery.of(context).size.width/25,),
-                Text(AppString.customizeCookies,
-                    style: BottomRowScreen.bottomRowTextStyle(context)
-                ),
-                SizedBox(height: 60,),
-              ],
-            ),
+            child: const DescriptionBottomRowConstant()
           ),
         ],
       ),

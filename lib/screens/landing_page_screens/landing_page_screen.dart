@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:official_binyuga_website/screens/landing_page_screens/bottom_nav_bar/bottom_nav_bar.dart';
+import 'package:official_binyuga_website/screens/common_screens/bottom_nav_bar.dart';
 import 'package:official_binyuga_website/screens/landing_page_screens/team_member_screen/team_member_screen.dart';
 import 'package:official_binyuga_website/screens/landing_page_screens/union_image_screen/union_image_screen.dart';
 
@@ -30,11 +30,11 @@ class MyStackPage extends StatelessWidget {
                 color: Colors.red,
                 child: ApprochScreen(),
               ),
-              Container(
-                height: 2200,
-                color: Colors.grey,
-                child: UnionImageScreen(),
-              ),
+              // Container(
+              //   height: 2200,
+              //   color: Colors.grey,
+              //   child: UnionImageScreen(),
+              // ),
               Container(
                 height: 720,
                 child: AboutUs(),

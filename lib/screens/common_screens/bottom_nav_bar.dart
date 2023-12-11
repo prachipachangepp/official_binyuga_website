@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import '../../../presentation/color_manager.dart';
-import '../../../presentation/font_manager.dart';
+
+import '../../presentation/color_manager.dart';
+import '../../presentation/font_manager.dart';
 
 class BottomNavBarScreen extends StatefulWidget {
   const BottomNavBarScreen({super.key});
+
   @override
   State<BottomNavBarScreen> createState() => _BottomNavBarScreenState();
 }
@@ -20,10 +22,11 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
     'France',
     'India',
     'Japan',
-// Add more countries as needed
+    // Add more countries as needed
   ];
   String? selectedValue;
   final TextEditingController textEditingController = TextEditingController();
+
   @override
   void dispose() {
     textEditingController.dispose();
@@ -34,9 +37,9 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-// Container(
-//   color: Colors.red,
-// ),
+        // Container(
+        //   color: Colors.red,
+        // ),
         Container(
           height: 187,
           decoration: const BoxDecoration(
@@ -60,10 +63,12 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                     Image.asset(
                       'images/binyuga_logo.png',
                     ),
-//SizedBox(width: MediaQuery.of(context).size.width / 1.6),
-// Image.asset(
-//   'images/binyuga_logo.png',
-// ),
+                    //SizedBox(width: MediaQuery.of(context).size.width / 1.6),
+
+                    // Image.asset(
+                    //   'images/binyuga_logo.png',
+                    // ),
+
                     SizedBox(
                       width: MediaQuery.of(context).size.width / 15,
                     ),
@@ -136,7 +141,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                             color: ColorManager.white,
                             border: Border.all(color: Colors.white, width: 2),
                             borderRadius: BorderRadius.circular(2)),
-//padding: EdgeInsets.all(3),
+                        //padding: EdgeInsets.all(3),
                         width: MediaQuery.of(context).size.width / 6.5,
                         height: 30,
                         child: DropdownButton(
@@ -146,7 +151,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                             countries[0],
                             style: TextStyle(
                                 color: ColorManager.black,
-//  fontWeight: FontWeight.bold,
+                                //  fontWeight: FontWeight.bold,
                                 fontSize: 11),
                           ),
                           value: selectedCountry,
