@@ -112,6 +112,7 @@ import 'package:official_binyuga_website/screens/landing_page_screens/team_membe
 import 'package:official_binyuga_website/screens/landing_page_screens/union_image_screen/union_image_screen.dart';
 
 import '../responsive_screen/responsive_scr.dart';
+import 'package:sizer/sizer.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
