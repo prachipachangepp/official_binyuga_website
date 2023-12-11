@@ -83,4 +83,7 @@ class AppString {
 
   ///Bottom Navbar screen
   static const String email = "www.career@binyuga.com";
+
+
+  static const String letsTalk = "Let’s Talk";
 }

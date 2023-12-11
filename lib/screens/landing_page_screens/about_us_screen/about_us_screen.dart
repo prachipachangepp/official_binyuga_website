@@ -23,7 +23,7 @@ class _AboutUsState extends State<AboutUs> {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Padding(
-                  padding: EdgeInsets.only(top:40,right: 200),
+                  padding: EdgeInsets.only(top:40,right: 170),
                   child: Text(AppString.aboutUs1,
                     style: AllScreensConstant.customTextStyle(
                         FontSize.s70,
@@ -75,20 +75,18 @@ class _AboutUsState extends State<AboutUs> {
                 ),
                 SizedBox(width: 50,),
                 Padding(
-                  padding: EdgeInsets.only(left: 100),
+
+                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/100,top:50),
                   child: Column(
                      crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Padding(
-                        padding: EdgeInsets.only(top:20,bottom: 10),
-                        child: Text(
-                          'OO',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: MediaQuery.of(context).size.width/10,
-                            fontFamily: FontConstants.fontFamily1,
-                            color: ColorManager.skyBlue,
-                          ),
+                      Text(
+                        'OO',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: MediaQuery.of(context).size.width/10,
+                          fontFamily: FontConstants.fontFamily1,
+                          color: ColorManager.skyBlue,
                         ),
                       ),
                       SizedBox(height: 5.0),
@@ -136,9 +134,12 @@ class _AboutUsState extends State<AboutUs> {
                   ),
                 ),
               ],
-            )
+            ),
+            SizedBox(height: 40.0,),
+
           ],
         ),
+
     );
   }
 }
