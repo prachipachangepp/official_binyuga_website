@@ -47,10 +47,10 @@ class MyStackPage extends StatelessWidget {
                 height: 700,
                 child: LastPage(),
               ),
-              Container(
-                height: 187,
-                child: BottomNavBarScreen(),
-              )
+              // Container(
+              //   height: 187,
+              //   child: BottomNavBarScreen(),
+              // )
             ],
           ),
         ],
