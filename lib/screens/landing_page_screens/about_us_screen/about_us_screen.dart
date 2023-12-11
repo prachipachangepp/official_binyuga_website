@@ -110,7 +110,7 @@ class _AboutUsState extends State<AboutUs> {
                 ),
                 SizedBox(width: 50,),
                 Padding(
-                  padding: EdgeInsets.only(left: 50,top: 30),
+                  padding: EdgeInsets.only(left:  MediaQuery.of(context).size.width/100,top: 30),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
