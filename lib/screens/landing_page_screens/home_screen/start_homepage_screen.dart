@@ -5,9 +5,10 @@ import 'package:official_binyuga_website/presentation/font_manager.dart';
 import 'package:official_binyuga_website/presentation/string_manager.dart';
 import 'package:official_binyuga_website/presentation/theme_manager.dart';
 import 'package:official_binyuga_website/presentation/value_manager.dart';
-//import 'package:official_binyuga_website/screens/common_screens/start-page_app_bar.dart';
+//import 'package:official_binyuga_website/screens/common_screens/description_bottom_row.dart';
 
 import '../../common_screens/responsive_app_bar.dart';
+import '../../what_we_do/what_we_do.dart';
 
 class StartHomeScreen extends StatelessWidget {
   const StartHomeScreen({super.key});
@@ -56,7 +57,11 @@ class StartHomeScreen extends StatelessWidget {
                           ),
                           SizedBox(height: AppSize.s50,),
                           GestureDetector(
-                            onTap: (){},
+                            onTap: (){
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => WhatWeDoScreen()),);
+                            },
                             child: Text(
                                 AppString.whatWeDo,
                                 style: HomeScreen.sidebarTextStyle

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:official_binyuga_website/screens/common_screens/description_bottom_row.dart';
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
@@ -224,34 +225,7 @@ class _LastPageState extends State<LastPage> {
           ///bottom row
           Padding(
             padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/10,),
-            child: Row(
-              children: [
-                Text(AppString.privacyNotice,
-                    style: BottomRowScreen.bottomRowTextStyle(context)
-                ),
-                SizedBox(width: MediaQuery.of(context).size.width/25,),
-                Text(AppString.cookiePolicy,
-                    style:BottomRowScreen.bottomRowTextStyle(context)
-                ),
-                SizedBox(width: MediaQuery.of(context).size.width/25,),
-                Text(AppString.disclaimer,
-                    style: BottomRowScreen.bottomRowTextStyle(context)
-                ),
-                SizedBox(width: MediaQuery.of(context).size.width/25,),
-                Text(AppString.securityPolicy,
-                    style:BottomRowScreen.bottomRowTextStyle(context)
-                ),
-                SizedBox(width: MediaQuery.of(context).size.width/25,),
-                Text(AppString.californiaNoticeAtCollection,
-                    style: BottomRowScreen.bottomRowTextStyle(context)
-                ),
-                SizedBox(width:MediaQuery.of(context).size.width/25,),
-                Text(AppString.customizeCookies,
-                    style: BottomRowScreen.bottomRowTextStyle(context)
-                ),
-                SizedBox(height: 60,),
-              ],
-            ),
+            child: const DescriptionBottomRowConstant()
           ),
         ],
       ),
