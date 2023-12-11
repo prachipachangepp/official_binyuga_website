@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:official_binyuga_website/screens/common_screens/description_bottom_row.dart';
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
@@ -223,10 +222,10 @@ class _LastPageState extends State<LastPage> {
           ),
           SizedBox(height:50),
           ///bottom row
-          Padding(
-            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/10,),
-            child: const DescriptionBottomRowConstant()
-          ),
+          // Padding(
+          //   padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/10,),
+          //   child: const DescriptionBottoRowConstant()
+          // ),
         ],
       ),
     );
