@@ -76,7 +76,7 @@ class TeamMemberScreen extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: AppSize.s10,
+                  height: AppSize.s20,
                 ),
 
                 Row(
@@ -97,7 +97,7 @@ class TeamMemberScreen extends StatelessWidget {
                       ],
                     ),
                     SizedBox(
-                      height: AppSize.s10,
+                      height: AppSize.s20,
                     ),
 
                 Column(
