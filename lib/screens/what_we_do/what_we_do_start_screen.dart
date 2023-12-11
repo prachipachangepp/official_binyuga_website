@@ -1,64 +1,68 @@
 import 'package:flutter/material.dart';
-
+import 'package:official_binyuga_website/presentation/font_manager.dart';
 import '../../presentation/color_manager.dart';
+import '../../presentation/string_manager.dart';
+import '../../presentation/theme_manager.dart';
 import '../../presentation/value_manager.dart';
+
 class WWDStartScreen extends StatelessWidget {
   const WWDStartScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: AppSize.s1000,
+      height: AppSize.s900,
       color: ColorManager.white,
       child: Stack(
         children: [
-          // Background Image
-          Positioned.fill(
-            child: Image.network(
-              'assets/images_2/what_we_do_home.png',
-              fit: BoxFit.cover,
-              height: AppSize.s900,
-            //  width: MediaQuery.of(context).size.width,
-            ),
+          /// Background Image
+          Image.network(
+            'assets/images/what_we_do_home.png',
+            fit: BoxFit.fill,
+            height: AppSize.s720,
+            width: MediaQuery.of(context).size.width,
           ),
 
-          // Content Column
-          Positioned(
-            left: 16.0,
-            bottom: 16.0,
+          /// Content Column
+          Padding(
+            padding: const EdgeInsets.only(top: 30.0,left: 70),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Text 1',
-                  style: TextStyle(color: Colors.white, fontSize: 20.0),
+                  'Elevating Success with\nInnovative Tech',
+                  style: AllScreensConstant.customTextStyle(FontSize.s58, FontWeightManager.bold, ColorManager.white),
                 ),
+                SizedBox(height: AppSize.s20,),
                 Text(
-                  'Text 2',
-                  style: TextStyle(color: Colors.white, fontSize: 16.0),
+                  'Our company harnesses cutting-edge technologies and\nstrategic IT solutions to empower business. We believe that\ninnovation and technology are the driving forces behind\nsuccess in the digital age. ',
+                  style: AllScreensConstant.customTextStyle(
+                    FontSize.s17,
+                    //  MediaQuery.of(context).size.width/89,
+                      FontWeightManager.medium,
+                      ColorManager.lightBlue),
                 ),
+                SizedBox(height: AppSize.s80,),
                 ElevatedButton(
                   onPressed: () {
                     // Button action
                   },
-                  child: Text('Button'),
+                  child: Text(
+                    AppString.letsTalk,
+                    style: RButtonTheme.roundedButtonTextStyle,
+                  ),
                 ),
               ],
             ),
           ),
 
-          // Image on the right side
-          Positioned(
-            right: 0,
-            bottom: 0,
-            child: Container(
-              width: MediaQuery.of(context).size.width / 2,
-              height: 200, // Adjust the height as needed
-              color: Colors.white, // Background color below the image
-              child: Image.network(
-                'assets/images_2/digital_innovation.png',
-                fit: BoxFit.cover,
-              ),
+          ///Image on the right side
+          Padding(
+            padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/2.5,top: MediaQuery.of(context).size.height/15),
+            child: Image.network(
+              'assets/images/digital_innovation.png',
+              width: AppSize.s870,
+              height: AppSize.s870,
             ),
           ),
         ],

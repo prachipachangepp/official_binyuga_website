@@ -325,7 +325,6 @@ Widget webBody() {
           ),
         ],
       )
-
     ];
 
     return ListView.builder(
