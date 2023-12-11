@@ -7,6 +7,7 @@ import 'about_us_screen/about_us_screen.dart';
 import 'description_screen/last_description_screen.dart';
 import 'home_screen/start_homepage_screen.dart';
 import 'our_approach_screen/approach_screen.dart';
+import 'package:sizer/sizer.dart';
 
 
 class MyStackPage extends StatelessWidget {
@@ -46,10 +47,10 @@ class MyStackPage extends StatelessWidget {
                 height: 700,
                 child: LastPage(),
               ),
-              Container(
-                height: 187,
-                child: BottomNavBarScreen(),
-              )
+              // Container(
+              //   height: 187,
+              //   child: BottomNavBarScreen(),
+              // )
             ],
           ),
         ],
