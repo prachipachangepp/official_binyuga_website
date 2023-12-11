@@ -61,30 +61,36 @@ class UnionImageScreen extends StatelessWidget {
               style: UnionTxtScreen2.union2TextStyle(context),
             ),
           ),
-          Positioned(
-            bottom: 190,
-            right: 80,
-            child: Image.network(
-              "images/union_2.png",
-              height: 720,
-              // width: MediaQuery.of(context).size.width * 0.8,
-              width: MediaQuery.of(context).size.width / 2,
+          Padding(
+            padding: const EdgeInsets.only(top: 1200.0,left: 120),
+            child: Row(
+              children: [
+                Text(
+                  AppString.unionTxt3,
+                  style: UnionTxtScreen1.union1TextStyle(context),
+                ),
+                SizedBox(width: MediaQuery.of(context).size.width/50,),
+                Image.network(
+                  "images/union_2.png",
+                  height: 720,
+                  // width: MediaQuery.of(context).size.width * 0.8,
+                  width: MediaQuery.of(context).size.width / 2,
+                ),
+              ],
             ),
           ),
-          Positioned(
-            bottom: 160,
-            right: 60,
+
+
+          Padding(
+            padding: const EdgeInsets.only(top: 1150,left: 600),
             child: Image.network(
               "images/rectangle.png",
-              height: 780,
+              height: 820,
               // width: MediaQuery.of(context).size.width * 0.8,
               width: MediaQuery.of(context).size.width / 1.9,
             ),
           ),
-          // Text(
-          //   AppString.unionTxt3,
-          //   style: UnionTxtScreen1.union1TextStyle(context),
-          // ),
+
         ],
       ),
     );
