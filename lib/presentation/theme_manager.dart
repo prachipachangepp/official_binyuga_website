@@ -34,6 +34,7 @@ class AllScreensConstant {
     return TextStyle(
       fontSize: fontSize,
       fontFamily: FontConstants.fontFamily1,
+      decoration:TextDecoration.none,
       fontWeight: fontWeight,
       color: color,
     );
@@ -138,4 +139,15 @@ class TeamMemberConstant {
       color: ColorManager.black
       //)
       );
+}
+
+/// Career page binyuga
+
+class CareerPageConstant {
+  static TextStyle careerTextStyle = GoogleFonts.inter(
+//textStyle: TextStyle(
+      fontSize: FontSize.s11,
+      fontWeight: FontWeightManager.medium,
+      decoration:TextDecoration.none,
+      color: ColorManager.white);
 }

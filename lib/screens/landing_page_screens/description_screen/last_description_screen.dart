@@ -19,7 +19,6 @@ class _LastPageState extends State<LastPage> {
   Widget build(BuildContext context) {
     return Container(
       // height:AppSize.s1000,
-      color: ColorManager.nevyBlue,
       child:Column(
         children: [
           Row(
