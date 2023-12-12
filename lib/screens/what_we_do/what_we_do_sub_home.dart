@@ -26,26 +26,30 @@ class WWDSubHome extends StatelessWidget {
           ),
           /// Base Image
           Padding(
-            padding: const EdgeInsets.only(left:10,top:200),
-            child: Image.network(
-              'images/Rectangle 677.png',
-              // height: 2200,
-              width: MediaQuery.of(context).size.width,
-            ),
-
-          ),
-
-          Padding(
-            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/25,top:250,),
+            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/20,top:250,),
             child: Row(
               children: [
                 Image.network(
                   "images/Rectangle 682.png",
+                  height: 635,
+                  width: MediaQuery.of(context).size.width/1.8,
                 ),
-                SizedBox(
-                  height: 40,
-                ),
-
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left:200, top:250),
+            child: Image.network(
+              'images/Rectangle 677.png',
+              // height: 2200,
+              width: MediaQuery.of(context).size.width/2,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 500,left: 400),
+            child: Row(
+              children: [
+                Text("saloni",style: TextStyle(color: Colors.red,fontSize: 50),)
               ],
             ),
           ),

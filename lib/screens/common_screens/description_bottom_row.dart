@@ -27,7 +27,6 @@ class DescriptionBottomRowConstant extends StatelessWidget {
         SizedBox(width: MediaQuery.of(context).size.width / 25),
         Text(AppString.customizeCookies,
             style: BottomRowScreen.bottomRowTextStyle(context)),
-        SizedBox(height: 60),
       ],
     );
   }
@@ -42,16 +41,16 @@ class DescriptionPageHeadConstant extends StatelessWidget{
       children: [
         Text(AppString.whatWeAre,
             style:LastDescriptionScreen.rowTextStyle(context)),
-        SizedBox(width: MediaQuery.of(context).size.width / 9),
+        SizedBox(width: MediaQuery.of(context).size.width / 15),
         Text(AppString.whatWeDo,
             style: LastDescriptionScreen.rowTextStyle(context)),
-        SizedBox(width: MediaQuery.of(context).size.width / 9),
+        SizedBox(width: MediaQuery.of(context).size.width / 10),
         Text(AppString.career,
             style: LastDescriptionScreen.rowTextStyle(context)),
-        SizedBox(width: MediaQuery.of(context).size.width / 9),
+        SizedBox(width: MediaQuery.of(context).size.width / 7),
         Text(AppString.features,
             style: LastDescriptionScreen.rowTextStyle(context)),
-        SizedBox(width: MediaQuery.of(context).size.width / 9),
+        SizedBox(width: MediaQuery.of(context).size.width / 7),
         Text(AppString.contact,
             style: LastDescriptionScreen.rowTextStyle(context)),
       ],

@@ -38,17 +38,16 @@ class _LastPageState extends State<LastPage> {
                   "images/search.png",
                 ),
               ),
-
             ],
           ),
-          SizedBox(width: MediaQuery.of(context).size.width/10,),
+          SizedBox(height: MediaQuery.of(context).size.height/100,),
           Padding(
             padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/10,),
             child: Row(
               children: [
                 ///who we are
                 Padding(
-                  padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/85,top:AppPadding.p58),
+                  padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/85,top:AppPadding.p25),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [

@@ -58,7 +58,7 @@ class LastDescriptionScreen {
 
 class LastColumnScreen {
   static double getFontSize(BuildContext context) {
-    return MediaQuery.of(context).size.width / 100;
+    return MediaQuery.of(context).size.width / 110;
   }
 
   static TextStyle columnTextStyle(BuildContext context) {
