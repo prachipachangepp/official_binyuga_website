@@ -20,7 +20,7 @@ class AppString {
 
 
   /// About Us screen
-  static const String aboutUs1 ="About Us";
+  static const String aboutUs1 = "About Us";
   static const String everyYear =
       "\nEvery year, we advance along our path of growth.";
 
@@ -38,7 +38,7 @@ class AppString {
   static const String webDevelopment = "Web Development";
   static const String uiUxDesigning = "UI/UxDesigning";
   static const String careerMonitoring = "Career Monitoring";
-  static const String careerC ="Career";
+  static const String careerC = "Career";
   static const String hybridApplicationDeveloper = "Hybrid application developer";
   static const String uIUxDesigning = "UI/UxDesigning";
   static const String uiUxDevelopment = "Ui/Ux Development";
@@ -46,7 +46,7 @@ class AppString {
   static const String fullStackDevelopment = "FullStack development";
   static const String softwareTesting = "Software Testing";
   static const String programmingLanguage = "Programming Language";
-  static const String featuresF ="Features";
+  static const String featuresF = "Features";
   static const String tailoredProducts = "Tailored Products";
   static const String costEffectiveness = "Cost Effectiveness";
   static const String intuitiveUserCenterDesign =
@@ -69,7 +69,7 @@ class AppString {
   /// Team Member screen
   static const String ourTeamMembers = "Our Team Members";
   static const String teamTxt = "The constant companion on our journey towards success";
-  static const String johnS ="John Smith";
+  static const String johnS = "John Smith";
 
   /// Union screen
   static const String unionTxt1 = "We adopt a fresh and distinctive approach\nfor every project, investing time to deeply\ncomprehend our clients requirements.\n"
@@ -87,4 +87,17 @@ class AppString {
 
 
   static const String letsTalk = "Let’s Talk";
+
+
+  ///Career Binyuga Page
+
+  static const String loremTxt =  'Lorem ipsum dolor sit amet consectetur '
+      ' \nadipiscing elit, mollis quam proin '
+      ' \nmolestie a enim, arcu potenti rutrum '
+      ' \nrisus torquent vel. Ut facilisis '
+      ' \ncondimentum vitae nam curae nec '
+      ' \ncurabitur, gravida convallis natoque '
+      ' \nlobortis sagittis scelerisque malesuada, '
+      ' \ncubilia ullamcorper tempor fermentum '
+      ' \ntellus odio.';
 }
