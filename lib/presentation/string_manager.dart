@@ -100,4 +100,11 @@ class AppString {
       ' \nlobortis sagittis scelerisque malesuada, '
       ' \ncubilia ullamcorper tempor fermentum '
       ' \ntellus odio.';
+
+
+
+/// WhatWeDo SubHomePage
+  static const String trustPropelsBuisnessProsperity = "Trust Propels Buisness \nProsperity";
+  static const String explore = "Explore";
+  static const String binyugaPvtLtd = "Binyuga.Pvt.Ltd";
 }
