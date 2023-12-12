@@ -88,7 +88,7 @@ class BottomRowScreen {
 ///Union imageScreen
 class UnionTxtScreen1 {
   static double getNewFont1Size(BuildContext context) {
-    return MediaQuery.of(context).size.width / 50;
+    return MediaQuery.of(context).size.width / 60;
   }
 
   static TextStyle union1TextStyle(BuildContext context) {
@@ -104,7 +104,7 @@ class UnionTxtScreen1 {
 
 class UnionTxtScreen2 {
   static double getNewFont2Size(BuildContext context) {
-    return MediaQuery.of(context).size.width / 32;
+    return MediaQuery.of(context).size.width / 42;
   }
 
   static TextStyle union2TextStyle(BuildContext context) {
