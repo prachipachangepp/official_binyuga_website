@@ -36,13 +36,13 @@ class WhatWeDoScreen extends StatelessWidget {
               ),
 
               Container(
-                  height: 900,
-                  color: Colors.orange,
+                  height: 600,
+                  color: Colors.blue,
                   child: CareerBinyugaScreen()
               ),
               Container(
-                  height: 800,
-                  color: Colors.blue,
+                  height: 500,
+                  color: Colors.orange,
                   child: CareerAboutUs()
               ),
 
