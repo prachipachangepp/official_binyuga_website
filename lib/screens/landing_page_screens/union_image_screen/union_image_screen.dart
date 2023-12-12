@@ -82,7 +82,9 @@ class UnionImageScreen extends StatelessWidget {
                   width: MediaQuery.of(context).size.width / 50,
                 ),
                 Padding(
-                  padding: EdgeInsets.only(right:MediaQuery.of(context).size.width /61,left:MediaQuery.of(context).size.width /57,top:MediaQuery.of(context).size.width/27),
+                  padding: EdgeInsets.only(right:MediaQuery.of(context).size.width /61,
+                      left:MediaQuery.of(context).size.width /57,
+                      top:MediaQuery.of(context).size.width/27),
                   child: Image.network(
                     "images/union_2.png",
                     height: 700,

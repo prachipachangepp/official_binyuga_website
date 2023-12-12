@@ -116,6 +116,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                     SizedBox(
                       width: MediaQuery.of(context).size.width / 20,
                     ),
+
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Row(
