@@ -37,7 +37,7 @@ class DesriptionScreenConstant extends StatelessWidget {
           SizedBox(width: MediaQuery.of(context).size.width/10,),
           ///heading
            Padding(
-            padding:  EdgeInsets.only(top: AppSize.s70,left: MediaQuery.of(context).size.width/15),
+            padding:  EdgeInsets.only(top: AppSize.s70,left: MediaQuery.of(context).size.width/14),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
@@ -47,12 +47,12 @@ class DesriptionScreenConstant extends StatelessWidget {
           ),
           SizedBox(height: 5,),
           Padding(
-            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/15,),
+            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/16,bottom:30),
             child: Row(
               children: [
                 ///who we are
                 Padding(
-                  padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/100,),
+                  padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/85,bottom: 160),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -72,7 +72,7 @@ class DesriptionScreenConstant extends StatelessWidget {
                       ),
                       SizedBox(height: AppSize.s15,),
                       Text(
-                        AppString.clientTestimonials,
+                        AppString.partnerShips,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
                     ],
@@ -81,7 +81,7 @@ class DesriptionScreenConstant extends StatelessWidget {
                 SizedBox(width:  MediaQuery.of(context).size.width/20,),
                 ///what we do
                 Padding(
-                  padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/85,),
+                  padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/85,bottom: 100),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -111,24 +111,38 @@ class DesriptionScreenConstant extends StatelessWidget {
                         textAlign: TextAlign.left,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
+                      SizedBox(height: AppSize.s15, ),
+                      Text(
+                        AppString.problemSolving,
+                        textAlign: TextAlign.left,
+                        style: LastColumnScreen.columnTextStyle(context),
+                      ),
                     ],
                   ),
                 ),
-                SizedBox(width: MediaQuery.of(context).size.width/20,),
+                SizedBox(width: MediaQuery.of(context).size.width/15,),
                 ///career
                 Padding(
-                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/85, ),
+                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/85,bottom:30 ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(height: 51,),
                       Text(
-                        AppString.hybridApplicationDeveloper,
+                        AppString.flutter,
+                        textAlign: TextAlign.left,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
+                      SizedBox(height: AppSize.s15, ),
+                      Text(
+                        AppString.reactJs,
+                        textAlign: TextAlign.left,
+                        style: LastColumnScreen.columnTextStyle(context),
+                      ),
+
                       SizedBox(height: AppSize.s15,),
                       Text(
                         AppString.uIUxDesigning,
+                        textAlign: TextAlign.left,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height: AppSize.s15,),
@@ -159,10 +173,10 @@ class DesriptionScreenConstant extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(width: MediaQuery.of(context).size.width/20,),
+                SizedBox(width: MediaQuery.of(context).size.width/15,),
                 ///features
                 Padding(
-                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/85),
+                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/85,bottom:100),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -201,37 +215,52 @@ class DesriptionScreenConstant extends StatelessWidget {
                 SizedBox(width: MediaQuery.of(context).size.width/15,),
                 ///contact
                 Padding(
-                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/85,),
+                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/85,top:20),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        AppString.tailoredProducts,
+                        AppString.nameRegisterOfficeAddress,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height: AppSize.s15,),
                       Text(
-                        AppString.costEffectiveness,
+                        AppString.requestForServices,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height: AppSize.s15,),
                       Text(
-                        AppString.intuitiveUserCenterDesign,
+                        AppString.corporateIdentityNumber,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height:AppSize.s15,),
                       Text(
-                        AppString.problemSolving,
+                        AppString.submitYourResume,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height: AppSize.s15,),
                       Text(
-                        AppString.roughToughSoftware,
+                        AppString.jobSeekers,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
                       SizedBox(height: AppSize.s15,),
                       Text(
-                        AppString.innovativeProjects,
+                        AppString.clients,
+                        style: LastColumnScreen.columnTextStyle(context),
+                      ),
+                      SizedBox(height: AppSize.s15,),
+                      Text(
+                        AppString.otherEnquiries,
+                        style: LastColumnScreen.columnTextStyle(context),
+                      ),
+                      SizedBox(height: AppSize.s15,),
+                      Text(
+                        AppString.emailId,
+                        style: LastColumnScreen.columnTextStyle(context),
+                      ),
+                      SizedBox(height: AppSize.s15,),
+                      Text(
+                        AppString.connectWithUs,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
                     ],
@@ -240,7 +269,7 @@ class DesriptionScreenConstant extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height:AppSize.s250),
+          SizedBox(height:AppSize.s100),
           ///bottom row
           Padding(
               padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/10,),

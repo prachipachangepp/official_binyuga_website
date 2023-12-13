@@ -30,10 +30,10 @@ class FeatureSubHomePage extends StatelessWidget {
               Image.network(
                 "images/design 2.png",
                 height: AppSize.s500,
-                // width: MediaQuery
-                //     .of(context)
-                //     .size
-                //     .width / 1.5,
+                width: MediaQuery
+                    .of(context)
+                    .size
+                    .width / 2,
                 // width:200,
               ),
             ],

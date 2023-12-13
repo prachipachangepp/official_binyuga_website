@@ -12,53 +12,74 @@ class FeatureSubHome extends StatelessWidget {
       // height: 2200,
       // width: MediaQuery.of(context).size.width,
       child: Stack(
-
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Image.network(
                 "images/design 1.png",
-                height: 400,
-                // alignment: Alignment.center,
+                height: 380,
+                // width: MediaQuery
+                //     .of(context)
+                //     .size
+                //     .width / 2,
+                // width:200,
               ),
             ],
           ),
-          Row(
-            children: [
-              Text('Dream it',
-                style: TextStyle(
-                  decoration: TextDecoration.none,
-                  fontSize: 50,
-                  color: Color(0xff214188),
+          Padding(
+            padding: const EdgeInsets.only(left:250),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Row(
+                  children: [
+                    Text('Dream it,',
+                      style: TextStyle(
+                        decoration: TextDecoration.none,
+                        fontSize: 50,
+                        fontFamily: 'inter',
+                        fontWeight: FontWeight.w800,
+                        color: Color(0xff214188),
+                      ),
+                    ),
+                  ],
                 ),
-              ),
-            ],
+                SizedBox(height:10,),
+                Row(
+                  children: [
+                    Text('Build it,',
+                      style: TextStyle(
+                        decoration: TextDecoration.none,
+                        fontSize: 50,
+                        fontFamily: 'inter',
+                        fontWeight: FontWeight.w800,
+                        color: Color(0xff214188),
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 10,),
+                Row(
+                  children: [
+                    Text('Achieve it,',
+                      style: TextStyle(
+                        decoration: TextDecoration.none,
+                        fontSize: 50,
+                        fontFamily: 'inter',
+                        fontWeight: FontWeight.w800,
+                        color: Color(0xff214188),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
           SizedBox(height: 30,),
-          Row(
-            children: [
-              Text('Build it',
-                style: TextStyle(
-                  decoration: TextDecoration.none,
-                  fontSize: 50,
-                  color: Color(0xff214188),
-                ),
-              ),
-            ],
-          ),
-          SizedBox(height: 40,),
-          Row(
-            children: [
-              Text('Achieve it',
-                style: TextStyle(
-                  decoration: TextDecoration.none,
-                  fontSize: 50,
-                  color: Color(0xff214188),
-                ),
-              ),
-            ],
-          ),
+
+
+
           /// Base Image
           Padding(
             padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/20,top:200,),
@@ -97,7 +118,7 @@ class FeatureSubHome extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 300,top: 415),
+            padding: const EdgeInsets.only(left: 280,top: 415),
             child: Text(
               "We believe in the power of envisioning, creating, \n"
                   "nd realizing. It all starts with a dream, an idea, or "
