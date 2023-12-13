@@ -142,7 +142,7 @@ class StartHomeScreen extends StatelessWidget {
                                       AppString.homesTxt2,
                                       textAlign: TextAlign.start,
                                       style: AllScreensConstant.customTextStyle(
-                                          MediaQuery.of(context).size.width/89,
+                                          MediaQuery.of(context).size.width/100,
                                           FontWeightManager.medium,
                                           ColorManager.lightBlue)
                                   ),
@@ -230,6 +230,7 @@ class StartHomeScreen extends StatelessWidget {
                     SizedBox(width: MediaQuery.of(context).size.width / 22),
                     Image.asset(
                       'images/toggle_bg.png',
+                      color:Color(0xff27C9B2),
                       height: MediaQuery.of(context).size.height / 18,
                       width: MediaQuery.of(context).size.width / 18,
                     ),
