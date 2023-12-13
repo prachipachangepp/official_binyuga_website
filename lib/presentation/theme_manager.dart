@@ -146,7 +146,7 @@ class TeamMemberConstant {
 class CareerPageConstant {
   static TextStyle careerTextStyle = GoogleFonts.inter(
 //textStyle: TextStyle(
-      fontSize: FontSize.s11,
+      fontSize: FontSize.s13,
       fontWeight: FontWeightManager.medium,
       decoration:TextDecoration.none,
       color: ColorManager.white);
