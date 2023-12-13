@@ -5,6 +5,7 @@ import 'package:official_binyuga_website/presentation/font_manager.dart';
 import 'package:official_binyuga_website/presentation/string_manager.dart';
 import 'package:official_binyuga_website/presentation/theme_manager.dart';
 import 'package:official_binyuga_website/presentation/value_manager.dart';
+import 'package:official_binyuga_website/screens/career_screens/career_page.dart';
 //import 'package:official_binyuga_website/screens/common_screens/description_bottom_row.dart';
 import '../../career_screens/career_binyuga_screen.dart';
 import '../../common_screens/responsive_app_bar.dart';
@@ -80,7 +81,7 @@ class StartHomeScreen extends StatelessWidget {
                             onTap: (){
                               Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => CareerBinyugaScreen()),);
+                                MaterialPageRoute(builder: (context) => CareerPageScreen()),);
                             },
                             child: Text(
                                 AppString.career,

@@ -35,34 +35,22 @@ class WhatWeDoScreen extends StatelessWidget {
                 child: WWDSubHome(),
               ),
 
-              Container(
-                height: 700,
-                color: Colors.blue,
-                child: CareerBinyugaScreen(),
-              ),
+              // Container(
+              //   height: 700,
+              //   color: Colors.blue,
+              //   child: CareerBinyugaScreen(),
+              // ),
 
-              Container(
-                height: 600,
-                color: Colors.orange,
-                child: CareerAboutUs(),
-              ),
+              // Container(
+              //   height: 600,
+              //   color: Colors.orange,
+              //   child: CareerAboutUs(),
+              // ),
               Container(
                 height: 800,
                 color: Colors.grey,
                 child: DesriptionScreenConstant(),
               ),
-//               Container(
-//                 height: 720,
-//                 child: AboutUs(),
-//               ),
-//               Container(
-//                 height: 1500,
-//                 child: TeamMemberScreen(),
-//               ),
-//               Container(
-//                 height: 700,
-//                 child: LastPage(),
-//               ),
               Container(
                 height: 187,
                 child: const BottomNavBarScreen(),

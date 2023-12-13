@@ -13,7 +13,7 @@ class CareerAboutUs extends StatelessWidget {
             Image.network(
               'images/background1.png',
               fit: BoxFit.fill,
-              height: 390,
+              height: 685,
               width: MediaQuery.of(context).size.width,
             ),
             Padding(
