@@ -17,17 +17,17 @@ class CareerBinyugaScreen extends StatelessWidget {
           Image.network(
             'images/bckground.png',
             fit: BoxFit.fill,
-            height: 500,
+            height: 600,
             width: MediaQuery.of(context).size.width,
           ),
           Padding(
             padding: EdgeInsets.only(
               top: MediaQuery.of(context).size.width / 40,
-              left: MediaQuery.of(context).size.width / 30,
+              left: MediaQuery.of(context).size.width / 12,
             ),
             child: Text(
-              'Why Binyuga.Pvt.Ltd,',
-                style: AllScreensConstant.customTextStyle(FontSize.s30,
+              'Why Binyuga. Pvt. Ltd,',
+                style: AllScreensConstant.customTextStyle(FontSize.s37,
                     FontWeightManager.bold, ColorManager.white)
 
 
@@ -36,17 +36,18 @@ class CareerBinyugaScreen extends StatelessWidget {
           //  SizedBox(height:60,),
           Padding(
             padding: EdgeInsets.only(
-              top: MediaQuery.of(context).size.height / 5,
-              left: MediaQuery.of(context).size.width / 50,
+              top: MediaQuery.of(context).size.height / 10,
+              left: MediaQuery.of(context).size.width / 12,
 
             ),
             child: Row(
 
+
               children: [
                 Image.network(
                   "images/woman.png",
-                  height: 300,
-                  width: MediaQuery.of(context).size.width/4,
+                  height: 405,
+                  width: MediaQuery.of(context).size.width/3,
                   // width:200,
                 ),
                 SizedBox(
@@ -57,20 +58,22 @@ class CareerBinyugaScreen extends StatelessWidget {
                   child: Image.network(
                     "images/line.png",
                     height: 230,
+                    alignment: Alignment.center,
                   ),
                 ),
                 SizedBox(
-                  width: 25,
+                  width: 10,
                 ),
 
                 Padding(
                   padding: EdgeInsets.only(
-                   // right: MediaQuery.of(context).size.width / 50,
-                   left: MediaQuery.of(context).size.width / 90,
+                  //  right: MediaQuery.of(context).size.width / 50,
+                   left: MediaQuery.of(context).size.width /90,
                     top: MediaQuery.of(context).size.height / 80,
                   ),
                   //   bottom:MediaQuery.of(context).size.height/3.5),
                   child: Text(AppString.loremTxt,
+
 
                     style: CareerPageConstant.careerTextStyle,
 

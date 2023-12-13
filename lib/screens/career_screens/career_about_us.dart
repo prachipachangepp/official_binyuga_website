@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../presentation/font_manager.dart';
+import '../../presentation/value_manager.dart';
+
 class CareerAboutUs extends StatelessWidget {
   const CareerAboutUs({super.key});
 
@@ -13,12 +16,12 @@ class CareerAboutUs extends StatelessWidget {
             Image.network(
               'images/background1.png',
               fit: BoxFit.fill,
-              height: 685,
+              height: 585,
               width: MediaQuery.of(context).size.width,
             ),
             Padding(
               padding: EdgeInsets.only(
-                  left: MediaQuery.of(context).size.width / 12, top: 220),
+                  left: MediaQuery.of(context).size.width / 12, top: 380),
               child: Text(
                 'About Us',
                 style: TextStyle(
@@ -32,23 +35,22 @@ class CareerAboutUs extends StatelessWidget {
             Column(
               children: [
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
+                 // mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Padding(
                       padding: EdgeInsets.only(
-                          top: 290,
+                          top: MediaQuery.of(context).size.height / 1.3,right:100),
                           //  MediaQuery.of(context).size.height / 2.5,
-                          left: MediaQuery.of(context).size.width / 20),
+                        //  left: MediaQuery.of(context).size.width / 20),
                     ),
                   ],
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      height: 160,
-                      width: 130,
+                      height: 200,
+                      width: 160,
                       decoration: BoxDecoration(
                         color: Colors.blueGrey[700],
                         borderRadius: BorderRadius.all(Radius.circular(15)),
@@ -66,8 +68,8 @@ class CareerAboutUs extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      height: 160,
-                      width: 130,
+                      height: 200,
+                      width: 160,
                       decoration: BoxDecoration(
                         color: Colors.blueGrey[700],
                         borderRadius: BorderRadius.all(Radius.circular(15)),
@@ -85,8 +87,8 @@ class CareerAboutUs extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      height: 160,
-                      width: 130,
+                      height: 200,
+                      width: 160,
                       decoration: BoxDecoration(
                         color: Colors.blueGrey[700],
                         borderRadius: BorderRadius.all(Radius.circular(15)),
@@ -96,6 +98,7 @@ class CareerAboutUs extends StatelessWidget {
                         child: const Text(
                           'DIVERSITY',
                           style: TextStyle(
+                            fontFamily: 'inter',
                             fontSize: 10,
                             color: Colors.white,
                           ),
@@ -103,8 +106,8 @@ class CareerAboutUs extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      height: 160,
-                      width: 130,
+                      height: 200,
+                      width: 160,
                       decoration: BoxDecoration(
                         color: Colors.blueGrey[700],
                         borderRadius: BorderRadius.all(Radius.circular(15)),
@@ -114,6 +117,7 @@ class CareerAboutUs extends StatelessWidget {
                         child: const Text(
                           'DEVELOPMENT',
                           style: TextStyle(
+                            fontFamily: 'inter',
                             fontSize: 10,
                             color: Colors.white,
                           ),
@@ -126,13 +130,16 @@ class CareerAboutUs extends StatelessWidget {
             ),
             Padding(
               padding: EdgeInsets.only(
-                  top: 25, right: MediaQuery.of(context).size.width / 10),
+                  top: 25, right: MediaQuery.of(context).size.width / 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Image.network(
-                    "images/line2.png",
-                    height: 250,
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Image.network(
+                      "images/line2.png",
+                      height:AppSize.s320,
+                    ),
                   ),
 
                   SizedBox(
@@ -142,22 +149,29 @@ class CareerAboutUs extends StatelessWidget {
                   //   padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/50,
                   //       top:20,
                   //      right:MediaQuery.of(context).size.width/2.5),
-                  Text(
-                    'Lorem ipsum dolor sit amet consectetur '
-                    ' \nadipiscing elit, mollis quam proin '
-                    ' \nmolestie a enim, arcu potenti rutrum '
-                    ' \nrisus torquent vel. Ut facilisis '
-                    ' \ncondimentum vitae nam curae nec '
-                    ' \ncurabitur, gravida convallis natoque '
-                    ' \nlobortis sagittis scelerisque malesuada, '
-                    ' \ncubilia ullamcorper tempor fermentum '
-                    ' \ntellus odio.',
-                    style: TextStyle(
-                        fontSize: 11,
-                        fontFamily: 'inter',
-                        decoration: TextDecoration.none,
-                        fontWeight: FontWeight.w500,
-                        color: Colors.white),
+                  Padding(
+                    padding: EdgeInsets.only(
+                      // right: MediaQuery.of(context).size.width / 50,
+                      left: MediaQuery.of(context).size.width / 90,
+                      top: MediaQuery.of(context).size.height / 20,
+                    ),
+                    child: Text(
+                      'Lorem ipsum dolor sit amet consectetur '
+                      ' \nadipiscing elit, mollis quam proin '
+                      ' \nmolestie a enim, arcu potenti rutrum '
+                      ' \nrisus torquent vel. Ut facilisis '
+                      ' \ncondimentum vitae nam curae nec '
+                      ' \ncurabitur, gravida convallis natoque '
+                      ' \nlobortis sagittis scelerisque malesuada, '
+                      ' \ncubilia ullamcorper tempor fermentum '
+                      ' \ntellus odio.',
+                      style: TextStyle(
+                          fontSize: FontSize.s15,
+                          fontFamily: 'inter',
+                          decoration: TextDecoration.none,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.white),
+                    ),
                   ),
                 ],
               ),
