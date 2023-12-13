@@ -72,7 +72,7 @@ class WWDSubHome extends StatelessWidget {
                 ),
                SizedBox(height: 20,),
                 Padding(
-                  padding: const EdgeInsets.only(right:500,top:300),
+                  padding: const EdgeInsets.only(right:700,top:300),
                   child: Row(
                     children: [
                       Image.network(
