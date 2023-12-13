@@ -7,8 +7,6 @@ import '../common_screens/description_page_constant.dart';
 import '../common_screens/responsive_app_bar.dart';
 import '../landing_page_screens/our_approach_screen/approach_screen.dart';
 
-
-
 class WhatWeDoScreen extends StatelessWidget {
   const WhatWeDoScreen({super.key});
 
@@ -28,18 +26,17 @@ class WhatWeDoScreen extends StatelessWidget {
                   height: 1000,
 // width:MediaQuery.of(context).size.width,
                   color: Colors.pink,
-                  child: WWDStartScreen()
-              ),
+                  child: WWDStartScreen()),
               Container(
                 height: 1500,
                 //color: Colors.red,
                 child: WWDSubHome(),
               ),
-Container(
-  height: 800,
-  color: Colors.grey,
-  child: DesriptionScreenConstant(),
-),
+              Container(
+                height: 800,
+                color: Colors.grey,
+                child: DesriptionScreenConstant(),
+              ),
 //               Container(
 //                 height: 720,
 //                 child: AboutUs(),
@@ -52,10 +49,10 @@ Container(
 //                 height: 700,
 //                 child: LastPage(),
 //               ),
-Container(
-  height: 187,
-  child: const BottomNavBarScreen(),
-)
+              Container(
+                height: 187,
+                child: const BottomNavBarScreen(),
+              )
             ],
           ),
         ],
