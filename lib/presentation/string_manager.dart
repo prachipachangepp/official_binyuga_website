@@ -61,6 +61,18 @@ class AppString {
   static const String californiaNoticeAtCollection =
       "California Notice At Collection";
   static const String customizeCookies = "Customize Cookies";
+  static const String partnerShips = "Partnerships";
+  static const String flutter = "Flutter";
+  static const String reactJs = "React js";
+  static const String nameRegisterOfficeAddress = "Name & register office\n address";
+  static const String requestForServices = "request For Services";
+  static const String corporateIdentityNumber = "Corporate identity\n number CIN";
+  static const String submitYourResume = "Submit your resume";
+  static const String jobSeekers = "Job seekers";
+  static const String clients = "Clients";
+  static const String emailId = "Email";
+  static const String otherEnquiries = "Other enquiries";
+  static const String  connectWithUs= "Connect with us";
 
   /// Approach screen
   static const String ourApproach = "Our Approach";
@@ -76,7 +88,7 @@ class AppString {
       '\nContinual learning is at our core, allowing us\nto embrace new trends and technologies\nand incorporate them into our projects,\nensuring that our work remains at the\nforefront of the industry.';
 
   static const String unionTxt2 =
-      "We also have a strong commitment to nurturing and educating\nemerging, forward-thinking talent in the field...,";
+      "We also have a strong commitment to nurturing and educating\nemerging, forward-thinking talent in the field...";
 
   static const String unionTxt3 =
       "In addition to our primary endeavors, we hold\na steadfast dedication to cultivating and\ninstructing up-and-coming, innovative talent\nwithin the industry.\n"

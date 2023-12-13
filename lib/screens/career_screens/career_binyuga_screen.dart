@@ -27,7 +27,7 @@ class CareerBinyugaScreen extends StatelessWidget {
             ),
             child: Text(
               'Why Binyuga.Pvt.Ltd,',
-                style: AllScreensConstant.customTextStyle(FontSize.s30,
+                style: AllScreensConstant.customTextStyle(FontSize.s50,
                     FontWeightManager.bold, ColorManager.white)
 
 
@@ -46,7 +46,7 @@ class CareerBinyugaScreen extends StatelessWidget {
                 Image.network(
                   "images/woman.png",
                   height: 300,
-                  width: MediaQuery.of(context).size.width/4,
+                  width: MediaQuery.of(context).size.width/3.9,
                   // width:200,
                 ),
                 SizedBox(
