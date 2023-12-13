@@ -10,9 +10,9 @@ class AppString {
   static const String portfolio = "Portfolio";
   static const String workshopTraining = "Workshop & Training";
   static const String homesTxt1 = "We craft\ntailored digital products \nfor your unique needs";
-  static const String homesTxt2 = "Whether its custom Software Solution, a User-friendly\napp, or a captivating website, we are commited to\ndelievering innovative and"
-      "tailored digital products that not\nonly meet but exceed your expectations";
-  static const String exploreMore = "Explore More";
+  static const String homesTxt2 = "Whether its custom software solution, a user-friendly\napp, or a captivating website, we are commited to\ndelievering innovative and tailored digital products that not"
+      "\nonly meet but exceed your expectations.";
+  static const String exploreMore = "Explore more";
   static const String whatWeAre = "What We Are";
   static const String whatWeDo = "What We Do";
   static const String features = "Features";
@@ -30,7 +30,7 @@ class AppString {
 
 
   /// description screen
-  static const String whoWeAre = " Who We Are ";
+  static const String whoWeAre = " Who we are ";
   static const String teamProfiles = "Team Profiles";
   static const String clientTestimonials = "Client Testimonials";
   static const String softwareDevelopment = "Software Development";
