@@ -151,3 +151,11 @@ class CareerPageConstant {
       decoration:TextDecoration.none,
       color: ColorManager.white);
 }
+/// WhatWeDo SubHome Page
+class WhatWeDoSubPageConstant {
+  static TextStyle subHomeTextStyle = GoogleFonts.inter(
+      fontSize: FontSize.s70,
+      fontWeight: FontWeightManager.extraBold,
+      decoration:TextDecoration.none,
+      color: ColorManager.darkBlue1);
+}
