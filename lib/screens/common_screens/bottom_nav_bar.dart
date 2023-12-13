@@ -63,12 +63,6 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                     Image.asset(
                       'images/binyuga_logo.png',
                     ),
-                    //SizedBox(width: MediaQuery.of(context).size.width / 1.6),
-
-                    // Image.asset(
-                    //   'images/binyuga_logo.png',
-                    // ),
-
                     SizedBox(
                       width: MediaQuery.of(context).size.width / 15,
                     ),

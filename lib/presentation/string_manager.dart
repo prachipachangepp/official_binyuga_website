@@ -4,6 +4,7 @@ import 'dart:core';
 class AppString {
   /// Home screen
   static const String contactUs = "Contact Us";
+  static const String contact = "Contact";
   static const String aboutUs = "About Us";
   static const String services = "Services";
   static const String portfolio = "Portfolio";

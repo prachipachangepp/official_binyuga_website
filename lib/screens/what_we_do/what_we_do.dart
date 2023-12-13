@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:official_binyuga_website/screens/what_we_do/what_we_do_start_screen.dart';
+import 'package:official_binyuga_website/screens/what_we_do/what_we_do_sub_home.dart';
 
-import '../career_screens/career_about_us.dart';
-import '../career_screens/career_binyuga_screen.dart';
 import '../common_screens/bottom_nav_bar.dart';
+import '../common_screens/description_page_constant.dart';
 import '../common_screens/responsive_app_bar.dart';
 import '../landing_page_screens/our_approach_screen/approach_screen.dart';
 
@@ -26,32 +26,20 @@ class WhatWeDoScreen extends StatelessWidget {
             children: [
               Container(
                   height: 1000,
+// width:MediaQuery.of(context).size.width,
                   color: Colors.pink,
                   child: WWDStartScreen()
               ),
               Container(
-                height: 500,
-                color: Colors.red,
-                child: ApprochScreen(),
+                height: 1500,
+                //color: Colors.red,
+                child: WWDSubHome(),
               ),
-
-              Container(
-                  height: 600,
-                  color: Colors.blue,
-                  child: CareerBinyugaScreen()
-              ),
-              Container(
-                  height: 500,
-                  color: Colors.orange,
-                  child: CareerAboutUs()
-              ),
-
-
-// Container(
-//   height: 2200,
-//   color: Colors.grey,
-//   child: UnionImageScreen(),
-// ),
+Container(
+  height: 800,
+  color: Colors.grey,
+  child: DesriptionScreenConstant(),
+),
 //               Container(
 //                 height: 720,
 //                 child: AboutUs(),
@@ -66,7 +54,7 @@ class WhatWeDoScreen extends StatelessWidget {
 //               ),
 Container(
   height: 187,
-  child: BottomNavBarScreen(),
+  child: const BottomNavBarScreen(),
 )
             ],
           ),
