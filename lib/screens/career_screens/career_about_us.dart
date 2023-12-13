@@ -13,24 +13,22 @@ class CareerAboutUs extends StatelessWidget {
             Image.network(
               'images/background1.png',
               fit: BoxFit.fill,
-              height: 380,
+              height: 390,
               width: MediaQuery.of(context).size.width,
             ),
             Padding(
-              padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/12,top:240),
+              padding: EdgeInsets.only(
+                  left: MediaQuery.of(context).size.width / 12, top: 220),
               child: Text(
                 'About Us',
-                textAlign:TextAlign.left,
                 style: TextStyle(
                     fontSize: 29,
-
                     fontFamily: 'inter',
                     decoration: TextDecoration.none,
                     fontWeight: FontWeight.w700,
                     color: Colors.white),
               ),
             ),
-
             Column(
               children: [
                 Row(
@@ -38,48 +36,94 @@ class CareerAboutUs extends StatelessWidget {
                   children: [
                     Padding(
                       padding: EdgeInsets.only(
-                          top: 220,
+                          top: 290,
                           //  MediaQuery.of(context).size.height / 2.5,
                           left: MediaQuery.of(context).size.width / 20),
-
-
                     ),
                   ],
                 ),
-                // Padding(
-                //   padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height / 90,),
-
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
-
                   children: [
-                    Image.network(
-                      "images/Rectangle1.png",
-                      height: 290,
-                      width: 110,
-
+                    Container(
+                      height: 160,
+                      width: 130,
+                      decoration: BoxDecoration(
+                        color: Colors.blueGrey[700],
+                        borderRadius: BorderRadius.all(Radius.circular(15)),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 25, left: 25),
+                        child: const Text(
+                          'OUR EMPLOYEE',
+                          style: TextStyle(
+                            // decoration: TextDecoration.none,
+                            fontSize: 10,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
                     ),
-
-                    Image.network(
-                      "images/Rectangle1.png",
-                      height: 290,
-                      width: 110,
+                    Container(
+                      height: 160,
+                      width: 130,
+                      decoration: BoxDecoration(
+                        color: Colors.blueGrey[700],
+                        borderRadius: BorderRadius.all(Radius.circular(15)),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 25, left: 25),
+                        child: const Text(
+                          'NATIONALITIES',
+                          style: TextStyle(
+                            fontFamily: 'inter',
+                            fontSize: 10,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
                     ),
-                    Image.network(
-                      "images/Rectangle1.png",
-                      height: 290,
-                      width: 110,
+                    Container(
+                      height: 160,
+                      width: 130,
+                      decoration: BoxDecoration(
+                        color: Colors.blueGrey[700],
+                        borderRadius: BorderRadius.all(Radius.circular(15)),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 25, left: 35),
+                        child: const Text(
+                          'DIVERSITY',
+                          style: TextStyle(
+                            fontSize: 10,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
                     ),
-                    Image.network(
-                      "images/Rectangle1.png",
-                      height: 290,
-                      width: 110,
+                    Container(
+                      height: 160,
+                      width: 130,
+                      decoration: BoxDecoration(
+                        color: Colors.blueGrey[700],
+                        borderRadius: BorderRadius.all(Radius.circular(15)),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 25, left: 25),
+                        child: const Text(
+                          'DEVELOPMENT',
+                          style: TextStyle(
+                            fontSize: 10,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
                     ),
                   ],
                 ),
-              ],),
-
+              ],
+            ),
             Padding(
               padding: EdgeInsets.only(
                   top: 25, right: MediaQuery.of(context).size.width / 10),
@@ -88,7 +132,7 @@ class CareerAboutUs extends StatelessWidget {
                 children: [
                   Image.network(
                     "images/line2.png",
-                    height: 260,
+                    height: 250,
                   ),
 
                   SizedBox(
@@ -100,14 +144,14 @@ class CareerAboutUs extends StatelessWidget {
                   //      right:MediaQuery.of(context).size.width/2.5),
                   Text(
                     'Lorem ipsum dolor sit amet consectetur '
-                        ' \nadipiscing elit, mollis quam proin '
-                        ' \nmolestie a enim, arcu potenti rutrum '
-                        ' \nrisus torquent vel. Ut facilisis '
-                        ' \ncondimentum vitae nam curae nec '
-                        ' \ncurabitur, gravida convallis natoque '
-                        ' \nlobortis sagittis scelerisque malesuada, '
-                        ' \ncubilia ullamcorper tempor fermentum '
-                        ' \ntellus odio.',
+                    ' \nadipiscing elit, mollis quam proin '
+                    ' \nmolestie a enim, arcu potenti rutrum '
+                    ' \nrisus torquent vel. Ut facilisis '
+                    ' \ncondimentum vitae nam curae nec '
+                    ' \ncurabitur, gravida convallis natoque '
+                    ' \nlobortis sagittis scelerisque malesuada, '
+                    ' \ncubilia ullamcorper tempor fermentum '
+                    ' \ntellus odio.',
                     style: TextStyle(
                         fontSize: 11,
                         fontFamily: 'inter',
@@ -118,8 +162,8 @@ class CareerAboutUs extends StatelessWidget {
                 ],
               ),
             ),
-
-          ],),
+          ],
+        ),
       ),
     );
   }

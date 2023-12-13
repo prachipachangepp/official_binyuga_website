@@ -51,7 +51,7 @@ class StartHomeScreen extends StatelessWidget {
                           GestureDetector(
                             onTap: (){},
                             child: Text(
-                                AppString.whatWeAre,
+                                AppString.whoWeAre,
                                 style: HomeScreen.sidebarTextStyle
                             ),
                           ),

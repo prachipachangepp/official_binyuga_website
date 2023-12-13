@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:official_binyuga_website/screens/what_we_do/what_we_do_start_screen.dart';
 import 'package:official_binyuga_website/screens/what_we_do/what_we_do_sub_home.dart';
 
+import '../career_screens/career_about_us.dart';
+import '../career_screens/career_binyuga_screen.dart';
 import '../common_screens/bottom_nav_bar.dart';
 import '../common_screens/description_page_constant.dart';
 import '../common_screens/responsive_app_bar.dart';
@@ -31,6 +33,18 @@ class WhatWeDoScreen extends StatelessWidget {
                 height: 1500,
                 //color: Colors.red,
                 child: WWDSubHome(),
+              ),
+
+              Container(
+                height: 700,
+                color: Colors.blue,
+                child: CareerBinyugaScreen(),
+              ),
+
+              Container(
+                height: 600,
+                color: Colors.orange,
+                child: CareerAboutUs(),
               ),
               Container(
                 height: 800,
