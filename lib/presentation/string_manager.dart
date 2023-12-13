@@ -10,9 +10,9 @@ class AppString {
   static const String portfolio = "Portfolio";
   static const String workshopTraining = "Workshop & Training";
   static const String homesTxt1 = "We craft\ntailored digital products \nfor your unique needs";
-  static const String homesTxt2 = "Whether its custom Software Solution, a User-friendly\napp, or a captivating website, we are commited to\ndelievering innovative and"
-      "tailored digital products that not\nonly meet but exceed your expectations";
-  static const String exploreMore = "Explore More";
+  static const String homesTxt2 = "Whether its custom software solution, a user-friendly\napp, or a captivating website, we are commited to\ndelievering innovative and tailored digital products that not"
+      "\nonly meet but exceed your expectations.";
+  static const String exploreMore = "Explore more";
   static const String whatWeAre = "What We Are";
   static const String whatWeDo = "What We Do";
   static const String features = "Features";
@@ -30,7 +30,7 @@ class AppString {
 
 
   /// description screen
-  static const String whoWeAre = " Who We Are ";
+  static const String whoWeAre = " Who we are ";
   static const String teamProfiles = "Team Profiles";
   static const String clientTestimonials = "Client Testimonials";
   static const String softwareDevelopment = "Software Development";
@@ -61,6 +61,18 @@ class AppString {
   static const String californiaNoticeAtCollection =
       "California Notice At Collection";
   static const String customizeCookies = "Customize Cookies";
+  static const String partnerShips = "Partnerships";
+  static const String flutter = "Flutter";
+  static const String reactJs = "React js";
+  static const String nameRegisterOfficeAddress = "Name & register office\n address";
+  static const String requestForServices = "request For Services";
+  static const String corporateIdentityNumber = "Corporate identity\n number CIN";
+  static const String submitYourResume = "Submit your resume";
+  static const String jobSeekers = "Job seekers";
+  static const String clients = "Clients";
+  static const String emailId = "Email";
+  static const String otherEnquiries = "Other enquiries";
+  static const String  connectWithUs= "Connect with us";
 
   /// Approach screen
   static const String ourApproach = "Our Approach";
@@ -76,7 +88,7 @@ class AppString {
       '\nContinual learning is at our core, allowing us\nto embrace new trends and technologies\nand incorporate them into our projects,\nensuring that our work remains at the\nforefront of the industry.';
 
   static const String unionTxt2 =
-      "We also have a strong commitment to nurturing and educating\nemerging, forward-thinking talent in the field...,";
+      "We also have a strong commitment to nurturing and educating\nemerging, forward-thinking talent in the field...";
 
   static const String unionTxt3 =
       "In addition to our primary endeavors, we hold\na steadfast dedication to cultivating and\ninstructing up-and-coming, innovative talent\nwithin the industry.\n"

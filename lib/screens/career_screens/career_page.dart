@@ -6,6 +6,7 @@ import '../common_screens/responsive_app_bar.dart';
 import 'career_about_us.dart';
 import 'career_binyuga_screen.dart';
 import 'career_start_screen.dart';
+import 'career_sub_home_page.dart';
 
 class CareerPageScreen extends StatelessWidget {
   const CareerPageScreen({super.key});
@@ -36,6 +37,11 @@ class CareerPageScreen extends StatelessWidget {
                 height: 900,
                 color: Colors.purple,
                 child: CareerStartScreen(),
+              ),
+              Container(
+                height: 900,
+              //  color: Colors.blueGrey,
+                child: CareerSubHomePage(),
               ),
 
               Container(
