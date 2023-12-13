@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:official_binyuga_website/screens/what_we_do/what_we_do_explore_screen.dart';
 import 'package:official_binyuga_website/screens/what_we_do/what_we_do_start_screen.dart';
 import 'package:official_binyuga_website/screens/what_we_do/what_we_do_sub_home.dart';
 
@@ -33,6 +34,11 @@ class WhatWeDoScreen extends StatelessWidget {
                 height: 1500,
                 //color: Colors.red,
                 child: WWDSubHome(),
+              ),
+              Container(
+                height: 1500,
+                //color: Colors.red,
+                child: WhatWeDoExploreScreen(),
               ),
 
               // Container(

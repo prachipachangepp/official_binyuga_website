@@ -34,27 +34,34 @@ class CareerStartScreen extends StatelessWidget {
             ),
           ),
           Padding(
-            padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height /4,left:290,),
+            padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height /4,left:MediaQuery.of(context).size.width /5.5,),
             child: Column(
               children: [
                 Text(
                     'Mold Your Dreams '
-                        '\ninto Reality,',
-                    style: AllScreensConstant.customTextStyle(FontSize.s30,
-                        FontWeightManager.bold, ColorManager.white)
+                        '\ninto Reality',
+                style: AllScreensConstant.customTextStyle(
+                    MediaQuery.of(context).size.width/31,
+                    FontWeightManager.bold,
+                    ColorManager.white)
 
                 ),
                 SizedBox(height: AppSize.s20,),
 
-            MaterialButton(
-              color: ColorManager.white,
-              shape: const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(30.0))),
-              onPressed: () {},
-              child:  Padding(
-                padding: EdgeInsets.symmetric(vertical: AppPadding.p10, horizontal: MediaQuery.of(context).size.width/60),
-                child:Text( 'Apply Now',
-                  style: RButtonTheme.roundedButtonTextStyle,
+            Padding(
+              padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/55,right:50),
+              child: MaterialButton(
+                color: ColorManager.white,
+                shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(30.0))),
+                onPressed: () {},
+                child:  Padding(
+                  padding:
+                  EdgeInsets.symmetric(vertical: AppPadding.p8,
+                      horizontal: MediaQuery.of(context).size.width/50),
+                  child:Text( 'Apply Now',
+                    style: RButtonTheme.roundedButtonTextStyle,
+                  ),
                 ),
               ),
             ),
