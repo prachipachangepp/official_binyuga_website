@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:official_binyuga_website/screens/common_screens/description_bottom_row.dart';
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
@@ -18,6 +19,7 @@ class _LastPageState extends State<LastPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: ColorManager.nevyBlue,
       // height:AppSize.s1000,
       child:Column(
         children: [
@@ -218,12 +220,13 @@ class _LastPageState extends State<LastPage> {
               ],
             ),
           ),
-          SizedBox(height:50),
+          SizedBox(height:40),
           ///bottom row
-          // Padding(
-          //   padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/10,),
-          //   child: const DescriptionBottoRowConstant()
-          // ),
+          Padding(
+            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/10,),
+            child: DescriptionBottomRowConstant()
+          ),
+          SizedBox(height:20),
         ],
       ),
     );

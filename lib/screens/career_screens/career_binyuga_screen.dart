@@ -37,15 +37,16 @@ class CareerBinyugaScreen extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(
               top: MediaQuery.of(context).size.height / 5,
-              left: MediaQuery.of(context).size.width / 20,
+              left: MediaQuery.of(context).size.width / 50,
 
             ),
             child: Row(
+
               children: [
                 Image.network(
                   "images/woman.png",
                   height: 300,
-                  // width: MediaQuery.of(context).size.width,
+                  width: MediaQuery.of(context).size.width/4,
                   // width:200,
                 ),
                 SizedBox(
@@ -61,10 +62,11 @@ class CareerBinyugaScreen extends StatelessWidget {
                 SizedBox(
                   width: 25,
                 ),
+
                 Padding(
                   padding: EdgeInsets.only(
                    // right: MediaQuery.of(context).size.width / 50,
-                    left: MediaQuery.of(context).size.width / 90,
+                   left: MediaQuery.of(context).size.width / 90,
                     top: MediaQuery.of(context).size.height / 80,
                   ),
                   //   bottom:MediaQuery.of(context).size.height/3.5),
