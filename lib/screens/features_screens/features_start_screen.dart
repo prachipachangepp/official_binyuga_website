@@ -31,7 +31,7 @@ class FeatureStartScreen extends StatelessWidget {
               children: [
                 Text(
                   'Turning Dreams into Features, and',
-                  style: AllScreensConstant.customTextStyle(FontSize.s50, FontWeightManager.bold, ColorManager.white),
+                  style: AllScreensConstant.customTextStyle(FontSize.s58, FontWeightManager.bold, ColorManager.white),
                 ),
                 SizedBox(height: 10,),
                 Padding(
@@ -40,7 +40,7 @@ class FeatureStartScreen extends StatelessWidget {
                     children: [
                       Text(
                         'Features into Reality',
-                        style: AllScreensConstant.customTextStyle(FontSize.s50, FontWeightManager.bold, ColorManager.white),
+                        style: AllScreensConstant.customTextStyle(FontSize.s58, FontWeightManager.bold, ColorManager.white),
                       ),
                     ],
                   ),
