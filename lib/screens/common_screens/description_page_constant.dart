@@ -52,7 +52,7 @@ class DesriptionScreenConstant extends StatelessWidget {
               children: [
                 ///who we are
                 Padding(
-                  padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/85,),
+                  padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/85,bottom:40),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -123,16 +123,16 @@ class DesriptionScreenConstant extends StatelessWidget {
                 SizedBox(width: MediaQuery.of(context).size.width/15,),
                 ///career
                 Padding(
-                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/85 ),
+                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/85,top:15 ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        AppString.flutter,
-                        textAlign: TextAlign.left,
-                        style: LastColumnScreen.columnTextStyle(context),
-                      ),
-                      SizedBox(height: AppSize.s15, ),
+                      // Text(
+                      //   AppString.flutter,
+                      //   textAlign: TextAlign.left,
+                      //   style: LastColumnScreen.columnTextStyle(context),
+                      // ),
+                      // SizedBox(height: AppSize.s15, ),
                       Text(
                         AppString.reactJs,
                         textAlign: TextAlign.left,
@@ -219,15 +219,15 @@ class DesriptionScreenConstant extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        AppString.nameRegisterOfficeAddress,
-                        style: LastColumnScreen.columnTextStyle(context),
-                      ),
-                      SizedBox(height: AppSize.s15,),
-                      Text(
-                        AppString.requestForServices,
-                        style: LastColumnScreen.columnTextStyle(context),
-                      ),
+                      // Text(
+                      //   AppString.nameRegisterOfficeAddress,
+                      //   style: LastColumnScreen.columnTextStyle(context),
+                      // ),
+                      // SizedBox(height: AppSize.s15,),
+                      // Text(
+                      //   AppString.requestForServices,
+                      //   style: LastColumnScreen.columnTextStyle(context),
+                      // ),
                       SizedBox(height: AppSize.s15,),
                       Text(
                         AppString.corporateIdentityNumber,

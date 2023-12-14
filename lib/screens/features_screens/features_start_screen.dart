@@ -25,7 +25,7 @@ class FeatureStartScreen extends StatelessWidget {
 
           /// Content Column
           Padding(
-            padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height /10,left:MediaQuery.of(context).size.width /2,),
+            padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height /10,left:MediaQuery.of(context).size.width /1,),
             child: Column(
 
               children: [
@@ -70,3 +70,6 @@ class FeatureStartScreen extends StatelessWidget {
     );
   }
 }
+
+
+

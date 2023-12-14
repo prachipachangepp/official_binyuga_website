@@ -29,7 +29,7 @@ class FeatureSubHomePage extends StatelessWidget {
               ),
               SizedBox(height:10,),
               Padding(
-                padding: const EdgeInsets.only(bottom:180),
+                padding: const EdgeInsets.only(right:250),
                 child: Image.network(
                   "images/design 2.png",
                   height: AppSize.s500,

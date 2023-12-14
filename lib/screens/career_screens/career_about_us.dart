@@ -48,7 +48,7 @@ class CareerAboutUs extends StatelessWidget {
                   ],
                 ),
                 Row(
-                  // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Container(
                       height: 200,

@@ -124,7 +124,7 @@ class AppString {
       "\n that dream to life, translating it into tangible"
       "\n solutions and results";
   static const String sculptYour ="Sculpt Your Path to Success";
-  static const String moldYour = " ' Mold Your Dreams "
+  static const String moldYour = "Mold Your Dreams "
   '\ninto Reality';
 
   /// WhatWeDo SubHomePage
@@ -137,5 +137,16 @@ class AppString {
       "\n resonates with our clients and the "
       "\ncommunities they impact.";
   static const String binyugaPvtLtd = "Binyuga.Pvt.Ltd";
+  /// FeatureSubHome Page
+  static const String dreamIt = "Dream It";
+  static const String buildIt = "Build It";
+  static const String achieveIt = "Achieve It ";
+  static const String featureTxt = "We believe in the power of envisioning, creating,\n"
+      "nd realizing. It all starts with a dream, an idea, or "
+      "\n a vision. "
+      "\n We then roll up our sleeves to build and bring  "
+      "\n that dream to life, translating it into tangible"
+      "\n solutions and results";
+  static const String readMore = "Read More";
 
 }

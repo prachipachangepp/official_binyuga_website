@@ -10,6 +10,7 @@ class ResponsiveAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      backgroundColor: Colors.white,
       title: Image.asset(
         'images/binyuga_logo.png',
         height: AppSize.s160,

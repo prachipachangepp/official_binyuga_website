@@ -24,7 +24,8 @@ class RButtonTheme {
       fontWeight: FontWeightManager.semiBold,
       fontSize: FontSize.s15,
       letterSpacing: -0.011,
-      color: ColorManager.black);
+      color: ColorManager.black
+  );
 }
 
 ///changing elements
