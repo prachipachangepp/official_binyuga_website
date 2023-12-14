@@ -9,10 +9,24 @@ class FeatureSubHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 2200,
-      width: MediaQuery.of(context).size.width,
+      // height: 2200,
+      // width: MediaQuery.of(context).size.width,
       child: Stack(
         children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Image.network(
+                "images/design 1.png",
+                height: 380,
+                // width: MediaQuery
+                //     .of(context)
+                //     .size
+                //     .width / 2,
+                // width:200,
+              ),
+            ],
+          ),
           Padding(
             padding: const EdgeInsets.only(left:250),
             child: Column(

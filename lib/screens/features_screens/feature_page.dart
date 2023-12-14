@@ -11,6 +11,7 @@ import '../common_screens/description_page_constant.dart';
 import '../common_screens/responsive_app_bar.dart';
 import '../landing_page_screens/our_approach_screen/approach_screen.dart';
 import 'features_start_screen.dart';
+import 'features_sub_home_page.dart';
 
 class FeaturePageScreen extends StatelessWidget {
   const FeaturePageScreen({super.key});
@@ -33,15 +34,15 @@ class FeaturePageScreen extends StatelessWidget {
                   color: Colors.pink,
                   child: FeatureStartScreen()),
               Container(
-                height: 1500,
+                height: 1000,
                 //color: Colors.red,
                 child: FeatureSubHome(),
               ),
-              // Container(
-              //   height: 1500,
-              //   //color: Colors.red,
-              //   child: WhatWeDoExploreScreen(),
-              // ),
+              Container(
+                height: 1200,
+               // color: Colors.grey,
+                child: FeatureSubHomePage(),
+              ),
 
               // Container(
               //   height: 700,

@@ -11,7 +11,7 @@ class FeatureStartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: AppSize.s900,
+    //  height: AppSize.s900,
       color: ColorManager.white,
       child: Stack(
         children: [
@@ -25,28 +25,21 @@ class FeatureStartScreen extends StatelessWidget {
 
           /// Content Column
           Padding(
-            padding: const EdgeInsets.only(top: 30.0,left:500),
+            padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height /10,left:MediaQuery.of(context).size.width /2,),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+
               children: [
                 Text(
-                  'Turning Dreams into Features, and',
-                  style: AllScreensConstant.customTextStyle(FontSize.s58, FontWeightManager.bold, ColorManager.white),
-                ),
-                SizedBox(height: 10,),
-                Padding(
-                  padding: const EdgeInsets.only(left:150),
-                  child: Row(
-                    children: [
-                      Text(
-                        'Features into Reality',
-                        style: AllScreensConstant.customTextStyle(FontSize.s58, FontWeightManager.bold, ColorManager.white),
+                  'Turning Dreams into Features, and'
+
+                        '\nFeatures into Reality',
+                        style: AllScreensConstant.customTextStyle(FontSize.s25, FontWeightManager.bold, ColorManager.white),
                       ),
                     ],
                   ),
                 ),
                 Padding(
-                  padding:  EdgeInsets.only(left:200,),
+                  padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height /3.5,left:MediaQuery.of(context).size.width /3,),
                   child: Text(
                     'We specialize in crafting customized solutions to meet \nyour unique needs, ensuring that our products align \nperfectly with your goals.Our services are designed t\noffer the best value for your investment, optimizing\nyour budget without compromising quality.. ',
                     style: AllScreensConstant.customTextStyle(
@@ -56,10 +49,10 @@ class FeatureStartScreen extends StatelessWidget {
                         ColorManager.lightBlue),
                   ),
                 ),
-                SizedBox(height: AppSize.s80,),
+                SizedBox(height: AppSize.s50,),
                 Padding(
-                  padding: const EdgeInsets.only(left: 200),
-                  child: ElevatedButton(
+                  padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height /2,left:MediaQuery.of(context).size.width /3),
+                    child: ElevatedButton(
                     onPressed: () {
                       // Button action
                     },
@@ -71,9 +64,6 @@ class FeatureStartScreen extends StatelessWidget {
                 ),
               ],
             ),
-          ),
-        ],
-      ),
     );
   }
 }
