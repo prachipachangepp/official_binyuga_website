@@ -48,7 +48,7 @@ class StartHomeScreen extends StatelessWidget {
                     Padding(
                       padding:  EdgeInsets.only(top: AppPadding.p100),
                       child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           GestureDetector(
                             onTap: (){},

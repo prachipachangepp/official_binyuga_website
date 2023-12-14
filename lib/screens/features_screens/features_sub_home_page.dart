@@ -27,14 +27,18 @@ class FeatureSubHomePage extends StatelessWidget {
                     .width / 1.5,
                 // width:200,
               ),
-              Image.network(
-                "images/design 2.png",
-                height: AppSize.s500,
-                width: MediaQuery
-                    .of(context)
-                    .size
-                    .width / 2,
-                // width:200,
+              SizedBox(height:10,),
+              Padding(
+                padding: const EdgeInsets.only(bottom:180),
+                child: Image.network(
+                  "images/design 2.png",
+                  height: AppSize.s500,
+                  width: MediaQuery
+                      .of(context)
+                      .size
+                      .width / 2,
+                  // width:200,
+                ),
               ),
             ],
           ),
