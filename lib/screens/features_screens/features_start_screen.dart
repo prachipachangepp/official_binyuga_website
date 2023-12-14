@@ -31,9 +31,12 @@ class FeatureStartScreen extends StatelessWidget {
               children: [
                 Text(
                   'Turning Dreams into Features, and'
-
-                        '\nFeatures into Reality',
-                        style: AllScreensConstant.customTextStyle(FontSize.s25, FontWeightManager.bold, ColorManager.white),
+                      '\nFeatures into Reality',
+                        style:
+                        AllScreensConstant.customTextStyle(
+                            FontSize.s25,
+                            FontWeightManager.bold,
+                            ColorManager.white),
                       ),
                     ],
                   ),
@@ -57,7 +60,7 @@ class FeatureStartScreen extends StatelessWidget {
                       // Button action
                     },
                     child: Text(
-                      AppString.letsTalk,
+                      AppString.readMore,
                       style: RButtonTheme.roundedButtonTextStyle,
                     ),
                   ),

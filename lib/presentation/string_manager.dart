@@ -72,7 +72,7 @@ class AppString {
   static const String clients = "Clients";
   static const String emailId = "Email";
   static const String otherEnquiries = "Other enquiries";
-  static const String  connectWithUs= "Connect with us";
+  static const String connectWithUs = "Connect with us";
 
   /// Approach screen
   static const String ourApproach = "Our Approach";
@@ -103,7 +103,7 @@ class AppString {
 
   ///Career Binyuga Page
 
-  static const String loremTxt =  'Lorem ipsum dolor sit amet consectetur '
+  static const String loremTxt = 'Lorem ipsum dolor sit amet consectetur '
       ' \nadipiscing elit, mollis quam proin '
       ' \nmolestie a enim, arcu potenti rutrum '
       ' \nrisus torquent vel. Ut facilisis '
@@ -114,9 +114,31 @@ class AppString {
       ' \ntellus odio.';
 
 
-
-/// WhatWeDo SubHomePage
+  /// WhatWeDo SubHomePage
   static const String trustPropelsBuisnessProsperity = "Trust Propels Buisness \nProsperity";
   static const String explore = "Explore";
   static const String binyugaPvtLtd = "Binyuga.Pvt.Ltd";
+/// WhatWeDoExploreScreen Page
+  static const String softwareDev = "Software Development";
+  static const String appDev = "Application Development";
+  static const String webDev = "Web Development";
+  static const String uiDes= "UI/UX Designing";
+  static const String careerMentor= "Career Menitoring";
+  static const String problemSolve = "Problem Solving";
+
+  /// FeatureSubHome Page
+  static const String dreamIt = "Dream It";
+  static const String buildIt = "Build It";
+  static const String achieveIt = "Achieve It ";
+  static const String featureTxt = "We believe in the power of envisioning, creating,\n"
+      "nd realizing. It all starts with a dream, an idea, or "
+      "\n a vision. "
+      "\n We then roll up our sleeves to build and bring  "
+      "\n that dream to life, translating it into tangible"
+      "\n solutions and results";
+
+  /// FeatureStartScrren Page
+  static const String readMore = "Read More";
+
+
 }

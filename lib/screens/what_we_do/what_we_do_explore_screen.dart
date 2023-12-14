@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+
+import '../../presentation/string_manager.dart';
+import '../../presentation/theme_manager.dart';
 class WhatWeDoExploreScreen extends StatefulWidget {
   const WhatWeDoExploreScreen({super.key});
 
@@ -46,14 +49,8 @@ class _WhatWeDoExploreScreenState extends State<WhatWeDoExploreScreen> {
                                       )
                                   ),
                                   child: Text(
-                                    'Software Development',
-                                    style: TextStyle(
-                                      backgroundColor: Colors.blue,
-                                      fontSize: 20,
-                                      color: Colors.white,
-                                      fontFamily: 'inter',
-                                      fontWeight: FontWeight.w800,
-                                    ),
+                                    AppString.softwareDev,
+                                    style:  WhatWeDoExploreConstant.subHomeTextStyle
                                   )
                               ),
                             )
@@ -84,15 +81,10 @@ class _WhatWeDoExploreScreenState extends State<WhatWeDoExploreScreen> {
                                       )
                                   ),
                                   child: Text(
-                                    'Application Development',
-                                    style: TextStyle(
-                                      backgroundColor: Colors.blue,
-                                      fontSize: 20,
-                                      color: Colors.white,
-                                      fontFamily: 'inter',
-                                      fontWeight: FontWeight.w800,
-                                    ),
-                                  )
+                                      AppString.appDev,
+                                      style:  WhatWeDoExploreConstant.subHomeTextStyle
+
+                                  ),
                               ),
                             )
                           ],
@@ -127,15 +119,9 @@ class _WhatWeDoExploreScreenState extends State<WhatWeDoExploreScreen> {
                                       )
                                   ),
                                   child: Text(
-                                    'Web Development',
-                                    style: TextStyle(
-                                      backgroundColor: Colors.blue,
-                                      fontSize: 20,
-                                      color: Colors.white,
-                                      fontFamily: 'inter',
-                                      fontWeight: FontWeight.w800,
-                                    ),
-                                  )
+                                      AppString.webDev,
+                                      style:  WhatWeDoExploreConstant.subHomeTextStyle
+                                  ),
                               ),
                             )
 
@@ -165,14 +151,8 @@ class _WhatWeDoExploreScreenState extends State<WhatWeDoExploreScreen> {
                                       )
                                   ),
                                   child: Text(
-                                    'Ui/UX Designing',
-                                    style: TextStyle(
-                                      backgroundColor: Colors.blue,
-                                      fontSize: 20,
-                                      color: Colors.white,
-                                      fontFamily: 'inter',
-                                      fontWeight: FontWeight.w800,
-                                    ),
+                                      AppString.uiDes,
+                                      style:  WhatWeDoExploreConstant.subHomeTextStyle
                                   )
                               ),
                             )
@@ -208,15 +188,9 @@ class _WhatWeDoExploreScreenState extends State<WhatWeDoExploreScreen> {
                                       )
                                   ),
                                   child: Text(
-                                    'Career Monitoring',
-                                    style: TextStyle(
-                                      backgroundColor: Colors.blue,
-                                      fontSize: 20,
-                                      color: Colors.white,
-                                      fontFamily: 'inter',
-                                      fontWeight: FontWeight.w800,
-                                    ),
-                                  )
+                                      AppString.careerMentor,
+                                      style:  WhatWeDoExploreConstant.subHomeTextStyle
+                                  ),
                               ),
                             )
                           ],
@@ -246,15 +220,9 @@ class _WhatWeDoExploreScreenState extends State<WhatWeDoExploreScreen> {
                                       )
                                   ),
                                   child: Text(
-                                    'Problem Solving',
-                                    style: TextStyle(
-                                      backgroundColor: Colors.blue,
-                                      fontSize: 20,
-                                      color: Colors.white,
-                                      fontFamily: 'inter',
-                                      fontWeight: FontWeight.w800,
-                                    ),
-                                  )
+                                      AppString.problemSolve,
+                                      style:  WhatWeDoExploreConstant.subHomeTextStyle
+                                  ),
                               ),
                             )
                           ],

@@ -53,6 +53,7 @@ class DescriptionPageHeadConstant extends StatelessWidget{
         SizedBox(width: MediaQuery.of(context).size.width / 7),
         Text(AppString.contact,
             style: LastDescriptionScreen.rowTextStyle(context)),
+        SizedBox(width: MediaQuery.of(context).size.width /10),
       ],
     );
   }

@@ -31,6 +31,7 @@ class ResponsiveAppBar extends StatelessWidget {
             NavBarItem(title: 'Portfolio'),
             SizedBox(width: MediaQuery.of(context).size.width/6.2),
             NavBarItem(title: 'Contacts'),
+
             Padding(
               padding:  EdgeInsets.only(right: AppPadding.p35),
               child: Image.asset(

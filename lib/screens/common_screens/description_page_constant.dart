@@ -47,12 +47,12 @@ class DesriptionScreenConstant extends StatelessWidget {
           ),
           SizedBox(height: 5,),
           Padding(
-            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/16,bottom:30),
+            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/16,),
             child: Row(
               children: [
                 ///who we are
                 Padding(
-                  padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/85,bottom: 160),
+                  padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/85,),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -81,7 +81,7 @@ class DesriptionScreenConstant extends StatelessWidget {
                 SizedBox(width:  MediaQuery.of(context).size.width/20,),
                 ///what we do
                 Padding(
-                  padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/85,bottom: 100),
+                  padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/85),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -123,7 +123,7 @@ class DesriptionScreenConstant extends StatelessWidget {
                 SizedBox(width: MediaQuery.of(context).size.width/15,),
                 ///career
                 Padding(
-                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/85,bottom:30 ),
+                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/85 ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -176,7 +176,7 @@ class DesriptionScreenConstant extends StatelessWidget {
                 SizedBox(width: MediaQuery.of(context).size.width/15,),
                 ///features
                 Padding(
-                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/85,bottom:100),
+                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/85,),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -215,7 +215,7 @@ class DesriptionScreenConstant extends StatelessWidget {
                 SizedBox(width: MediaQuery.of(context).size.width/15,),
                 ///contact
                 Padding(
-                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/85,top:20),
+                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/85,),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [

@@ -73,12 +73,14 @@ class CareerSubHomePage extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(left: 280,top: 415),
           child: Text(
-            "We believe in the power of envisioning, creating, \n"
-                "nd realizing. It all starts with a dream, an idea, or "
-                "\n a vision. "
-                "\n We then roll up our sleeves to build and bring  "
-                "\n that dream to life, translating it into tangible"
-                "\n solutions and results",
+           " We see every journey to success as a work of art, "
+               "\nwhere each decision and effort shapes the way "
+               "\nforward. Our mission is to help you carve out your"
+               "\n unique route to achievement, providing the tools,"
+               "\n support, and expertise you need to achieve your "
+               "\ngoals. Just as a sculptor molds clay into a"
+               "\n masterpiece, we are here to assist you in crafting"
+               "\n your path towards success.",
             style: TextStyle(
                 color: Colors.white,
                 fontSize: 30),),
