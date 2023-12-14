@@ -164,4 +164,32 @@ class WhatWeDoSubPageConstant {
       fontWeight: FontWeightManager.extraBold,
       decoration:TextDecoration.none,
       color: ColorManager.darkBlue1);
+
+}
+/// WhatWeDo ExploreScreen
+class WhatWeDoExploreConstant {
+  static TextStyle subHomeTextStyle = GoogleFonts.inter(
+    backgroundColor:ColorManager.skyBlue1,
+    fontSize:  FontSize.s20,
+    color: ColorManager.white,
+    fontWeight: FontWeightManager.extraBold,
+
+  );
+
+}
+///FeatureSubHome Page
+class FeatureSubHomeConstant {
+  static TextStyle featuresubHomeTextStyle = GoogleFonts.inter(
+      fontSize: FontSize.s70,
+      fontWeight: FontWeightManager.extraBold,
+      decoration:TextDecoration.none,
+      color: ColorManager.darkBlue1);
+}
+/// FeatureSubHome Page LongText
+class FeatureLongTxtConstant {
+  static TextStyle featurelongTextStyle = GoogleFonts.inter(
+      fontSize: FontSize.s30,
+      fontWeight: FontWeightManager.semiBold,
+      decoration:TextDecoration.none,
+      color: ColorManager.white);
 }

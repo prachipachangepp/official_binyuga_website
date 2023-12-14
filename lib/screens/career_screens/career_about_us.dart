@@ -48,7 +48,7 @@ class CareerAboutUs extends StatelessWidget {
                   ],
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Container(
                       height: 200,
@@ -69,6 +69,7 @@ class CareerAboutUs extends StatelessWidget {
                         ),
                       ),
                     ),
+                    SizedBox(width:MediaQuery.of(context).size.width / 80,),
                     Container(
                       height: 200,
                       width: 160,
@@ -88,6 +89,7 @@ class CareerAboutUs extends StatelessWidget {
                         ),
                       ),
                     ),
+                    SizedBox(width: 50,),
                     Container(
                       height: 200,
                       width: 160,
@@ -107,6 +109,7 @@ class CareerAboutUs extends StatelessWidget {
                         ),
                       ),
                     ),
+                    SizedBox(width: MediaQuery.of(context).size.width / 80,),
                     Container(
                       height: 200,
                       width: 160,

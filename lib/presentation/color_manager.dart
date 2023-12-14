@@ -11,9 +11,11 @@ class ColorManager{
   static Color purple    = Color(0xff210B32);
   static Color nevyBlue  = Color(0xff090B17);
   static Color skyBlue   = Color(0xff07558D);
+  static Color skyBlue1   = Color(0xff3394DD);
   static Color blueShade = Color(0xff83CAFF);
   static Color white1    = Color(0xffDFDFDF);
   static Color darkBlue1  =  Color(0xff214188);
+
 
 
 
