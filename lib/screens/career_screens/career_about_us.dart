@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../presentation/font_manager.dart';
+import '../../presentation/string_manager.dart';
+import '../../presentation/theme_manager.dart';
 import '../../presentation/value_manager.dart';
 
 class CareerAboutUs extends StatelessWidget {
@@ -155,22 +157,8 @@ class CareerAboutUs extends StatelessWidget {
                       left: MediaQuery.of(context).size.width / 90,
                       top: MediaQuery.of(context).size.height / 20,
                     ),
-                    child: Text(
-                      'Lorem ipsum dolor sit amet consectetur '
-                      ' \nadipiscing elit, mollis quam proin '
-                      ' \nmolestie a enim, arcu potenti rutrum '
-                      ' \nrisus torquent vel. Ut facilisis '
-                      ' \ncondimentum vitae nam curae nec '
-                      ' \ncurabitur, gravida convallis natoque '
-                      ' \nlobortis sagittis scelerisque malesuada, '
-                      ' \ncubilia ullamcorper tempor fermentum '
-                      ' \ntellus odio.',
-                      style: TextStyle(
-                          fontSize: FontSize.s15,
-                          fontFamily: 'inter',
-                          decoration: TextDecoration.none,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.white),
+                    child: Text(AppString.loremTxt,
+                      style: CareerPageConstant.careerTextStyle,
                     ),
                   ),
                 ],

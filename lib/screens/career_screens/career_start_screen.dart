@@ -37,9 +37,7 @@ class CareerStartScreen extends StatelessWidget {
             padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height /4,left:MediaQuery.of(context).size.width /5.5,),
             child: Column(
               children: [
-                Text(
-                    'Mold Your Dreams '
-                        '\ninto Reality',
+                Text(AppString.moldYour,
                 style: AllScreensConstant.customTextStyle(
                     MediaQuery.of(context).size.width/31,
                     FontWeightManager.bold,

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../presentation/color_manager.dart';
+import '../../presentation/font_manager.dart';
 import '../../presentation/string_manager.dart';
 import '../../presentation/theme_manager.dart';
 
@@ -63,15 +65,9 @@ class WWDSubHome extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 300,top: 415),
-                  child: Text(
-                        "We are dedicated to more than just \n"
-                        "technology transformation; our goal is "
-                        "\nto bring about meaningful change that"
-                        "\n resonates with our clients and the "
-                        "\ncommunities they impact.",
-                         style: TextStyle(
-                             color: Colors.white,
-                             fontSize: 30),),
+                  child: Text(AppString.weAreDedicated,
+                      style: AllScreensConstant.customTextStyle(FontSize.s30,
+                        FontWeightManager.medium,ColorManager.white,)),
                 ),
                // SizedBox(height: 20,),
                 Padding(

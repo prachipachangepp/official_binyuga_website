@@ -146,11 +146,17 @@ class TeamMemberConstant {
 class CareerPageConstant {
   static TextStyle careerTextStyle = GoogleFonts.inter(
 //textStyle: TextStyle(
-      fontSize: FontSize.s13,
-      fontWeight: FontWeightManager.medium,
+      fontSize: FontSize.s15,
+     // fontWeight: FontWeightManager.medium,
       decoration:TextDecoration.none,
       color: ColorManager.white);
 }
+class CareerPageConstant1 {
+  static TextStyle careerTextStyle1 = GoogleFonts.inter(
+      fontSize: FontSize.s10,
+      color: Colors.white);
+}
+
 /// WhatWeDo SubHome Page
 class WhatWeDoSubPageConstant {
   static TextStyle subHomeTextStyle = GoogleFonts.inter(

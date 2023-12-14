@@ -20,16 +20,11 @@ class CareerSubHomePage extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.only(top:140),
-            child: Text('Sculpt Your Path to Success',
-              style: TextStyle(
-                decoration: TextDecoration.none,
-                fontSize: 50,
-                fontFamily: 'inter',
-                fontWeight: FontWeight.w800,
-                color: Color(0xff214188),
+            child: Text(AppString.sculptYour,
+              style: WhatWeDoSubPageConstant.subHomeTextStyle,
+
               ),
             ),
-          ),
         ],
       ),
       Padding(
@@ -73,15 +68,9 @@ class CareerSubHomePage extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(left: 280,top: 415),
           child: Text(
-            "We believe in the power of envisioning, creating, \n"
-                "nd realizing. It all starts with a dream, an idea, or "
-                "\n a vision. "
-                "\n We then roll up our sleeves to build and bring  "
-                "\n that dream to life, translating it into tangible"
-                "\n solutions and results",
-            style: TextStyle(
-                color: Colors.white,
-                fontSize: 30),),
+            AppString.weBelieveIn,
+              style: AllScreensConstant.customTextStyle(FontSize.s30,
+                FontWeightManager.medium,ColorManager.white,)),
         ),
         // SizedBox(height: 20,),
         Padding(

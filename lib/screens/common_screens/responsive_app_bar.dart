@@ -39,7 +39,7 @@ class ResponsiveAppBar extends StatelessWidget {
                 height: AppSize.s50,
               ),
             )
-          ],
+              ],
         )
             : Container(),
       ],
