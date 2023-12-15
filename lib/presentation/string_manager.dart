@@ -120,7 +120,19 @@ class AppString {
   static const String trustPropelsBuisnessProsperity = "Trust Propels Buisness \nProsperity";
   static const String explore = "Explore";
   static const String binyugaPvtLtd = "Binyuga.Pvt.Ltd";
-/// WhatWeDoExploreScreen Page
+  static const String weBelieveIn ="We believe in the power of envisioning, creating, \n"
+      "nd realizing. It all starts with a dream, an idea, or "
+      "\n a vision. "
+      "\n We then roll up our sleeves to build and bring  "
+      "\n that dream to life, translating it into tangible"
+      "\n solutions and results";
+  static const String sculptYour ="Sculpt Your Path to Success";
+  static const String moldYour = "Mold Your Dreams "
+      '\ninto Reality';
+  static const String exploreBinyuga ="Explore\nBinyuga.Pvt.Ltd.";
+  static const String weAreDedicated ="We're dedicated to more than just\ntechnology transformation; our goal is\nto bring about meaningful change that\nresonates with our clients and the\ncommunities they impact.";
+
+  /// WhatWeDoExploreScreen Page
   static const String softwareDev = "Software Development";
   static const String appDev = "Application Development";
   static const String webDev = "Web Development";
