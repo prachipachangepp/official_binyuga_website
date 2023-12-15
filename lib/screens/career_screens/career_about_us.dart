@@ -18,12 +18,12 @@ class CareerAboutUs extends StatelessWidget {
             Image.network(
               'images/background1.png',
               fit: BoxFit.fill,
-              height: 585,
+              height: 720,
               width: MediaQuery.of(context).size.width,
             ),
             Padding(
               padding: EdgeInsets.only(
-                  left: MediaQuery.of(context).size.width / 12, top: 380),
+                  left: MediaQuery.of(context).size.width / 12, top: 400),
               child: const Text(AppString.aboutUs,
                 style: TextStyle(
                     fontSize: 35,
@@ -58,7 +58,7 @@ class CareerAboutUs extends StatelessWidget {
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   // decoration: TextDecoration.none,
-                                  fontSize: 10,
+                                  fontSize: 13,
                                   color: Colors.white,
                                 ),
                               ),
@@ -68,8 +68,8 @@ class CareerAboutUs extends StatelessWidget {
                         SizedBox(width:MediaQuery.of(context).size.width / 20,),
                         Expanded(
                           child: Container(
-                            height: 210,
-                            width: 180,
+                            height: 300,
+                           // width: 180,
                             decoration: BoxDecoration(
                               color: Colors.blueGrey[700],
                               borderRadius: BorderRadius.all(Radius.circular(15)),
@@ -81,7 +81,7 @@ class CareerAboutUs extends StatelessWidget {
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   fontFamily: 'inter',
-                                  fontSize: 10,
+                                  fontSize: 13,
                                   color: Colors.white,
                                 ),
                               ),
@@ -91,8 +91,8 @@ class CareerAboutUs extends StatelessWidget {
                         SizedBox(width: MediaQuery.of(context).size.width / 20,),
                         Expanded(
                           child: Container(
-                            height: 210,
-                            width: 180,
+                            height: 300,
+                          //  width: 180,
                             decoration: BoxDecoration(
                               color: Colors.blueGrey[700],
                               borderRadius: BorderRadius.all(Radius.circular(15)),
@@ -104,7 +104,7 @@ class CareerAboutUs extends StatelessWidget {
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   fontFamily: 'inter',
-                                  fontSize: 10,
+                                  fontSize: 13,
                                   color: Colors.white,
                                 ),
                               ),
@@ -114,8 +114,8 @@ class CareerAboutUs extends StatelessWidget {
                         SizedBox(width: MediaQuery.of(context).size.width / 20,),
                         Expanded(
                           child: Container(
-                            height: 210,
-                            width: 180,
+                            height: 300,
+                           // width: 180,
                             decoration: BoxDecoration(
                               color: Colors.blueGrey[700],
                               borderRadius: BorderRadius.all(Radius.circular(15)),
@@ -127,7 +127,7 @@ class CareerAboutUs extends StatelessWidget {
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   fontFamily: 'inter',
-                                  fontSize: 10,
+                                  fontSize: 13,
                                   color: Colors.white,
                                 ),
                               ),
