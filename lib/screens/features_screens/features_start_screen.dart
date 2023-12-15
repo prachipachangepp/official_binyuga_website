@@ -25,47 +25,87 @@ class FeatureStartScreen extends StatelessWidget {
 
           /// Content Column
           Padding(
-            padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height /10,left:MediaQuery.of(context).size.width /1,),
+            padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height /10,),
             child: Column(
 
+
               children: [
-                Text(
-                     AppString.featureScreenText1,
-                        style:
-                        AllScreensConstant.customTextStyle(
-                            FontSize.s25,
-                            FontWeightManager.bold,
-                            ColorManager.white),
-                      ),
+                Padding(
+                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width /2.3,),
+                  child: Text(
+                    'Turning Dreams into Features, and',
+            style:
+            AllScreensConstant.customTextStyle(
+                  FontSize.s36,
+                  FontWeightManager.bold,
+                  ColorManager.white),
+          ),
+                ),
+              //  SizedBox(height: AppSize.s10,),
+                Padding(
+                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/1.8),
+                  child: Text(
+                        '  Features into Reality',
+                          style:
+                          AllScreensConstant.customTextStyle(
+                              FontSize.s37,
+                              FontWeightManager.bold,
+                              ColorManager.white),
+                        ),
+                ),
                     ],
                   ),
                 ),
                 Padding(
-                  padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height /3.5,left:MediaQuery.of(context).size.width /3,),
+                  padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height /3.5,
+                    left:MediaQuery.of(context).size.width /1.7,),
                   child: Text(
-                      AppString.featureScreenText2,
+                    'We specialize in crafting customized solutions to meet \nyour unique needs, ensuring that our products align \nperfectly with your goals.Our services are designed to\noffer the best value for your investment, optimizing\nyour budget without compromising quality.. ',
                     style: AllScreensConstant.customTextStyle(
-                        FontSize.s17,
+                        FontSize.s15,
                         //  MediaQuery.of(context).size.width/89,
                         FontWeightManager.medium,
                         ColorManager.lightBlue),
                   ),
                 ),
-                SizedBox(height: AppSize.s50,),
+              //  SizedBox(height: AppSize.s50,),
                 Padding(
-                  padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height /2,left:MediaQuery.of(context).size.width /3),
-                    child: ElevatedButton(
-                    onPressed: () {
-                      // Button action
-                    },
-                    child: Text(
-                      AppString.readMore,
-                      style: RButtonTheme.roundedButtonTextStyle,
+                  padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height /2,
+                      left:MediaQuery.of(context).size.width /1.7),
+                    child:
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.white,
+                          fixedSize: const Size(
+                              130, 33),
+                          shape:
+                          RoundedRectangleBorder(
+                              borderRadius:
+                              BorderRadius
+                                  .circular(
+                                  20))),
+                      onPressed: () {}, child: Text(
+                      'Read More',style:TextStyle(fontWeight: FontWeightManager.semiBold,fontSize: FontSize.s15,
+                        letterSpacing: -0.011,
+                        color: ColorManager.black,),
+
+
+
+
                     ),
+                    // ElevatedButton(
+                    //
+                    // onPressed: () {
+                    //   // Button action
+                    // },
+                    //
+                    //   style:
+                    //   RButtonTheme.roundedButtonTextStyle,
+                    //
+                    // ),
                   ),
-                ),
-              ],
-            ),
+
+            ),],),
     );
   }
 }

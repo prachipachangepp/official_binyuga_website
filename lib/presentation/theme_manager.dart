@@ -154,7 +154,7 @@ class CareerPageConstant {
 }
 class CareerPageConstant1 {
   static TextStyle careerTextStyle1 = GoogleFonts.inter(
-      fontSize: FontSize.s10,
+      fontSize: FontSize.s15,
       color: Colors.white);
 }
 
@@ -187,7 +187,7 @@ class WhatWeDoExploreConstant {
 ///FeatureSubHome Page
 class FeatureSubHomeConstant {
   static TextStyle featuresubHomeTextStyle = GoogleFonts.inter(
-      fontSize: FontSize.s70,
+      fontSize: FontSize.s60,
       fontWeight: FontWeightManager.extraBold,
       decoration:TextDecoration.none,
       color: ColorManager.darkBlue1);

@@ -63,13 +63,13 @@ class FeatureSubHome extends StatelessWidget {
 
           /// Base Image
           Padding(
-            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/20,top:200,),
+            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/10,top:200,),
             child: Row(
               children: [
                 Image.network(
                   "images/Rectangle 682.png",
-                  height: 635,
-                  width: MediaQuery.of(context).size.width/1.8,
+                  height: 935,
+                  width: MediaQuery.of(context).size.width/1.6,
                 ),
               ],
             ),
@@ -79,13 +79,13 @@ class FeatureSubHome extends StatelessWidget {
             padding: const EdgeInsets.only(left:200, top:220),
             child: Image.network(
               'images/Rectangle 677.png',
-              height: 800,
-              width: MediaQuery.of(context).size.width/2,
+              height: 900,
+              width: MediaQuery.of(context).size.width/1.7,
             ),
           ),
 
           Padding(
-            padding: const EdgeInsets.only(top: 320,right: 400),
+            padding: const EdgeInsets.only(top: 310,right: 410),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -99,14 +99,14 @@ class FeatureSubHome extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 280,top: 415),
-            child: Text(AppString.featureTxt,
+            padding:  EdgeInsets.only(left: 280,top: MediaQuery.of(context).size.width/3.4),
+            child: Text(AppString.weSee,
                 style:FeatureLongTxtConstant.featurelongTextStyle
             ),
           ),
           // SizedBox(height: 20,),
           Padding(
-            padding: const EdgeInsets.only(left:500,top:520),
+            padding: const EdgeInsets.only(left:500,top:590),
             child: Row(
               children: [
                 Image.network(

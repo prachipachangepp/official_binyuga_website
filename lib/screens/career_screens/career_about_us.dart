@@ -27,7 +27,7 @@ class CareerAboutUs extends StatelessWidget {
               child: Text(
                 'About Us',
                 style: TextStyle(
-                    fontSize: 29,
+                    fontSize: 35,
                     fontFamily: 'inter',
                     decoration: TextDecoration.none,
                     fontWeight: FontWeight.w700,
@@ -51,8 +51,8 @@ class CareerAboutUs extends StatelessWidget {
                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Container(
-                      height: 200,
-                      width: 160,
+                      height: 210,
+                      width: 180,
                       decoration: BoxDecoration(
                         color: Colors.blueGrey[700],
                         borderRadius: BorderRadius.all(Radius.circular(15)),
@@ -71,8 +71,8 @@ class CareerAboutUs extends StatelessWidget {
                     ),
                     SizedBox(width:MediaQuery.of(context).size.width / 80,),
                     Container(
-                      height: 200,
-                      width: 160,
+                      height: 210,
+                      width: 180,
                       decoration: BoxDecoration(
                         color: Colors.blueGrey[700],
                         borderRadius: BorderRadius.all(Radius.circular(15)),
@@ -91,8 +91,8 @@ class CareerAboutUs extends StatelessWidget {
                     ),
                     SizedBox(width: 50,),
                     Container(
-                      height: 200,
-                      width: 160,
+                      height: 210,
+                      width: 180,
                       decoration: BoxDecoration(
                         color: Colors.blueGrey[700],
                         borderRadius: BorderRadius.all(Radius.circular(15)),
@@ -111,8 +111,8 @@ class CareerAboutUs extends StatelessWidget {
                     ),
                     SizedBox(width: MediaQuery.of(context).size.width / 80,),
                     Container(
-                      height: 200,
-                      width: 160,
+                      height: 210,
+                      width: 180,
                       decoration: BoxDecoration(
                         color: Colors.blueGrey[700],
                         borderRadius: BorderRadius.all(Radius.circular(15)),
