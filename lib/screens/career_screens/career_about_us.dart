@@ -27,7 +27,7 @@ class CareerAboutUs extends StatelessWidget {
               child: Text(
                 'About Us',
                 style: TextStyle(
-                    fontSize: 29,
+                    fontSize: 35,
                     fontFamily: 'inter',
                     decoration: TextDecoration.none,
                     fontWeight: FontWeight.w700,

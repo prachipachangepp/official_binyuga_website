@@ -154,7 +154,7 @@ class CareerPageConstant {
 }
 class CareerPageConstant1 {
   static TextStyle careerTextStyle1 = GoogleFonts.inter(
-      fontSize: FontSize.s10,
+      fontSize: FontSize.s15,
       color: Colors.white);
 }
 
