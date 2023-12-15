@@ -36,7 +36,7 @@ class MyStackPage extends StatelessWidget {
               //   child: UnionImageScreen(),
               // ),
               Container(
-                height: 720,
+                height: 780,
                 child: AboutUs(),
               ),
               Container(
