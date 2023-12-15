@@ -49,7 +49,10 @@ class WWDStartScreen extends StatelessWidget {
                   },
                   child: Text(
                     AppString.letsTalk,
-                    style: RButtonTheme.roundedButtonTextStyle,
+                    style: TextStyle(fontSize: FontSize.s15,
+                      letterSpacing: -0.011,
+                      color: ColorManager.black,
+                        fontFamily: FontConstants.fontFamily1),
                   ),
                 ),
               ],

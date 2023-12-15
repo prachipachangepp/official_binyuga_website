@@ -37,7 +37,7 @@ class CareerBinyugaScreen extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(
               top: MediaQuery.of(context).size.height / 5,
-              left: MediaQuery.of(context).size.width / 50,
+              left: MediaQuery.of(context).size.width / 10,
 
             ),
             child: Row(

@@ -181,7 +181,7 @@ class WhatWeDoExploreConstant {
 ///FeatureSubHome Page
 class FeatureSubHomeConstant {
   static TextStyle featuresubHomeTextStyle = GoogleFonts.inter(
-      fontSize: FontSize.s70,
+      fontSize: FontSize.s60,
       fontWeight: FontWeightManager.extraBold,
       decoration:TextDecoration.none,
       color: ColorManager.darkBlue1);
