@@ -26,8 +26,8 @@ class _AboutUsState extends State<AboutUs> {
                   padding: EdgeInsets.only(top:40,right: 170),
                   child: Text(AppString.aboutUs1,
                     style: AllScreensConstant.customTextStyle(
-                        FontSize.s70,
-                        FontWeightManager.extraBold,
+                        FontSize.s60,
+                        FontWeightManager.bold,
                         ColorManager.darkBlue
                       )
                    ),
@@ -44,12 +44,12 @@ class _AboutUsState extends State<AboutUs> {
                     ColorManager.black)
 
             ),
-            SizedBox(height: 60,),
+            SizedBox(height: 30,),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Padding(
-                  padding: EdgeInsets.only(top:30,left: 50),
+                  padding: EdgeInsets.only(top:30,left: 30),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
@@ -76,7 +76,7 @@ class _AboutUsState extends State<AboutUs> {
                 SizedBox(width: 50,),
                 Padding(
 
-                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/100,top:50),
+                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/100,top:30),
                   child: Column(
                      crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
@@ -135,7 +135,7 @@ class _AboutUsState extends State<AboutUs> {
                 ),
               ],
             ),
-            SizedBox(height: 40.0,),
+            SizedBox(height: 80.0,),
 
           ],
         ),

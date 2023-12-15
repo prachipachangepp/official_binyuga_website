@@ -1,6 +1,7 @@
-
 import 'dart:core';
-
+import 'dart:core';
+import 'dart:core';
+import 'dart:core';
 
 class AppString {
   /// Home screen
@@ -10,16 +11,15 @@ class AppString {
   static const String services = "Services";
   static const String portfolio = "Portfolio";
   static const String workshopTraining = "Workshop & Training";
-  static const String homesTxt1 =
-      "We craft\ntailored digital products \nfor your unique needs";
-  static const String homesTxt2 =
-      "Whether it's custom software solution, a user-friendly\napp, or a captivating website, we are commited to\ndelievering innovative and tailored digital products that not"
+  static const String homesTxt1 = "We craft\ntailored digital products \nfor your unique needs";
+  static const String homesTxt2 = "Whether its custom software solution, a user-friendly\napp, or a captivating website, we are commited to\ndelievering innovative and tailored digital products that not"
       "\nonly meet but exceed your expectations.";
   static const String exploreMore = "Explore more";
-  static const String whatWeAre = "What we are";
-  static const String whatWeDo = "What we do";
+  static const String whatWeAre = "What We Are";
+  static const String whatWeDo = "What We Do";
   static const String features = "Features";
   static const String career = "Career";
+
 
   /// About Us screen
   static const String aboutUs1 = "About Us";
@@ -29,6 +29,7 @@ class AppString {
   static const String successfullyProject = "Successfully\ncompleted projects";
   static const String revenueGrowth = "Revenue Growth";
   static const String trainingDays = "Training Days conducted\nfor interns";
+
 
   /// description screen
   static const String whoWeAre = " Who we are ";
@@ -40,8 +41,7 @@ class AppString {
   static const String uiUxDesigning = "UI/UxDesigning";
   static const String careerMonitoring = "Career Monitoring";
   static const String careerC = "Career";
-  static const String hybridApplicationDeveloper =
-      "Hybrid application developer";
+  static const String hybridApplicationDeveloper = "Hybrid application developer";
   static const String uIUxDesigning = "UI/UxDesigning";
   static const String uiUxDevelopment = "Ui/Ux Development";
   static const String backendDevelopment = "Backend development";
@@ -66,11 +66,9 @@ class AppString {
   static const String partnerShips = "Partnerships";
   static const String flutter = "Flutter";
   static const String reactJs = "React js";
-  static const String nameRegisterOfficeAddress =
-      "Name & register office\n address";
+  static const String nameRegisterOfficeAddress = "Name & register office\n address";
   static const String requestForServices = "request For Services";
-  static const String corporateIdentityNumber =
-      "Corporate identity\n number CIN";
+  static const String corporateIdentityNumber = "Corporate identity\n number CIN";
   static const String submitYourResume = "Submit your resume";
   static const String jobSeekers = "Job seekers";
   static const String clients = "Clients";
@@ -80,18 +78,15 @@ class AppString {
 
   /// Approach screen
   static const String ourApproach = "Our Approach";
-  static const String approachTxt =
-      "Is driven by innovation and guided by user-friendly designs. We also\nhave a strong commitment to nurturing and educating emerging,\nforward-thinking talent in the field.";
+  static const String approachTxt = "Is driven by innovation and guided by user-friendly designs. We also\nhave a strong commitment to nurturing and educating emerging,\nforward-thinking talent in the field.";
 
   /// Team Member screen
   static const String ourTeamMembers = "Our Team Members";
-  static const String teamTxt =
-      "The constant companion on our journey towards success";
+  static const String teamTxt = "The constant companion on our journey towards success";
   static const String johnS = "John Smith";
 
   /// Union screen
-  static const String unionTxt1 =
-      "We adopt a fresh and distinctive approach\nfor every project, investing time to deeply\ncomprehend our clients requirements.\n"
+  static const String unionTxt1 = "We adopt a fresh and distinctive approach\nfor every project, investing time to deeply\ncomprehend our clients requirements.\n"
       '\nContinual learning is at our core, allowing us\nto embrace new trends and technologies\nand incorporate them into our projects,\nensuring that our work remains at the\nforefront of the industry.';
 
   static const String unionTxt2 =
@@ -104,7 +99,9 @@ class AppString {
   ///Bottom Navbar screen
   static const String email = "www.career@binyuga.com";
 
+
   static const String letsTalk = "Let’s Talk";
+
 
   ///Career Binyuga Page
 
@@ -117,27 +114,20 @@ class AppString {
       ' \nlobortis sagittis scelerisque malesuada, '
       ' \ncubilia ullamcorper tempor fermentum '
       ' \ntellus odio.';
-  static const String weBelieveIn ="We believe in the power of envisioning, creating, \n"
-      "nd realizing. It all starts with a dream, an idea, or "
-      "\n a vision. "
-      "\n We then roll up our sleeves to build and bring  "
-      "\n that dream to life, translating it into tangible"
-      "\n solutions and results";
-  static const String sculptYour ="Sculpt Your Path to Success";
-  static const String moldYour = "Mold Your Dreams "
-  '\ninto Reality';
+
 
   /// WhatWeDo SubHomePage
-  static const String trustPropelsBuisnessProsperity =
-      "Trust Propels Buisness \nProsperity";
+  static const String trustPropelsBuisnessProsperity = "Trust Propels Buisness \nProsperity";
   static const String explore = "Explore";
-  static const String exploreBinyuga = "Explore\nBinyuga.Pvt.Ltd";
-  static const String  weAreDedicated  = "We are dedicated to more than just \n"
-      "technology transformation; our goal is "
-      "\nto bring about meaningful change that"
-      "\n resonates with our clients and the "
-      "\ncommunities they impact.";
   static const String binyugaPvtLtd = "Binyuga.Pvt.Ltd";
+/// WhatWeDoExploreScreen Page
+  static const String softwareDev = "Software Development";
+  static const String appDev = "Application Development";
+  static const String webDev = "Web Development";
+  static const String uiDes= "UI/UX Designing";
+  static const String careerMentor= "Career Menitoring";
+  static const String problemSolve = "Problem Solving";
+
   /// FeatureSubHome Page
   static const String dreamIt = "Dream It";
   static const String buildIt = "Build It";
@@ -148,6 +138,15 @@ class AppString {
       "\n We then roll up our sleeves to build and bring  "
       "\n that dream to life, translating it into tangible"
       "\n solutions and results";
+
+  /// FeatureStartScrren Page
   static const String readMore = "Read More";
+  static const String  featureScreenText1= "Turning Dreams into Features, and"
+                          "\nFeatures into Reality";
+  static const String featureScreenText2 =  'We specialize in crafting customized solutions to meet'
+      '\nyour unique needs, ensuring that our products align '
+      '\nperfectly with your goals.Our services are designed'
+      '\noffer the best value for your investment, optimizing'
+      '\nyour budget without compromising quality..';
 
 }

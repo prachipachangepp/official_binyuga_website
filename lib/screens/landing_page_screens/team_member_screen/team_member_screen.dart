@@ -12,7 +12,7 @@ class TeamMemberScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 1000,
+      height: 1400,
       color: ColorManager.white,
       child: Stack(
         children: [
@@ -43,7 +43,7 @@ class TeamMemberScreen extends StatelessWidget {
                           FontWeightManager.bold, ColorManager.white)),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
 
                 ///txt 2
@@ -66,7 +66,7 @@ class TeamMemberScreen extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(
               left: 80,
-              top: 550,
+              top: 450,
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -75,7 +75,7 @@ class TeamMemberScreen extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       backgroundColor: ColorManager.white1,
-                      radius: MediaQuery.of(context).size.width / 15,
+                      radius: MediaQuery.of(context).size.width / 10,
                     ),
                     Text(AppString.johnS,
                         style: TeamMemberConstant.nameTextStyle),
@@ -93,7 +93,7 @@ class TeamMemberScreen extends StatelessWidget {
                       children: [
                         CircleAvatar(
                           backgroundColor: ColorManager.white1,
-                          radius: MediaQuery.of(context).size.width / 15,
+                          radius: MediaQuery.of(context).size.width / 10,
                         ),
                         Text(AppString.johnS,
                             style: TeamMemberConstant.nameTextStyle),
@@ -107,37 +107,41 @@ class TeamMemberScreen extends StatelessWidget {
                 SizedBox(
                   height: AppSize.s20,
                 ),
-                Column(
+                Row(
                   children: [
-                    CircleAvatar(
-                      backgroundColor: ColorManager.white1,
-                      radius: MediaQuery.of(context).size.width / 15,
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: ColorManager.white1,
+                          radius: MediaQuery.of(context).size.width / 10,
+                        ),
+                        Text(AppString.johnS,
+                            style: TeamMemberConstant.nameTextStyle),
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width / 20,
+                        ),
+                      ],
                     ),
-                    Text(AppString.johnS,
-                        style: TeamMemberConstant.nameTextStyle),
                   ],
-                ),
-                SizedBox(
-                  height: 60,
                 ),
               ],
             ),
           ),
           SizedBox(
-            height: 80,
+            height:AppSize.s50,
           ),
 
           ///cirle avtar row 2
           Padding(
-            padding: const EdgeInsets.only(left: 80, top: 700),
+            padding: const EdgeInsets.only(left: 90, top: 800),
             child: Row(
-              //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Column(
                   children: [
                     CircleAvatar(
                       backgroundColor: ColorManager.white1,
-                      radius: MediaQuery.of(context).size.width / 15,
+                      radius: MediaQuery.of(context).size.width / 10,
                     ),
                     Text(AppString.johnS,
                         style: TeamMemberConstant.nameTextStyle),
@@ -147,20 +151,20 @@ class TeamMemberScreen extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: AppSize.s10,
+                  height: AppSize.s20,
                 ),
                 Column(
                   children: [
                     CircleAvatar(
                       backgroundColor: ColorManager.white1,
-                      radius: MediaQuery.of(context).size.width / 15,
+                      radius: MediaQuery.of(context).size.width / 10,
                     ),
                     Text(AppString.johnS,
                         style: TeamMemberConstant.nameTextStyle),
                   ],
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 80,
                 ),
               ],
             ),

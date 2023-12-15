@@ -30,8 +30,7 @@ class FeatureStartScreen extends StatelessWidget {
 
               children: [
                 Text(
-                  'Turning Dreams into Features, and'
-                      '\nFeatures into Reality',
+                     AppString.featureScreenText1,
                         style:
                         AllScreensConstant.customTextStyle(
                             FontSize.s25,
@@ -44,7 +43,7 @@ class FeatureStartScreen extends StatelessWidget {
                 Padding(
                   padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height /3.5,left:MediaQuery.of(context).size.width /3,),
                   child: Text(
-                    'We specialize in crafting customized solutions to meet \nyour unique needs, ensuring that our products align \nperfectly with your goals.Our services are designed t\noffer the best value for your investment, optimizing\nyour budget without compromising quality.. ',
+                      AppString.featureScreenText2,
                     style: AllScreensConstant.customTextStyle(
                         FontSize.s17,
                         //  MediaQuery.of(context).size.width/89,
