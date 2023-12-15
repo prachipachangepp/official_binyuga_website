@@ -25,87 +25,73 @@ class FeatureStartScreen extends StatelessWidget {
 
           /// Content Column
           Padding(
-            padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height /10,),
+            padding:  EdgeInsets.only(top: AppPadding.p100,left: MediaQuery.of(context).size.width/1.9),
             child: Column(
-
-
               children: [
-                Padding(
-                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width /2.3,),
-                  child: Text(
-                    'Turning Dreams into Features, and',
+                ///head txt 1
+                Row(
+                  children: [
+                    Text(
+                      'Turning Dreams into Features, and\n Features into Reality',
+            textAlign: TextAlign.end,
             style:
             AllScreensConstant.customTextStyle(
-                  FontSize.s36,
-                  FontWeightManager.bold,
-                  ColorManager.white),
+                    MediaQuery.of(context).size.width/40,
+                    FontWeightManager.bold,
+                    ColorManager.white),
           ),
+                  ],
                 ),
-              //  SizedBox(height: AppSize.s10,),
+                SizedBox(height: AppSize.s20,),
+                ///txt 2
                 Padding(
-                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/1.8),
-                  child: Text(
-                        '  Features into Reality',
-                          style:
-                          AllScreensConstant.customTextStyle(
-                              FontSize.s37,
-                              FontWeightManager.bold,
-                              ColorManager.white),
-                        ),
+                  padding:  EdgeInsets.only(right: MediaQuery.of(context).size.width/11),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    //crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Text(
+                        'We specialize in crafting customized solutions to meet \nyour unique needs, ensuring that our products align \nperfectly with your goals.Our services are designed to\noffer the best value for your investment, optimizing\nyour budget without compromising quality.. ',
+                        textAlign: TextAlign.start,
+                        style: AllScreensConstant.customTextStyle(
+                            //FontSize.s15,
+                            MediaQuery.of(context).size.width/120,
+                            FontWeightManager.medium,
+                            ColorManager.lightBlue),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(height: AppSize.s50,),
+                ///button
+                Padding(
+                  padding: EdgeInsets.only(right:MediaQuery.of(context).size.width /4.6),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.white,
+                            shape:
+                            RoundedRectangleBorder(
+                                borderRadius:
+                                BorderRadius
+                                    .circular(
+                                    20))),
+                        onPressed: () {}, child: Text(
+                        'Read More',style:TextStyle(fontWeight: FontWeightManager.semiBold,fontSize: FontSize.s15,
+                        letterSpacing: -0.011,
+                        color: ColorManager.black,),
+
+                      ),
+                      ),
+                    ],
+                  ),
                 ),
                     ],
                   ),
                 ),
-                Padding(
-                  padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height /3.5,
-                    left:MediaQuery.of(context).size.width /1.7,),
-                  child: Text(
-                    'We specialize in crafting customized solutions to meet \nyour unique needs, ensuring that our products align \nperfectly with your goals.Our services are designed to\noffer the best value for your investment, optimizing\nyour budget without compromising quality.. ',
-                    style: AllScreensConstant.customTextStyle(
-                        FontSize.s15,
-                        //  MediaQuery.of(context).size.width/89,
-                        FontWeightManager.medium,
-                        ColorManager.lightBlue),
-                  ),
-                ),
-              //  SizedBox(height: AppSize.s50,),
-                Padding(
-                  padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height /2,
-                      left:MediaQuery.of(context).size.width /1.7),
-                    child:
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.white,
-                          fixedSize: const Size(
-                              130, 33),
-                          shape:
-                          RoundedRectangleBorder(
-                              borderRadius:
-                              BorderRadius
-                                  .circular(
-                                  20))),
-                      onPressed: () {}, child: Text(
-                      'Read More',style:TextStyle(fontWeight: FontWeightManager.semiBold,fontSize: FontSize.s15,
-                        letterSpacing: -0.011,
-                        color: ColorManager.black,),
-
-
-
-
-                    ),
-                    // ElevatedButton(
-                    //
-                    // onPressed: () {
-                    //   // Button action
-                    // },
-                    //
-                    //   style:
-                    //   RButtonTheme.roundedButtonTextStyle,
-                    //
-                    // ),
-                  ),
-
-            ),],),
+        ],),
     );
   }
 }
