@@ -1,5 +1,7 @@
 import 'dart:core';
 import 'dart:core';
+import 'dart:core';
+import 'dart:core';
 
 class AppString {
   /// Home screen
@@ -139,6 +141,12 @@ class AppString {
 
   /// FeatureStartScrren Page
   static const String readMore = "Read More";
-
+  static const String  featureScreenText1= "Turning Dreams into Features, and"
+                          "\nFeatures into Reality";
+  static const String featureScreenText2 =  'We specialize in crafting customized solutions to meet'
+      '\nyour unique needs, ensuring that our products align '
+      '\nperfectly with your goals.Our services are designed'
+      '\noffer the best value for your investment, optimizing'
+      '\nyour budget without compromising quality..';
 
 }
