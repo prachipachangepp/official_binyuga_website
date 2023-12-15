@@ -100,13 +100,13 @@ class FeatureSubHome extends StatelessWidget {
           ),
           Padding(
             padding:  EdgeInsets.only(left: 280,top: MediaQuery.of(context).size.width/3.4),
-            child: Text(AppString.featureTxt,
+            child: Text(AppString.weSee,
                 style:FeatureLongTxtConstant.featurelongTextStyle
             ),
           ),
           // SizedBox(height: 20,),
           Padding(
-            padding: const EdgeInsets.only(left:500,top:540),
+            padding: const EdgeInsets.only(left:500,top:590),
             child: Row(
               children: [
                 Image.network(
