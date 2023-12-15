@@ -16,7 +16,7 @@ class WhatWeDoScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
+      appBar: const PreferredSize(
         preferredSize: Size.fromHeight(kToolbarHeight),
         child: ResponsiveAppBar(),
       ),
@@ -26,17 +26,18 @@ class WhatWeDoScreen extends StatelessWidget {
           Column(
             children: [
               Container(
-                  height: 1000,
-// width:MediaQuery.of(context).size.width,
-                  color: Colors.pink,
+                  height: 850,
+                  //color: Colors.pink,
                   child: WWDStartScreen()),
               Container(
-                height: 1500,
+               // height: 1200,
+                height: MediaQuery.of(context).size.height/0.6,
                 //color: Colors.red,
                 child: WWDSubHome(),
               ),
               Container(
-                height: 1500,
+              //  height: 1500,
+                height: MediaQuery.of(context).size.height/1,
                 //color: Colors.red,
                 child: WhatWeDoExploreScreen(),
               ),

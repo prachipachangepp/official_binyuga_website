@@ -131,6 +131,7 @@ class AppString {
   static const String trustPropelsBuisnessProsperity =
       "Trust Propels Buisness \nProsperity";
   static const String explore = "Explore";
+  static const String exploreBinyuga = "Explore\nBinyuga.Pvt.Ltd";
   static const String  weAreDedicated  = "We are dedicated to more than just \n"
       "technology transformation; our goal is "
       "\nto bring about meaningful change that"

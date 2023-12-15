@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:official_binyuga_website/presentation/value_manager.dart';
 
 import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
@@ -11,104 +12,93 @@ class WWDSubHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 2200,
-      width: MediaQuery.of(context).size.width,
-      child: Stack(
-        children: [
+        height: 1200,
+        width: MediaQuery.of(context).size.width,
+        child: Stack(children: [
+          ///txt 1
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: 20,left: 30),
-                child: Text(
-                  AppString.trustPropelsBuisnessProsperity,
-                  style:  WhatWeDoSubPageConstant.subHomeTextStyle
-                ),
+                padding: const EdgeInsets.only(top: AppPadding.p20, left: AppPadding.p30),
+                child: Text(AppString.trustPropelsBuisnessProsperity,
+                    style: WhatWeDoSubPageConstant.subHomeTextStyle(context)),
               ),
             ],
           ),
+
           /// Base Image
           Padding(
-            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/20,top:200,),
+            padding: EdgeInsets.only(left: AppPadding.p30, top: AppPadding.p250,),
             child: Row(
               children: [
                 Image.network(
                   "images/Rectangle 682.png",
-                  height: 635,
-                  width: MediaQuery.of(context).size.width/1.8,
+                  height: AppSize.s636,
+                  width: MediaQuery.of(context).size.width / 1.5,
                 ),
               ],
             ),
           ),
+
           ///rectangle
           Padding(
-            padding: const EdgeInsets.only(left:200, top:220),
+            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/7.5, top: AppPadding.p280),
             child: Image.network(
               'images/Rectangle 677.png',
-               height: 800,
-              width: MediaQuery.of(context).size.width/2,
+              height: AppSize.s780,
+              width: MediaQuery.of(context).size.width / 1.7,
             ),
           ),
 
+          ///inverted comma start
           Padding(
-            padding: const EdgeInsets.only(top: 320,right: 400),
+            padding: const EdgeInsets.only(top: 350,),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Image.network(
                   'images/inverted_start.png',
-                   height: 200,
-                  width: MediaQuery.of(context).size.width/3,
+                  height: 200,
+                  width: MediaQuery.of(context).size.width / 3,
                 ),
               ],
             ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 300,top: 415),
-                  child: Text(AppString.weAreDedicated,
-                      style: AllScreensConstant.customTextStyle(FontSize.s30,
-                        FontWeightManager.medium,ColorManager.white,)),
-                ),
-               // SizedBox(height: 20,),
-                Padding(
-                  padding: const EdgeInsets.only(left:500,top:520),
-                  child: Row(
-                    children: [
-                      Image.network(
-                        'images/inverted_end.png',
-                         height: 200,
-                        width: MediaQuery.of(context).size.width/3,
-
-                      ),
-                    ],
-                  ),
-                ),
-                    const Padding(
-            padding: EdgeInsets.only(top:1000,left:950),
-            child: Column(
+          ),
+          Padding(
+            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/5, top: AppPadding.p430),
+            child: Text(AppString.weAreDedicated,
+                style: AllScreensConstant.customTextStyle(
+                  MediaQuery.of(context).size.width/50,
+                  FontWeightManager.medium,
+                  ColorManager.white,
+                )),
+          ),
+          // // SizedBox(height: 20,),
+          Padding(
+            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/3 , top: 530),
+            child: Row(
               children: [
-                Padding(
-                  padding: EdgeInsets.only(right: 10),
-                  child: Text('Explore',
-                    style: TextStyle(
-                      decoration: TextDecoration.none,
-                      fontSize: 50,
-                      color: Color(0xff214188),
-                    ),
-                  ),
-                ),
-                Text('Binyuga.Pvt.Ltd',
-                  style: TextStyle(
-                    decoration: TextDecoration.none,
-                    fontSize: 50,
-                    color: Color(0xff214188),
-                  ),
+                Image.network(
+                  'images/inverted_end.png',
+                  height: 200,
+                  width: MediaQuery.of(context).size.width / 3,
                 ),
               ],
             ),
-              ),
-        ],
-      ),
-    );
+          ),
+          ///explore binyuga txt
+          Padding(
+            padding:
+                const EdgeInsets.only(top: AppPadding.p1000, right: AppPadding.p58),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Text(AppString.exploreBinyuga,
+                    textAlign: TextAlign.center,
+                    style: WhatWeDoSubPageConstant.subHomeTextStyle(context)),
+              ],
+            ),
+          ),
+        ]));
   }
 }

@@ -11,7 +11,7 @@ class WWDStartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: AppSize.s900,
+      height: AppSize.s870,
       color: ColorManager.white,
       child: Stack(
         children: [
@@ -58,11 +58,11 @@ class WWDStartScreen extends StatelessWidget {
 
           ///Image on the right side
           Padding(
-            padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/2.5,top: MediaQuery.of(context).size.height/15),
+            padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/2.5,top: MediaQuery.of(context).size.height/7),
             child: Image.network(
               'assets/images/digital_innovation.png',
               width: AppSize.s870,
-              height: AppSize.s870,
+              height: 700,
             ),
           ),
         ],

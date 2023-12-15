@@ -21,7 +21,7 @@ class CareerSubHomePage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(top:140),
             child: Text(AppString.sculptYour,
-              style: WhatWeDoSubPageConstant.subHomeTextStyle,
+              style: WhatWeDoSubPageConstant.subHomeTextStyle(context)
 
               ),
             ),

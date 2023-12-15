@@ -160,13 +160,19 @@ class CareerPageConstant1 {
 
 /// WhatWeDo SubHome Page
 class WhatWeDoSubPageConstant {
-  static TextStyle subHomeTextStyle = GoogleFonts.inter(
-      fontSize: FontSize.s70,
-      fontWeight: FontWeightManager.extraBold,
-      decoration:TextDecoration.none,
-      color: ColorManager.darkBlue1);
-
+  static double getNewFontSizeWWD(BuildContext context) {
+    return MediaQuery.of(context).size.width / 30;
+  }
+  static TextStyle subHomeTextStyle(BuildContext context){
+    return GoogleFonts.inter(
+        fontSize: getNewFontSizeWWD(context),
+        fontWeight: FontWeightManager.extraBold,
+        decoration:TextDecoration.none,
+        color: ColorManager.darkBlue1
+    );
+  }
 }
+
 /// WhatWeDo ExploreScreen
 class WhatWeDoExploreConstant {
   static TextStyle subHomeTextStyle = GoogleFonts.inter(
