@@ -24,8 +24,7 @@ class CareerAboutUs extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(
                   left: MediaQuery.of(context).size.width / 12, top: 380),
-              child: Text(
-                'About Us',
+              child: const Text(AppString.aboutUs,
                 style: TextStyle(
                     fontSize: 35,
                     fontFamily: 'inter',
@@ -34,104 +33,112 @@ class CareerAboutUs extends StatelessWidget {
                     color: Colors.white),
               ),
             ),
-            Column(
-              children: [
-                Row(
-                 // mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(
-                          top: MediaQuery.of(context).size.height / 1.3,right:100),
-                          //  MediaQuery.of(context).size.height / 2.5,
-                        //  left: MediaQuery.of(context).size.width / 20),
-                    ),
-                  ],
-                ),
-                Row(
-                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Container(
-                      height: 210,
-                      width: 180,
-                      decoration: BoxDecoration(
-                        color: Colors.blueGrey[700],
-                        borderRadius: BorderRadius.all(Radius.circular(15)),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 25, left: 25),
-                        child: const Text(
-                          'OUR EMPLOYEE',
-                          style: TextStyle(
-                            // decoration: TextDecoration.none,
-                            fontSize: 10,
-                            color: Colors.white,
+            Padding(
+              padding: const EdgeInsets.only(top: 500),
+              child: Column(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(left:  MediaQuery.of(context).size.width/15,
+                      right:  MediaQuery.of(context).size.width/15,),
+                    child: Row(
+                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Expanded(
+                          child: Container(
+                            height: 300,
+                            //width: 180,
+                            decoration: BoxDecoration(
+                              color: Colors.blueGrey[700],
+                              borderRadius: BorderRadius.all(Radius.circular(15)),
+                            ),
+                            child: const Padding(
+                              padding: EdgeInsets.only(top: 25,),
+                              child: Text(
+                                'OUR EMPLOYEE',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  // decoration: TextDecoration.none,
+                                  fontSize: 10,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
                           ),
                         ),
-                      ),
-                    ),
-                    SizedBox(width:MediaQuery.of(context).size.width / 80,),
-                    Container(
-                      height: 210,
-                      width: 180,
-                      decoration: BoxDecoration(
-                        color: Colors.blueGrey[700],
-                        borderRadius: BorderRadius.all(Radius.circular(15)),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 25, left: 25),
-                        child: const Text(
-                          'NATIONALITIES',
-                          style: TextStyle(
-                            fontFamily: 'inter',
-                            fontSize: 10,
-                            color: Colors.white,
+                        SizedBox(width:MediaQuery.of(context).size.width / 20,),
+                        Expanded(
+                          child: Container(
+                            height: 210,
+                            width: 180,
+                            decoration: BoxDecoration(
+                              color: Colors.blueGrey[700],
+                              borderRadius: BorderRadius.all(Radius.circular(15)),
+                            ),
+                            child: const Padding(
+                              padding: EdgeInsets.only(top: 25, ),
+                              child: Text(
+                                'NATIONALITIES',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontFamily: 'inter',
+                                  fontSize: 10,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
                           ),
                         ),
-                      ),
-                    ),
-                    SizedBox(width: 50,),
-                    Container(
-                      height: 210,
-                      width: 180,
-                      decoration: BoxDecoration(
-                        color: Colors.blueGrey[700],
-                        borderRadius: BorderRadius.all(Radius.circular(15)),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 25, left: 35),
-                        child: const Text(
-                          'DIVERSITY',
-                          style: TextStyle(
-                            fontFamily: 'inter',
-                            fontSize: 10,
-                            color: Colors.white,
+                        SizedBox(width: MediaQuery.of(context).size.width / 20,),
+                        Expanded(
+                          child: Container(
+                            height: 210,
+                            width: 180,
+                            decoration: BoxDecoration(
+                              color: Colors.blueGrey[700],
+                              borderRadius: BorderRadius.all(Radius.circular(15)),
+                            ),
+                            child: const Padding(
+                              padding: EdgeInsets.only(top: 25,),
+                              child: Text(
+                                'DIVERSITY',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontFamily: 'inter',
+                                  fontSize: 10,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
                           ),
                         ),
-                      ),
-                    ),
-                    SizedBox(width: MediaQuery.of(context).size.width / 80,),
-                    Container(
-                      height: 210,
-                      width: 180,
-                      decoration: BoxDecoration(
-                        color: Colors.blueGrey[700],
-                        borderRadius: BorderRadius.all(Radius.circular(15)),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 25, left: 25),
-                        child: const Text(
-                          'DEVELOPMENT',
-                          style: TextStyle(
-                            fontFamily: 'inter',
-                            fontSize: 10,
-                            color: Colors.white,
+                        SizedBox(width: MediaQuery.of(context).size.width / 20,),
+                        Expanded(
+                          child: Container(
+                            height: 210,
+                            width: 180,
+                            decoration: BoxDecoration(
+                              color: Colors.blueGrey[700],
+                              borderRadius: BorderRadius.all(Radius.circular(15)),
+                            ),
+                            child: const Padding(
+                              padding: EdgeInsets.only(top: 25,),
+                              child: Text(
+                                'DEVELOPMENT',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontFamily: 'inter',
+                                  fontSize: 10,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
                           ),
                         ),
-                      ),
+                      ],
                     ),
-                  ],
-                ),
-              ],
+                  ),
+                ],
+              ),
             ),
             Padding(
               padding: EdgeInsets.only(
