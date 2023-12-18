@@ -275,7 +275,9 @@ Widget webBody() {
                 children: [
                   Expanded(
                       flex: 2,
-                      child: Container(child: StartHomeScreen())),
+                      child: Container(
+                          color: Colors.white,
+                          child: StartHomeScreen())),
                 ],
               ),
               Row(
