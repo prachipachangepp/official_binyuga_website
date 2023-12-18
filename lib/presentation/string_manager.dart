@@ -167,7 +167,7 @@ class AppString {
       '\nsupport, and expertise you need to achieve your '
       '\ngoals. Just as a sculptor molds clay into a '
       '\nmasterpiece, we are here to assist you in crafting '
-      '\n your path towards success, ';
+      '\n your path towards success. ';
 
 
 }

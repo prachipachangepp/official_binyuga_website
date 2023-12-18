@@ -218,13 +218,27 @@ class StartHomeScreen extends StatelessWidget {
                 width: MediaQuery.of(context).size.width / 18,
               ),
               SizedBox(width: MediaQuery.of(context).size.width / 50),
-              Padding(
-                padding: EdgeInsets.only(right: MediaQuery.of(context).size.width / 80),
-                child: Image.asset(
-                  'images/search.png',
-                  width: MediaQuery.of(context).size.width / 25,
-                ),
-              ),
+               Padding(
+                 padding: const EdgeInsets.only(right: 15),
+                 child: CircleAvatar(
+                   backgroundColor: Colors.white,
+                   radius:15,
+                   child: IconButton(
+                     padding: EdgeInsets.zero,
+                     icon: Icon(Icons.search_rounded,
+                     size: 25,),
+                     color: Colors.red, onPressed: () {  },
+                   ),
+                 ),
+               )
+
+              // Padding(
+              //   padding: EdgeInsets.only(right: MediaQuery.of(context).size.width / 80),
+              //   child: Image.asset(
+              //     'images/search.png',
+              //     width: MediaQuery.of(context).size.width / 25,
+              //   ),
+              // ),
             ],
           ),
         ),

@@ -112,7 +112,7 @@ class CareerSubHomePage extends StatelessWidget {
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: AppPadding.p150, left: AppPadding.p30),
+                padding: const EdgeInsets.only(top: 150, left: 30),
                 child: Text(AppString.sculptYour,
                     style: WhatWeDoSubPageConstant.subHomeTextStyle(context)),
               ),
@@ -121,12 +121,12 @@ class CareerSubHomePage extends StatelessWidget {
 
           /// Base Image
           Padding(
-            padding: EdgeInsets.only(left: AppPadding.p130, top: AppPadding.p280,),
+            padding: EdgeInsets.only(left:130, top: 280,),
             child: Row(
               children: [
                 Image.network(
                   'images/Rectangle 677.png',
-                  height: AppSize.s636,
+                  height:1200,
                   width: MediaQuery.of(context).size.width / 1.5,
                 ),
               ],
@@ -135,11 +135,11 @@ class CareerSubHomePage extends StatelessWidget {
 
           ///rectangle
           Padding(
-            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/7.5, top: AppPadding.p280),
+            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/7.5, top:300),
             child: Image.network(
               "images/Rectangle 682.png",
 
-              height: AppSize.s780,
+              height: 900,
               width: MediaQuery.of(context).size.width / 1.7,
             ),
           ),

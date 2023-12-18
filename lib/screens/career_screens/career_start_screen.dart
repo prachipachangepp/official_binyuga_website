@@ -47,7 +47,7 @@ class CareerStartScreen extends StatelessWidget {
                 SizedBox(height: AppSize.s20,),
 
             Padding(
-              padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/55,right:50),
+              padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/50,right:230),
               child: MaterialButton(
                 color: ColorManager.white,
                 shape: const RoundedRectangleBorder(

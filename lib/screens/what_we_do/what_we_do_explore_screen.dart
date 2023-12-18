@@ -103,80 +103,75 @@ class _WhatWeDoExploreScreenState extends State<WhatWeDoExploreScreen> {
                   width: 10,
                 ),
                 Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
+                  /// Third Image
                   children: [
-                    Column(
-                      /// Third Image
-                      children: [
-                        Image.network(
-                          'images/wd.png',
-                          height: 250,
-                          width: 415,
-                          // height: 2200,
-                          // width: MediaQuery.of(context).size.width,
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 5),
-                          child: TextButton(
-                              onPressed: () {},
-                              style: ButtonStyle(
-                                  backgroundColor:
-                                      MaterialStateProperty.all(Colors.blue),
-                                  shape: MaterialStateProperty.all<
-                                          RoundedRectangleBorder>(
-                                      RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.zero,
-                                          side:
-                                              BorderSide(color: Colors.blue)))),
-                              child: Text(
-                                'Web Development',
-                                style: TextStyle(
-                                  backgroundColor: Colors.blue,
-                                  fontSize: 20,
-                                  color: Colors.white,
-                                  fontFamily: 'inter',
-                                  fontWeight: FontWeight.w800,
-                                ),
-                              )),
-                        )
-                      ],
+                    Image.network(
+                      'images/wd.png',
+                      height: 250,
+                      width: 415,
+                      // height: 2200,
+                      // width: MediaQuery.of(context).size.width,
                     ),
-                    SizedBox(height: 40),
-                    Column(
-                      children: [
-                        /// Fourth Image
-                        Image.network(
-                          'images/ui.png',
-                          height: 250,
-                          width: 415,
-                          // width: MediaQuery.of(context).size.width,
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 5),
-                          child: TextButton(
-                              onPressed: () {},
-                              style: ButtonStyle(
-                                  backgroundColor:
-                                      MaterialStateProperty.all(Colors.blue),
-                                  shape: MaterialStateProperty.all<
-                                          RoundedRectangleBorder>(
-                                      RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.zero,
-                                          side:
-                                              BorderSide(color: Colors.blue)))),
-                              child: Text(
-                                'Ui/UX Designing',
-                                style: TextStyle(
-                                  backgroundColor: Colors.blue,
-                                  fontSize: 20,
-                                  color: Colors.white,
-                                  fontFamily: 'inter',
-                                  fontWeight: FontWeight.w800,
-                                ),
-                              )),
-                        )
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 5),
+                      child: TextButton(
+                          onPressed: () {},
+                          style: ButtonStyle(
+                              backgroundColor:
+                                  MaterialStateProperty.all(Colors.blue),
+                              shape: MaterialStateProperty.all<
+                                      RoundedRectangleBorder>(
+                                  RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.zero,
+                                      side:
+                                          BorderSide(color: Colors.blue)))),
+                          child: Text(
+                            'Web Development',
+                            style: TextStyle(
+                              backgroundColor: Colors.blue,
+                              fontSize: 20,
+                              color: Colors.white,
+                              fontFamily: 'inter',
+                              fontWeight: FontWeight.w800,
+                            ),
+                          )),
+                    )
+                  ],
+                ),
+                SizedBox(height: 40),
+                Column(
+                  children: [
+                    /// Fourth Image
+                    Image.network(
+                      'images/ui.png',
+                      height: 250,
+                      width: 415,
+                      // width: MediaQuery.of(context).size.width,
                     ),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 5),
+                      child: TextButton(
+                          onPressed: () {},
+                          style: ButtonStyle(
+                              backgroundColor:
+                                  MaterialStateProperty.all(Colors.blue),
+                              shape: MaterialStateProperty.all<
+                                      RoundedRectangleBorder>(
+                                  RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.zero,
+                                      side:
+                                          BorderSide(color: Colors.blue)))),
+                          child: Text(
+                            'Ui/UX Designing',
+                            style: TextStyle(
+                              backgroundColor: Colors.blue,
+                              fontSize: 20,
+                              color: Colors.white,
+                              fontFamily: 'inter',
+                              fontWeight: FontWeight.w800,
+                            ),
+                          )),
+                    )
                   ],
                 ),
                 SizedBox(

@@ -17,7 +17,7 @@ class CareerBinyugaScreen extends StatelessWidget {
           Image.network(
             'images/bckground.png',
             fit: BoxFit.fill,
-            height: 600,
+            height: 700,
             width: MediaQuery.of(context).size.width,
           ),
           Padding(
@@ -27,7 +27,7 @@ class CareerBinyugaScreen extends StatelessWidget {
             ),
             child: Text(
               'Why Binyuga.Pvt.Ltd,',
-                style: AllScreensConstant.customTextStyle(FontSize.s46,
+                style: AllScreensConstant.customTextStyle(FontSize.s58,
                     FontWeightManager.bold, ColorManager.white)
 
 
@@ -45,23 +45,27 @@ class CareerBinyugaScreen extends StatelessWidget {
               children: [
                 Image.network(
                   "images/woman.png",
-                  height: 500,
-                  width: MediaQuery.of(context).size.width/3.5,
+                   height: 500,
+                   width: MediaQuery.of(context).size.width/3.5,
                   // width:200,
                 ),
-                SizedBox(
-                  width: 25,
-                ),
+                // SizedBox(
+                //   width: 25,
+                // ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Image.network(
-                    "images/line.png",
-                    height: 230,
+                  padding:  EdgeInsets.only(top: 100,left:100,),
+                  child: Container(
+                    height: MediaQuery.of(context).size.height/3.2,
+                    child: VerticalDivider(
+                      width: MediaQuery.of(context).size.width/2.2,
+                      color: Colors.blue,
+                      thickness: 4,
+                    ),
                   ),
                 ),
-                SizedBox(
-                  width: 25,
-                ),
+                // SizedBox(
+                //   width: 25,
+                // ),
 
                 Padding(
                   padding: EdgeInsets.only(

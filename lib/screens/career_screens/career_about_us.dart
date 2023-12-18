@@ -23,7 +23,7 @@ class CareerAboutUs extends StatelessWidget {
             ),
             Padding(
               padding: EdgeInsets.only(
-                  left: MediaQuery.of(context).size.width / 12, top: 380),
+                  left: MediaQuery.of(context).size.width / 12, top: 420),
               child: const Text(AppString.aboutUs,
                 style: TextStyle(
                     fontSize: 35,
@@ -68,8 +68,8 @@ class CareerAboutUs extends StatelessWidget {
                         SizedBox(width:MediaQuery.of(context).size.width / 20,),
                         Expanded(
                           child: Container(
-                            height: 210,
-                            width: 180,
+                            height: 300,
+                            // width: 180,
                             decoration: BoxDecoration(
                               color: Colors.blueGrey[700],
                               borderRadius: BorderRadius.all(Radius.circular(15)),
@@ -91,8 +91,8 @@ class CareerAboutUs extends StatelessWidget {
                         SizedBox(width: MediaQuery.of(context).size.width / 20,),
                         Expanded(
                           child: Container(
-                            height: 210,
-                            width: 180,
+                            height: 300,
+                            // width: 180,
                             decoration: BoxDecoration(
                               color: Colors.blueGrey[700],
                               borderRadius: BorderRadius.all(Radius.circular(15)),
@@ -114,8 +114,8 @@ class CareerAboutUs extends StatelessWidget {
                         SizedBox(width: MediaQuery.of(context).size.width / 20,),
                         Expanded(
                           child: Container(
-                            height: 210,
-                            width: 180,
+                            height:300,
+                            // width: 180,
                             decoration: BoxDecoration(
                               color: Colors.blueGrey[700],
                               borderRadius: BorderRadius.all(Radius.circular(15)),
@@ -147,10 +147,14 @@ class CareerAboutUs extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Image.network(
-                      "images/line2.png",
-                      height:AppSize.s320,
+                    padding:  EdgeInsets.only(top: 100,left: MediaQuery.of(context).size.width/3.5,),
+                    child: Container(
+                      height: MediaQuery.of(context).size.height/3.2,
+                      child: VerticalDivider(
+                        width: MediaQuery.of(context).size.width/2.2,
+                        color: Colors.blue,
+                        thickness: 4,
+                      ),
                     ),
                   ),
 
