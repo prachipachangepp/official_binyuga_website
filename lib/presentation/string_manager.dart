@@ -143,7 +143,7 @@ class AppString {
   /// FeatureSubHome Page
   static const String dreamIt = "Dream It";
   static const String buildIt = "Build It";
-  static const String achieveIt = "Achieve It ";
+  static const String achieveIt = "Achieve It. ";
   static const String featureTxt = "We believe in the power of envisioning, creating,\n"
       "nd realizing. It all starts with a dream, an idea, or "
       "\n a vision. "

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../presentation/string_manager.dart';
 import '../../presentation/theme_manager.dart';
+import '../../presentation/value_manager.dart';
 
 class FeatureSubHome extends StatelessWidget {
   const FeatureSubHome({super.key});
@@ -18,7 +19,7 @@ class FeatureSubHome extends StatelessWidget {
             children: [
               Image.network(
                 "images/design 1.png",
-                height: 380,
+                 height:AppSize.s380,
 
               ),
             ],
@@ -36,7 +37,7 @@ class FeatureSubHome extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height:10,),
+                SizedBox(height:AppSize.s10,),
                 Row(
                   children: [
                     Text(
@@ -45,7 +46,7 @@ class FeatureSubHome extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 10,),
+                SizedBox(  height:AppSize.s10,),
                 Row(
                   children: [
                     Text(
@@ -57,18 +58,19 @@ class FeatureSubHome extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 30,),
+          SizedBox(height:AppSize.s20,),
 
 
 
           /// Base Image
           Padding(
-            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/10,top:200,),
+            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/15,top:200,),
             child: Row(
               children: [
                 Image.network(
                   "images/Rectangle 682.png",
-                  height: 935,
+                  // height: 935,
+                  height:AppSize.s636,
                   width: MediaQuery.of(context).size.width/1.6,
                 ),
               ],
@@ -76,31 +78,32 @@ class FeatureSubHome extends StatelessWidget {
           ),
           ///rectangle
           Padding(
-            padding: const EdgeInsets.only(left:200, top:220),
+            padding: const EdgeInsets.only(left:190, top:200),
             child: Image.network(
               'images/Rectangle 677.png',
-              height: 900,
+              // height: 1050,
+              height: AppSize.s780,
               width: MediaQuery.of(context).size.width/1.7,
             ),
           ),
 
           Padding(
-            padding: const EdgeInsets.only(top: 310,right: 410),
+            padding: const EdgeInsets.only(left:20,top: 310,right: 410),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Image.network(
-                  'images/inverted_start.png',
-                  height: 200,
+                  'images/inverted_start_white.png',
+                  height:AppSize.s200,
                   width: MediaQuery.of(context).size.width/3,
                 ),
               ],
             ),
           ),
           Padding(
-            padding:  EdgeInsets.only(left: 280,top: MediaQuery.of(context).size.width/3.4),
-            child: Text(AppString.weSee,
+            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/4.3,top: AppPadding.p430),
+            child: Text(AppString.featureTxt,
                 style:FeatureLongTxtConstant.featurelongTextStyle
             ),
           ),
@@ -110,8 +113,8 @@ class FeatureSubHome extends StatelessWidget {
             child: Row(
               children: [
                 Image.network(
-                  'images/inverted_end.png',
-                  height: 200,
+                  'images/inverted_end_white.png',
+                  height:AppSize.s200,
                   width: MediaQuery.of(context).size.width/3,
 
                 ),

@@ -187,7 +187,7 @@ class WhatWeDoExploreConstant {
 ///FeatureSubHome Page
 class FeatureSubHomeConstant {
   static TextStyle featuresubHomeTextStyle = GoogleFonts.inter(
-      fontSize: FontSize.s60,
+      fontSize: FontSize.s46,
       fontWeight: FontWeightManager.extraBold,
       decoration:TextDecoration.none,
       color: ColorManager.darkBlue1);
@@ -195,7 +195,7 @@ class FeatureSubHomeConstant {
 /// FeatureSubHome Page LongText
 class FeatureLongTxtConstant {
   static TextStyle featurelongTextStyle = GoogleFonts.inter(
-      fontSize: FontSize.s30,
+      fontSize: FontSize.s25,
       fontWeight: FontWeightManager.semiBold,
       decoration:TextDecoration.none,
       color: ColorManager.white);
