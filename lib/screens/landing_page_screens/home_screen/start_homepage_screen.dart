@@ -9,9 +9,15 @@ import 'package:official_binyuga_website/screens/career_screens/career_page.dart
 import 'package:official_binyuga_website/screens/features_screens/feature_page.dart';
 import '../../what_we_do/what_we_do.dart';
 
-class StartHomeScreen extends StatelessWidget {
+class StartHomeScreen extends StatefulWidget {
   const StartHomeScreen({super.key});
 
+  @override
+  State<StartHomeScreen> createState() => _StartHomeScreenState();
+}
+
+class _StartHomeScreenState extends State<StartHomeScreen> {
+  bool _lights = false;
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -211,12 +217,16 @@ class StartHomeScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(width: MediaQuery.of(context).size.width / 22),
-              Image.asset(
-                'images/toggle_bg.png',
-                color:Color(0xff27C9B2),
-                height: MediaQuery.of(context).size.height / 18,
-                width: MediaQuery.of(context).size.width / 18,
-              ),
+              Switch.adaptive(
+                  activeColor: Colors.cyanAccent,
+                  focusColor: Colors.white,
+
+                  value: _lights,
+                  onChanged: (bool value){
+                    setState((){
+                     _lights=value;
+                      });
+                  }),
               SizedBox(width: MediaQuery.of(context).size.width / 50),
                Padding(
                  padding: const EdgeInsets.only(right: 15),
@@ -231,14 +241,6 @@ class StartHomeScreen extends StatelessWidget {
                    ),
                  ),
                )
-
-              // Padding(
-              //   padding: EdgeInsets.only(right: MediaQuery.of(context).size.width / 80),
-              //   child: Image.asset(
-              //     'images/search.png',
-              //     width: MediaQuery.of(context).size.width / 25,
-              //   ),
-              // ),
             ],
           ),
         ),
