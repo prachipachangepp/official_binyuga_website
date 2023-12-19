@@ -220,7 +220,6 @@ class _StartHomeScreenState extends State<StartHomeScreen> {
               Switch.adaptive(
                   activeColor: Colors.cyanAccent,
                   focusColor: Colors.white,
-
                   value: _lights,
                   onChanged: (bool value){
                     setState((){
@@ -237,7 +236,10 @@ class _StartHomeScreenState extends State<StartHomeScreen> {
                      padding: EdgeInsets.zero,
                      icon: Icon(Icons.search_rounded,
                      size: 25,),
-                     color: Colors.red, onPressed: () {  },
+                     color: Colors.red,
+                     onPressed: () {
+
+                      },
                    ),
                  ),
                )

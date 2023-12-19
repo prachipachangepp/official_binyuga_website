@@ -23,21 +23,12 @@ class CareerPageScreen extends StatelessWidget {
         children: [
           Column(
             children: [
-//               Container(
-//                   height: 1000,
-// // width:MediaQuery.of(context).size.width,
-//                   color: Colors.pink,
-//                   child: WWDStartScreen()),
-//               Container(
-//                 height: 1500,
-//                 //color: Colors.red,
-//                 child: (),
-//               ),
               Container(
                 height: 900,
                 color: Colors.purple,
                 child: CareerStartScreen(),
               ),
+
               Container(
                 height: 900,
               //  color: Colors.blueGrey,
@@ -63,7 +54,7 @@ class CareerPageScreen extends StatelessWidget {
               Container(
                 height: 187,
                 child: const BottomNavBarScreen(),
-              )
+              ),
             ],
           ),
         ],

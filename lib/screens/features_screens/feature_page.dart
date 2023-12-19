@@ -43,19 +43,6 @@ class FeaturePageScreen extends StatelessWidget {
                // color: Colors.grey,
                 child: FeatureSubHomePage(),
               ),
-
-              // Container(
-              //   height: 700,
-              //   color: Colors.blue,
-              //   child: CareerBinyugaScreen(),
-              // ),
-
-              // Container(
-              //   height: 600,
-              //   color: Colors.orange,
-              //   child: CareerAboutUs(),
-              // ),
-
               Container(
                 height: 800,
                 color: Colors.grey,

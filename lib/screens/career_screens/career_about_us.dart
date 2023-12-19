@@ -167,9 +167,9 @@ class CareerAboutUs extends StatelessWidget {
                   //      right:MediaQuery.of(context).size.width/2.5),
                   Padding(
                     padding: EdgeInsets.only(
-                      // right: MediaQuery.of(context).size.width / 50,
-                      left: MediaQuery.of(context).size.width / 90,
-                      top: MediaQuery.of(context).size.height / 20,
+                      right: MediaQuery.of(context).size.width /3,
+                      // left: MediaQuery.of(context).size.width /75,
+                      top: MediaQuery.of(context).size.height / 15,
                     ),
                     child: Text(AppString.loremTxt,
                       style: CareerPageConstant.careerTextStyle,

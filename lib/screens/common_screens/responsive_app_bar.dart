@@ -3,6 +3,9 @@ import 'package:official_binyuga_website/presentation/color_manager.dart';
 import 'package:official_binyuga_website/presentation/font_manager.dart';
 import 'package:official_binyuga_website/presentation/theme_manager.dart';
 import '../../presentation/value_manager.dart';
+import '../career_screens/career_page.dart';
+import '../features_screens/feature_page.dart';
+import '../what_we_do/what_we_do.dart';
 
 class ResponsiveAppBar extends StatelessWidget {
   const ResponsiveAppBar({super.key});
@@ -23,11 +26,29 @@ class ResponsiveAppBar extends StatelessWidget {
           children: <Widget>[
             NavBarItem(title: 'Who we are'),
             SizedBox(width: MediaQuery.of(context).size.width/55),
-            NavBarItem(title: 'What we do'),
+            GestureDetector(
+              onTap: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => WhatWeDoScreen()),);
+              },
+                child: NavBarItem(title: 'What we do')),
             SizedBox(width: MediaQuery.of(context).size.width/55),
-            NavBarItem(title: 'Features'),
+            GestureDetector(
+                onTap: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => FeaturePageScreen()),);
+                },
+                child: NavBarItem(title: 'Features')),
             SizedBox(width: MediaQuery.of(context).size.width/55),
-            NavBarItem(title: 'Career'),
+            GestureDetector(
+                onTap: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => CareerPageScreen()),);
+                },
+                child: NavBarItem(title: 'Career')),
             SizedBox(width: MediaQuery.of(context).size.width/55),
             NavBarItem(title: 'Portfolio'),
             SizedBox(width: MediaQuery.of(context).size.width/6.2),
