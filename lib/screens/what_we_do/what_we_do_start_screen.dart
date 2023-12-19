@@ -31,7 +31,7 @@ class WWDStartScreen extends StatelessWidget {
               children: [
                 Text(
                   'Elevating Success with\nInnovative Tech',
-                  style: AllScreensConstant.customTextStyle(FontSize.s58, FontWeightManager.bold, ColorManager.white),
+                  style: AllScreensConstant.customTextStyle(FontSize.s50, FontWeightManager.bold, ColorManager.white),
                 ),
                 SizedBox(height: AppSize.s20,),
                 Text(

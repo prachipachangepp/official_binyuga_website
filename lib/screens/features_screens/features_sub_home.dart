@@ -109,7 +109,7 @@ class FeatureSubHome extends StatelessWidget {
           ),
           // SizedBox(height: 20,),
           Padding(
-            padding: const EdgeInsets.only(left:500,top:590),
+            padding: const EdgeInsets.only(left:500,top:550),
             child: Row(
               children: [
                 Image.network(

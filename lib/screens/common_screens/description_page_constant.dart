@@ -45,14 +45,14 @@ class DesriptionScreenConstant extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 5,),
+          SizedBox(height: 10,),
           Padding(
             padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/16,),
             child: Row(
               children: [
                 ///who we are
                 Padding(
-                  padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/85,bottom:40),
+                  padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/85,bottom:270),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -81,7 +81,7 @@ class DesriptionScreenConstant extends StatelessWidget {
                 SizedBox(width:  MediaQuery.of(context).size.width/20,),
                 ///what we do
                 Padding(
-                  padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/85),
+                  padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/85,bottom:200),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -123,16 +123,16 @@ class DesriptionScreenConstant extends StatelessWidget {
                 SizedBox(width: MediaQuery.of(context).size.width/15,),
                 ///career
                 Padding(
-                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/85,top:15 ),
+                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/130, bottom:140),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      // Text(
-                      //   AppString.flutter,
-                      //   textAlign: TextAlign.left,
-                      //   style: LastColumnScreen.columnTextStyle(context),
-                      // ),
-                      // SizedBox(height: AppSize.s15, ),
+                      Text(
+                        AppString.flutter,
+                        textAlign: TextAlign.left,
+                        style: LastColumnScreen.columnTextStyle(context),
+                      ),
+                      SizedBox(height: AppSize.s15, ),
                       Text(
                         AppString.reactJs,
                         textAlign: TextAlign.left,
@@ -176,7 +176,7 @@ class DesriptionScreenConstant extends StatelessWidget {
                 SizedBox(width: MediaQuery.of(context).size.width/15,),
                 ///features
                 Padding(
-                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/85,),
+                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/85,bottom:210),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -215,19 +215,19 @@ class DesriptionScreenConstant extends StatelessWidget {
                 SizedBox(width: MediaQuery.of(context).size.width/15,),
                 ///contact
                 Padding(
-                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/85,),
+                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/140,bottom: 80),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      // Text(
-                      //   AppString.nameRegisterOfficeAddress,
-                      //   style: LastColumnScreen.columnTextStyle(context),
-                      // ),
-                      // SizedBox(height: AppSize.s15,),
-                      // Text(
-                      //   AppString.requestForServices,
-                      //   style: LastColumnScreen.columnTextStyle(context),
-                      // ),
+                      Text(
+                        AppString.nameRegisterOfficeAddress,
+                        style: LastColumnScreen.columnTextStyle(context),
+                      ),
+                      SizedBox(height: AppSize.s15,),
+                      Text(
+                        AppString.requestForServices,
+                        style: LastColumnScreen.columnTextStyle(context),
+                      ),
                       SizedBox(height: AppSize.s15,),
                       Text(
                         AppString.corporateIdentityNumber,
@@ -272,7 +272,7 @@ class DesriptionScreenConstant extends StatelessWidget {
           SizedBox(height:AppSize.s100),
           ///bottom row
           Padding(
-              padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/10,),
+              padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/15,),
               child: const DescriptionBottomRowConstant()
           ),
         ],

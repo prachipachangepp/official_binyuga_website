@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../presentation/string_manager.dart';
 import '../common_screens/explore_screen_image_btn_constant.dart';
 
 class WhatWeDoExploreScreen extends StatefulWidget {
@@ -25,7 +26,7 @@ class _WhatWeDoExploreScreenState extends State<WhatWeDoExploreScreen> {
                       onPressed: (){}),
                   ImageWithButtonStack(
                       imageUrl: 'images/ad.png',
-                      buttonText:  'Application Development',
+                      buttonText:  AppString.appDev,
                       onPressed: (){}),
                   ImageWithButtonStack(
                       imageUrl:  'images/wd.png',
@@ -42,7 +43,7 @@ class _WhatWeDoExploreScreenState extends State<WhatWeDoExploreScreen> {
                     onPressed: (){}),
                 ImageWithButtonStack(
                     imageUrl: 'images/cm.png',
-                    buttonText: 'Career Monitoring',
+                    buttonText: 'Career Mentoring',
                     onPressed: (){}),
                 ImageWithButtonStack(
                     imageUrl: 'images/ps.png',

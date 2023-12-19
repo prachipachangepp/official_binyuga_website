@@ -112,7 +112,7 @@ class CareerSubHomePage extends StatelessWidget {
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: 150, left: 30),
+                padding: const EdgeInsets.only(top: 200, left: 30),
                 child: Text(AppString.sculptYour,
                     style: WhatWeDoSubPageConstant.subHomeTextStyle(context)),
               ),
@@ -120,14 +120,15 @@ class CareerSubHomePage extends StatelessWidget {
           ),
 
           /// Base Image
+
           Padding(
-            padding: EdgeInsets.only(left:130, top: 280,),
+            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/7.5, top:300),
             child: Row(
               children: [
                 Image.network(
-                  'images/Rectangle 677.png',
-                  height:1200,
-                  width: MediaQuery.of(context).size.width / 1.5,
+                  "images/Rectangle 682.png",
+                   height: 890,
+                  width: MediaQuery.of(context).size.width / 1.7,
                 ),
               ],
             ),
@@ -135,14 +136,26 @@ class CareerSubHomePage extends StatelessWidget {
 
           ///rectangle
           Padding(
-            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/7.5, top:300),
-            child: Image.network(
-              "images/Rectangle 682.png",
-
-              height: 900,
-              width: MediaQuery.of(context).size.width / 1.7,
+            padding: EdgeInsets.only(left:80, top: 320,),
+            child: Row(
+              children: [
+                Image.network(
+                  'images/Rectangle 677.png',
+                  height:500,
+                  width: MediaQuery.of(context).size.width / 1.5,
+                ),
+              ],
             ),
           ),
+          // Padding(
+          //   padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/7.5, top:300),
+          //   child: Image.network(
+          //     "images/Rectangle 682.png",
+          //
+          //     height: 900,
+          //     width: MediaQuery.of(context).size.width / 1.7,
+          //   ),
+          // ),
 
           ///inverted comma start
           Padding(

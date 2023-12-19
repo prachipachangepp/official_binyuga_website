@@ -200,3 +200,14 @@ class FeatureLongTxtConstant {
       decoration:TextDecoration.none,
       color: ColorManager.white);
 }
+
+// class ExploreScreenImageButtonConstant {
+//   static TextStyle exploreImageButtonTextStyle = GoogleFonts.inter(
+//       fontSize: FontSize.s20,
+//       backgroundColor: ColorManager.skyBlue,
+//       fontWeight: FontWeightManager.extraBold,
+//       decoration:TextDecoration.none,
+//       color: ColorManager.white);
+// }
+//
+

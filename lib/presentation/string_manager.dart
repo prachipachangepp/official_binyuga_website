@@ -12,7 +12,7 @@ class AppString {
   static const String portfolio = "Portfolio";
   static const String workshopTraining = "Workshop & Training";
   static const String homesTxt1 = "We craft\ntailored digital products \nfor your unique needs";
-  static const String homesTxt2 = "Whether its custom software solution, a user-friendly\napp, or a captivating website, we are commited to\ndelievering innovative and tailored digital products that not"
+  static const String homesTxt2 = "Whether it's a custom software solution, a user-friendly\napp, or a captivating website, we are commited to\ndelievering innovative and tailored digital products that not"
       "\nonly meet but exceed your expectations.";
   static const String exploreMore = "Explore more";
   static const String whatWeAre = "What We Are";
@@ -39,9 +39,9 @@ class AppString {
   static const String applicationDevelopment = "Application Development ";
   static const String webDevelopment = "Web Development";
   static const String uiUxDesigning = "UI/UxDesigning";
-  static const String careerMonitoring = "Career Monitoring";
+  static const String careerMonitoring = "Career mentoring";
   static const String careerC = "Career";
-  static const String hybridApplicationDeveloper = "Hybrid application developer";
+  static const String hybridApplicationDeveloper = "Hybrid application developement";
   static const String uIUxDesigning = "UI/UxDesigning";
   static const String uiUxDevelopment = "Ui/Ux Development";
   static const String backendDevelopment = "Backend development";
@@ -125,10 +125,10 @@ class AppString {
       "\n a vision. "
       "\n We then roll up our sleeves to build and bring  "
       "\n that dream to life, translating it into tangible"
-      "\n solutions and results";
-  static const String sculptYour ="Sculpt Your Path to Success";
+      "\n solutions and results.";
+  static const String sculptYour ="Sculpt Your Path To Success";
   static const String moldYour = "Mold Your Dreams "
-      '\ninto Reality';
+      '\nInto Reality';
   static const String exploreBinyuga ="Explore\nBinyuga.Pvt.Ltd.";
   static const String weAreDedicated ="We're dedicated to more than just\ntechnology transformation; our goal is\nto bring about meaningful change that\nresonates with our clients and the\ncommunities they impact.";
 
@@ -137,7 +137,7 @@ class AppString {
   static const String appDev = "Application Development";
   static const String webDev = "Web Development";
   static const String uiDes= "UI/UX Designing";
-  static const String careerMentor= "Career Menitoring";
+  static const String careerMentor= "Career Mentoring";
   static const String problemSolve = "Problem Solving";
 
   /// FeatureSubHome Page
@@ -149,7 +149,7 @@ class AppString {
       "\n a vision. "
       "\n We then roll up our sleeves to build and bring  "
       "\n that dream to life, translating it into tangible"
-      "\n solutions and results";
+      "\n solutions and results.";
 
   /// FeatureStartScrren Page
   static const String readMore = "Read More";
@@ -159,7 +159,7 @@ class AppString {
       '\nyour unique needs, ensuring that our products align '
       '\nperfectly with your goals.Our services are designed'
       '\noffer the best value for your investment, optimizing'
-      '\nyour budget without compromising quality..';
+      '\nyour budget without compromising quality.';
   static const String  weSee ="We see every journey to success as a work of art, "
       '\nwhere each decision and effort shapes the way '
       '\nforward. Our mission is to help you carve out your '

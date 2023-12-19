@@ -8,6 +8,7 @@ import 'package:official_binyuga_website/presentation/value_manager.dart';
 import 'package:official_binyuga_website/screens/career_screens/career_page.dart';
 import 'package:official_binyuga_website/screens/features_screens/feature_page.dart';
 import '../../what_we_do/what_we_do.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class StartHomeScreen extends StatefulWidget {
   const StartHomeScreen({super.key});
@@ -17,6 +18,7 @@ class StartHomeScreen extends StatefulWidget {
 }
 
 class _StartHomeScreenState extends State<StartHomeScreen> {
+
   bool _lights = false;
   @override
   Widget build(BuildContext context) {
@@ -227,23 +229,45 @@ class _StartHomeScreenState extends State<StartHomeScreen> {
                       });
                   }),
               SizedBox(width: MediaQuery.of(context).size.width / 50),
-               Padding(
-                 padding: const EdgeInsets.only(right: 15),
-                 child: CircleAvatar(
-                   backgroundColor: Colors.white,
-                   radius:15,
-                   child: IconButton(
-                     padding: EdgeInsets.zero,
-                     icon: Icon(Icons.search_rounded,
-                     size: 25,),
-                     color: Colors.red,
-                     onPressed: () {
 
-                      },
-                   ),
-                 ),
-               )
-            ],
+               ///Search Button
+               // Padding(
+               //   padding: const EdgeInsets.only(right: 15),
+               //   child: CircleAvatar(
+               //     backgroundColor: Colors.white,
+               //     radius:15,
+               //     child: IconButton(
+               //       padding: EdgeInsets.zero,
+               //       icon: Icon(Icons.search_rounded,
+               //       size: 25,),
+               //       color: Colors.red,
+               //       onPressed: () {
+               //
+               //        },
+               //     ),
+               //   ),
+               // )
+              Container(
+                height: 30,
+                width: 30,
+                decoration: BoxDecoration(
+                   color: Colors.white,
+                  // color:(index % 2 ==0) ?Colors.red:   Colors.deepOrange,
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(20.0),
+                  ),
+                ),
+                child:IconButton(
+                  onPressed: (){},
+                  icon: Icon(FontAwesomeIcons.search,
+                    size: 15, //Icon Size
+                    color: Colors.deepOrange,
+
+                  ),
+                  //using font awesome icon in action list of appbar
+                ),
+
+              )],
           ),
         ),
       ],
