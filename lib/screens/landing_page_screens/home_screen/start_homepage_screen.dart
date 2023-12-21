@@ -247,27 +247,54 @@ class _StartHomeScreenState extends State<StartHomeScreen> {
                //     ),
                //   ),
                // )
-              Container(
-                height: 30,
-                width: 30,
-                decoration: BoxDecoration(
-                   color: Colors.white,
-                  // color:(index % 2 ==0) ?Colors.red:   Colors.deepOrange,
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(20.0),
+              // Container(
+              //   height: 30,
+              //   width: 30,
+              //   decoration: BoxDecoration(
+              //      color: Colors.white,
+              //     // color:(index % 2 ==0) ?Colors.red:   Colors.deepOrange,
+              //     borderRadius: BorderRadius.all(
+              //       Radius.circular(20.0),
+              //     ),
+              //   ),
+              //   child:IconButton(
+              //     onPressed: (){},
+              //     icon: Icon(FontAwesomeIcons.search,
+              //       size: 15, //Icon Size
+              //       color: Colors.deepOrange,
+              //
+              //     ),
+              //     //using font awesome icon in action list of appbar
+              //   ),
+              //
+              // ),
+              Padding(
+                padding: const EdgeInsets.only(right:10),
+                child: Container(
+                  height: 40,
+                  width: 40,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(25.0),
+                    ),
                   ),
+                  child: ShaderMask(
+                    shaderCallback: (Rect bounds) {
+                      return LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [Colors.red, Colors.yellow,Colors.blue],
+                      ).createShader(bounds);
+                      },
+                       child: Icon(
+                        Icons.search,
+                         color: Colors.white,
+                         size: 35,   ), ),
                 ),
-                child:IconButton(
-                  onPressed: (){},
-                  icon: Icon(FontAwesomeIcons.search,
-                    size: 15, //Icon Size
-                    color: Colors.deepOrange,
+              )
 
-                  ),
-                  //using font awesome icon in action list of appbar
-                ),
-
-              )],
+            ],
           ),
         ),
       ],
